@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Engineering & Solar Wiring Lab | Wire Size & Voltage Drop Calc</title>
+    <meta name="description" content="NEC (AWG) & Metric (IEC mm²) Cable Sizing, Voltage Drop, Breaker Protection (Ib ≤ In ≤ Iz) & 40% Conduit Fill">
+    <link rel="canonical" href="https://pbideasvirtuales.github.io/electric_blog/">
+    <style>
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background:#0d1117; color:#e6edf3; margin:0; line-height:1.65; }
+        .top-bar { background:#161b22; border-bottom:2px solid #FFB300; padding:10px 20px; text-align:center; font-size:0.9em; color:#fff; }
+        .top-bar a { color:#FFB300; font-weight:800; text-decoration:underline; }
+        header { background:linear-gradient(135deg,#161b22 0%,#000000 100%); padding:50px 20px; border-bottom:3px solid #00E676; text-align:center; }
+        header h1 { margin:0; color:#00E676; font-size:2.4em; }
+        header p { color:#c9d1d9; font-size:1.15em; max-width:740px; margin:12px auto 0; }
+        .container { max-width:880px; margin:0 auto; padding:36px 20px; }
+        .hero-app { background:linear-gradient(145deg,#161b22,#1f2937); border:2px solid #FFB300; border-radius:18px; padding:30px 24px; margin-bottom:40px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.6); }
+        .fomo-box { background:rgba(0,230,118,0.1); border:1px dashed #00E676; color:#e6edf3; padding:12px 16px; border-radius:10px; max-width:660px; margin:12px auto 18px; font-size:0.92em; }
+        .cta-btn { display:inline-block; margin-top:10px; padding:16px 34px; background:#FFB300; color:#0d1117; font-weight:900; font-size:1.08em; text-decoration:none; border-radius:30px; text-transform:uppercase; box-shadow:0 4px 15px rgba(255,179,0,0.4); }
+        .post-card { background:#161b22; border:1px solid #30363d; border-radius:14px; padding:24px; margin-bottom:24px; transition:border-color 0.2s; }
+        .post-card:hover { border-color:#00E676; }
+        .post-date { color:#FFB300; font-size:0.85em; font-weight:bold; text-transform:uppercase; }
+        .post-card h2 { margin:8px 0 10px; font-size:1.5em; }
+        .post-card h2 a { color:#ffffff; text-decoration:none; }
+        .read-more { color:#00E676; font-weight:bold; text-decoration:none; font-size:1.02em; }
+        footer { text-align:center; padding:30px 20px; color:#8b949e; border-top:1px solid #21262d; margin-top:50px; }
+        footer a { color:#00E676; text-decoration:none; }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        🔥 LAUNCH EDITION (v1.0) — EARLY ADOPTER ACCESS: Download free on Android right now and lock in full access to all core calculators & 40 offline guides before our upcoming Pro subscription update! <a href="https://play.google.com/store/apps/details?id=com.pbideasvirtuales.voltagedropwiresizecalc&hl=en_US&gl=US&referrer=utm_source%3Dgithub_electric_blog%26utm_medium%3Dorganic_seo%26utm_campaign%3Dlaunch_v1" target="_blank" rel="noopener">Install Free Now &rarr;</a>
+    </div>
+    <header>
+        <h1>Electrical Engineering & Solar Wiring Lab</h1>
+        <p>NEC (AWG) & Metric (IEC mm²) Cable Sizing, Voltage Drop, Breaker Protection (Ib ≤ In ≤ Iz) & 40% Conduit Fill</p>
+    </header>
+    <div class="container">
+        <div class="hero-app">
+            <strong style="color:#FFB300; font-size:0.95em;">⚡ Dual Standard NEC AWG + IEC mm² • Auto Breaker Sizing (Ib ≤ In ≤ Iz)</strong>
+            <h2 style="margin:8px 0; color:#fff; font-size:1.9em;">Wire Size & Voltage Drop Calc</h2>
+            <p style="color:#c9d1d9; max-width:680px; margin:10px auto;">Stop testing wire gauges one by one! Our physical calculation engine automatically recommends the exact commercial conductor size (AWG & whole metric mm²) and protective breaker/fuse simultaneously—supporting 8 conductor metals (Copper, Aluminum, Silver, Gold, Pure Nickel, Nichrome), AC Mains, 12V/24V/48V Solar, Motor HP/Amps, 40% Conduit Fill, 40 Offline Field Guides, and a 200-question Electrician Quiz.</p>
+            <div class="fomo-box">🔥 LAUNCH EDITION (v1.0) — EARLY ADOPTER ACCESS: Download free on Android right now and lock in full access to all core calculators & 40 offline guides before our upcoming Pro subscription update!</div>
+            
+    <div style="margin:26px 0;">
+        <p style="font-size:0.9em; color:#8b949e; text-transform:uppercase; letter-spacing:1px; font-weight:bold; margin-bottom:12px;">
+            📱 Inside the Official Android Toolkit (100% Offline Ready):
+        </p>
+        <div style="display:flex; gap:14px; overflow-x:auto; padding-bottom:12px; justify-content:center; flex-wrap:wrap;">
+            <img src="assets/wire_en_1.jpg" alt="Wire Size & Voltage Drop Calc Android Screenshot" style="height:340px; border-radius:12px; border:2px solid #30363d; box-shadow:0 4px 14px rgba(0,0,0,0.5);"><img src="assets/wire_en_2.jpg" alt="Wire Size & Voltage Drop Calc Android Screenshot" style="height:340px; border-radius:12px; border:2px solid #30363d; box-shadow:0 4px 14px rgba(0,0,0,0.5);"><img src="assets/wire_en_3.jpg" alt="Wire Size & Voltage Drop Calc Android Screenshot" style="height:340px; border-radius:12px; border:2px solid #30363d; box-shadow:0 4px 14px rgba(0,0,0,0.5);"><img src="assets/wire_en_4.jpg" alt="Wire Size & Voltage Drop Calc Android Screenshot" style="height:340px; border-radius:12px; border:2px solid #30363d; box-shadow:0 4px 14px rgba(0,0,0,0.5);">
+        </div>
+    </div>
+    
+            <a href="https://play.google.com/store/apps/details?id=com.pbideasvirtuales.voltagedropwiresizecalc&hl=en_US&gl=US&referrer=utm_source%3Dgithub_electric_blog%26utm_medium%3Dorganic_seo%26utm_campaign%3Dlaunch_v1" target="_blank" rel="noopener" class="cta-btn">📲 Download Free on Google Play (Android v1.0)</a>
+            <p style="font-size:0.82em; color:#8b949e; margin-top:12px; margin-bottom:0;">✓ Free on Android (Google Play) • ✓ Works 100% Offline • ✓ 40 Field Guides + 200-Q Quiz</p>
+        </div>
+
+        
+        <div class="widget-box" style="border: 2px solid #00E676; background:linear-gradient(145deg,#161b22,#0d1117); padding:26px; border-radius:16px; margin:34px 0; box-shadow:0 8px 28px rgba(0,0,0,0.5);">
+            <div style="display:inline-block; background:rgba(0,230,118,0.15); color:#00E676; padding:4px 12px; border-radius:20px; font-size:0.82em; font-weight:bold; margin-bottom:10px;">
+                ⚡ INTERACTIVE MINI-CALCULATOR ("TRY THE ENGINE")
+            </div>
+            <h3 style="color:#ffffff; margin-top:4px; margin-bottom:8px; font-size:1.35em;">Quick Copper Voltage Drop &amp; Breaker Check</h3>
+            <p style="font-size:0.95em; color:#c9d1d9; margin-top:0;">Adjust system voltage, load amps, and one-way distance to see live voltage drop on a <strong>4 mm² (~12 AWG)</strong> copper circuit:</p>
+
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:14px; margin:16px 0;">
+                <div style="background:#0d1117; padding:12px; border-radius:10px; border:1px solid #30363d;">
+                    <label style="font-weight:bold; font-size:0.9em; color:#8b949e;">System Voltage:</label><br>
+                    <select id="sysVolt" onchange="calcWireMini()" style="width:100%; margin-top:6px; padding:8px; background:#161b22; color:#fff; border:1px solid #30363d; border-radius:6px; font-weight:bold;">
+                        <option value="12">12V DC (Solar / Camper)</option>
+                        <option value="24">24V DC (Solar / Marine)</option>
+                        <option value="48">48V DC (Off-Grid Lithium)</option>
+                        <option value="120">120V AC (US Single-Phase)</option>
+                        <option value="230" selected>230V / 240V AC (Single-Phase)</option>
+                    </select>
+                </div>
+                <div style="background:#0d1117; padding:12px; border-radius:10px; border:1px solid #30363d;">
+                    <label style="font-weight:bold; font-size:0.9em; color:#8b949e;">Load Current (Ib): <span id="ampVal" style="color:#00E676;">20 A</span></label><br>
+                    <input type="range" id="ampSlider" min="5" max="40" step="1" value="20" style="width:100%; margin-top:10px;" oninput="calcWireMini()">
+                </div>
+                <div style="background:#0d1117; padding:12px; border-radius:10px; border:1px solid #30363d;">
+                    <label style="font-weight:bold; font-size:0.9em; color:#8b949e;">One-Way Distance: <span id="distVal" style="color:#00E676;">45 m (148 ft)</span></label><br>
+                    <input type="range" id="distSlider" min="5" max="100" step="5" value="45" style="width:100%; margin-top:10px;" oninput="calcWireMini()">
+                </div>
+            </div>
+
+            <div id="wireResult" style="padding:16px; background:#0d1117; border-left:4px solid #ff5252; border-radius:8px; margin-top:12px; font-size:0.98em;">
+                Voltage Drop on 4 mm² (12 AWG): <strong>7.88V (3.43%)</strong> &mdash; <strong style="color:#ff5252;">⚠️ EXCEEDS 3% LIMIT! Step up to 6 mm² (10 AWG) or 10 mm² (8 AWG).</strong><br>
+                <span style="font-size:0.9em; color:#8b949e;">Power wasted as heat in cable (I²R): <strong>157.5 Watts</strong></span>
+            </div>
+
+            <script>
+            function calcWireMini() {
+                let V = parseFloat(document.getElementById('sysVolt').value);
+                let I = parseFloat(document.getElementById('ampSlider').value);
+                let L = parseFloat(document.getElementById('distSlider').value);
+                document.getElementById('ampVal').innerText = I + ' A';
+                document.getElementById('distVal').innerText = L + ' m (' + Math.round(L*3.28084) + ' ft)';
+                let R = (2 * L * 0.0175) / 4.0;
+                let vdrop = (I * R).toFixed(2);
+                let pct = ((vdrop / V) * 100).toFixed(2);
+                let watts = (I * I * R).toFixed(1);
+                let box = document.getElementById('wireResult');
+                let col = pct > 3.0 ? '#ff5252' : '#00e676';
+                box.style.borderLeftColor = col;
+                let msg = pct > 3.0
+                    ? '⚠️ EXCEEDS 3% LIMIT! Use the full Android app to auto-size the exact AWG / mm² gauge & breaker.'
+                    : '✅ SAFE (<3% Voltage Drop). Thermal check (Ib ≤ In ≤ Iz) required for breaker selection.';
+                box.innerHTML = 'Voltage Drop on 4 mm² (~12 AWG): <strong>' + vdrop + 'V (' + pct + '%)</strong> &mdash; <strong style="color:' + col + ';">' + msg + '</strong><br><span style="font-size:0.9em; color:#8b949e;">Joule Heat Loss in Cable (I²R): <strong>' + watts + ' Watts</strong></span>';
+            }
+            </script>
+
+            <div style="margin-top:16px; padding-top:14px; border-top:1px solid #30363d; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px;">
+                <span style="font-size:0.9em; color:#FFB300; font-weight:bold;">
+                    💡 Want automatic AWG + whole mm² sizing, 8 metals (Copper, Aluminum, Pure Nickel, Nichrome), 3-Phase AC, Motor HP &amp; 40% Conduit Fill?
+                </span>
+                <a href="https://play.google.com/store/apps/details?id=com.pbideasvirtuales.voltagedropwiresizecalc&hl=en_US&gl=US&referrer=utm_source%3Dgithub_electric_blog%26utm_medium%3Dorganic_seo%26utm_campaign%3Dlaunch_v1" target="_blank" rel="noopener" style="background:#00E676; color:#0d1117; font-weight:800; padding:10px 20px; border-radius:24px; text-decoration:none; font-size:0.9em;">
+                    Unlock Full App Free (v1.0) &rarr;
+                </a>
+            </div>
+        </div>
+        
+
+        <h2 style="border-bottom:2px solid #30363d; padding-bottom:10px; color:#fff;">📐 Latest Electrical &amp; Solar Field Guides</h2>
+        
+        <div class="post-card">
+            <img src="assets/el01_regla_oro_termica_cable.webp" alt="NEC (AWG) vs. IEC (mm²) Wire Sizing & Why Breakers Must Obey Ib ≤ In ≤ Iz" style="width:100%; height:220px; object-fit:cover; border-radius:10px; margin-bottom:14px;">
+            <div class="post-date">Published 2026-11-10 • Technical Field Guide</div>
+            <h2><a href="nec-awg-vs-iec-mm2-wire-size-and-voltage-drop-guide.html">NEC (AWG) vs. IEC (mm²) Wire Sizing & Why Breakers Must Obey Ib ≤ In ≤ Iz</a></h2>
+            <p>Discover why cables melt even when the circuit breaker doesn't trip, how long wire runs create hidden I²R heat losses, and how to size both American AWG and commercial Metric mm² conductors in one tap.</p>
+            <a href="nec-awg-vs-iec-mm2-wire-size-and-voltage-drop-guide.html" class="read-more">Read Full Guide &amp; Use Interactive Calculator &rarr;</a>
+        </div>
+        
+        <div class="post-card">
+            <img src="assets/so02_elegir_12v_24v_48v_sistema_solar.webp" alt="12V vs. 24V vs. 48V Solar Battery Wiring: How to Size Inverter Cables & Class-T Fuses Safely" style="width:100%; height:220px; object-fit:cover; border-radius:10px; margin-bottom:14px;">
+            <div class="post-date">Published 2026-11-10 • Technical Field Guide</div>
+            <h2><a href="12v-vs-24v-vs-48v-solar-inverter-cable-sizing-and-fuse-guide.html">12V vs. 24V vs. 48V Solar Battery Wiring: How to Size Inverter Cables & Class-T Fuses Safely</a></h2>
+            <p>Why a 3000W inverter on a 12V battery bank demands massive 4/0 AWG copper cables, how switching to 48V saves hundreds of dollars in copper, and how to pick the exact ANL, MEGA, or Class-T DC fuse.</p>
+            <a href="12v-vs-24v-vs-48v-solar-inverter-cable-sizing-and-fuse-guide.html" class="read-more">Read Full Guide &amp; Use Interactive Calculator &rarr;</a>
+        </div>
+        
+    </div>
+    <footer>
+        <p>&copy; 2026 PB Ideas Virtuales • <a href="../index.html">Developer Home</a> • <a href="../privacidad-utilidades.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
