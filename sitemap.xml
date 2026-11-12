@@ -7,6 +7,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://pbideasvirtuales.github.io/electric_blog/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://pbideasvirtuales.github.io/electric_blog/nec-awg-vs-iec-mm2-wire-size-and-voltage-drop-guide.html</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>daily</changefreq>
@@ -31,7 +37,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pbideasvirtuales.github.io/electric_blog/</loc>
+    <loc>https://pbideasvirtuales.github.io/carpentry_blog/</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -67,7 +73,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pbideasvirtuales.github.io/carpentry_blog/</loc>
+    <loc>https://pbideasvirtuales.github.io/rv_camper_blog/</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -97,7 +103,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pbideasvirtuales.github.io/rv_camper_blog/</loc>
+    <loc>https://pbideasvirtuales.github.io/country_radio_blog/</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -127,7 +133,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pbideasvirtuales.github.io/country_radio_blog/</loc>
+    <loc>https://pbideasvirtuales.github.io/christmas_radio_blog/</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -157,7 +163,7 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://pbideasvirtuales.github.io/christmas_radio_blog/</loc>
+    <loc>https://pbideasvirtuales.github.io/radios_mexico_blog/</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -182,12 +188,6 @@
   </url>
   <url>
     <loc>https://pbideasvirtuales.github.io/radios_mexico_blog/fernando-valenzuela-el-joven-de-etchohuaquila-que-hechiz-al-b-isbol-con-una-mirada-al-cielo.html</loc>
-    <lastmod>2026-11-12</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://pbideasvirtuales.github.io/radios_mexico_blog/</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
