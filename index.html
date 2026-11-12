@@ -1,169 +1,77 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PB Ideas Virtuales - Premium Radio Apps</title>
+    <title>PB Ideas Virtuales | Engineering Labs, Field Tools &amp; Thematic Radio Portals</title>
+    <meta name="description" content="Official developer hub of PB Ideas Virtuales. Discover our engineering calculation suites, overlanding leveler tools, and high-fidelity streaming radio networks on Android.">
+    <link rel="canonical" href="https://pbideasvirtuales.github.io/">
     <style>
-        /* Estilos generales */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        
-        /* Cabecera */
-        header {
-            background: linear-gradient(135deg, #1e1e1e 0%, #000000 100%);
-            padding: 60px 20px;
-            border-bottom: 3px solid #FFD700;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-            color: #FFD700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-        header p {
-            font-size: 1.2em;
-            color: #aaaaaa;
-            margin-top: 10px;
-        }
-
-        /* Contenido Principal */
-        .content {
-            padding: 50px 20px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .content h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .content p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #cccccc;
-            margin-bottom: 40px;
-        }
-
-        /* Grilla de Categorías */
-        .grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .card {
-            background-color: #1e1e1e;
-            padding: 25px;
-            border-radius: 12px;
-            width: 250px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-            transition: transform 0.3s ease, border-bottom 0.3s ease;
-            border-bottom: 3px solid transparent;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-            border-bottom: 3px solid #FFD700;
-        }
-        .card h3 {
-            color: #FFD700;
-            margin-top: 0;
-            font-size: 1.3em;
-        }
-        .card p {
-            font-size: 0.9em;
-            margin-bottom: 0;
-        }
-        .icon {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
-        /* Botón Call to Action */
-        .cta-button {
-            display: inline-block;
-            margin-top: 50px;
-            padding: 15px 40px;
-            background-color: #FFD700;
-            color: #000000;
-            font-weight: bold;
-            font-size: 1.1em;
-            text-decoration: none;
-            border-radius: 30px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: background 0.3s, box-shadow 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #ffcc00;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
-        }
-
-        /* Pie de página */
-        footer {
-            margin-top: 60px;
-            background-color: #0a0a0a;
-            padding: 30px 20px;
-            color: #777777;
-            font-size: 0.9em;
-        }
-        footer a {
-            color: #FFD700;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background:#0d1117; color:#e6edf3; margin:0; line-height:1.65; }
+        header { background:linear-gradient(135deg, #161b22 0%, #000000 100%); padding:50px 20px; text-align:center; border-bottom:3px solid #00E676; }
+        header h1 { margin:0; color:#00E676; font-size:2.5em; }
+        header p { color:#c9d1d9; font-size:1.15em; max-width:760px; margin:14px auto 0; }
+        .container { max-width:1160px; margin:0 auto; padding:40px 20px; }
+        .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:24px; }
+        .card { background:#161b22; border:1px solid #30363d; border-radius:16px; padding:26px; transition:transform 0.2s, border-color 0.2s; }
+        .card:hover { transform:translateY(-4px); border-color:#00E676; }
+        .card h3 { margin:0 0 10px; font-size:1.4em; }
+        .card h3 a { text-decoration:none; }
+        .card p { color:#c9d1d9; font-size:0.95em; line-height:1.55; }
+        .card .btn { display:inline-block; margin-top:14px; padding:10px 20px; border-radius:20px; font-weight:bold; text-decoration:none; font-size:0.9em; }
+        footer { text-align:center; padding:40px 20px; color:#8b949e; border-top:1px solid #21262d; margin-top:60px; }
+        footer a { color:#00E676; text-decoration:none; margin:0 10px; }
     </style>
 </head>
 <body>
-
     <header>
         <h1>PB Ideas Virtuales</h1>
-        <p>Experiencias de Audio & Radio Premium</p>
+        <p>Engineering Toolkits, Job-Site Instruments &amp; Authentic Music Portals &mdash; Built for Precision and Long-Term Reliability</p>
     </header>
 
-    <div class="content">
-        <h2>Desarrollo de Aplicaciones Móviles</h2>
-        <p>Nos especializamos en crear plataformas de radio nativas, rápidas y estables. Seleccionamos cuidadosamente las mejores emisoras del mundo y las combinamos con contenido cultural, histórico y trivias para ofrecer una experiencia auditiva inigualable.</p>
-
+    <div class="container">
+        <h2 style="color:#ffffff; margin-bottom:26px; font-size:1.8em; border-bottom:2px solid #30363d; padding-bottom:10px;">Official Portals &amp; Engineering Labs</h2>
         <div class="grid">
-            <div class="card">
-                <div class="icon">🎷</div>
-                <h3>Jazz & Blues</h3>
-                <p>La expresión más pura de la música. Emisoras globales de Soul, Funk, R&B y Smooth Jazz.</p>
+            <div class="card" style="border-top:4px solid #00E676;">
+                <h3><a href="electric_blog/" style="color:#00E676;">⚡ Electrical Engineering &amp; Solar Wiring Lab</a></h3>
+                <p>NEC AWG &amp; Metric IEC mm² cable sizing, percentage voltage drop, circuit breaker coordination (Ib ≤ In ≤ Iz), 8 conductor metals &amp; 40% conduit fill.</p>
+                <a href="electric_blog/" class="btn" style="background:#00E676; color:#0d1117;">Explore Electrical Lab &rarr;</a>
             </div>
-            <div class="card">
-                <div class="icon">🕰️</div>
-                <h3>Retro & Oldies</h3>
-                <p>Máquinas del tiempo musicales. Revive la magia de las décadas de los 50s a los 90s.</p>
+
+            <div class="card" style="border-top:4px solid #F59E0B;">
+                <h3><a href="carpentry_blog/" style="color:#F59E0B;">🪚 Carpentry, Roof Framing &amp; Construction Lab</a></h3>
+                <p>Roof pitch &amp; rafter calculator (Common, Hip/Valley, Jack), 1/16" tape measure fractions zoom, stair stringers with IRC code check &amp; concrete cubic yards.</p>
+                <a href="carpentry_blog/" class="btn" style="background:#F59E0B; color:#0d1117;">Explore Carpentry Lab &rarr;</a>
             </div>
-            <div class="card">
-                <div class="icon">🎻</div>
-                <h3>Ópera & Clásica</h3>
-                <p>Las salas de concierto más grandes del mundo en tu bolsillo. Obras maestras atemporales.</p>
+
+            <div class="card" style="border-top:4px solid #10B981;">
+                <h3><a href="rv_camper_blog/" style="color:#10B981;">🚐 RV Overlanding, Camper Leveling &amp; HVAC Lab</a></h3>
+                <p>Wheelbase axle leveling blocks, 3-degree absorption fridge protection, diesel heater altitude adjustments &amp; off-grid LiFePO4 battery banks.</p>
+                <a href="rv_camper_blog/" class="btn" style="background:#10B981; color:#0d1117;">Explore RV Leveling Lab &rarr;</a>
             </div>
-            <div class="card">
-                <div class="icon">🪗</div>
-                <h3>Ritmos Latinos</h3>
-                <p>Orgullo y pasión. Radios de Colombia, Música Norteña, Tango, Cumbia y más.</p>
+
+            <div class="card" style="border-top:4px solid #D97706;">
+                <h3><a href="country_radio_blog/" style="color:#D97706;">🤠 Country Radio &amp; Outlaw Legends Chronicle</a></h3>
+                <p>Classic country, 90s hits, Nashville bluegrass, and biographies of Johnny Cash, Hank Williams, and Dolly Parton with 24/7 commercial-free live streaming.</p>
+                <a href="country_radio_blog/" class="btn" style="background:#D97706; color:#0d1117;">Explore Country Radio &rarr;</a>
+            </div>
+
+            <div class="card" style="border-top:4px solid #EF4444;">
+                <h3><a href="christmas_radio_blog/" style="color:#EF4444;">🎄 Christmas Radio &amp; Holiday Legends Chronicle</a></h3>
+                <p>Vintage 1940s-1950s crooners, Bing Crosby, Frank Sinatra, heartwarming holiday miracles, and 24/7 peaceful Christmas acoustic carols.</p>
+                <a href="christmas_radio_blog/" class="btn" style="background:#EF4444; color:#fff;">Explore Christmas Radio &rarr;</a>
+            </div>
+
+            <div class="card" style="border-top:4px solid #10B981;">
+                <h3><a href="radios_mexico_blog/" style="color:#10B981;">🇲🇽 Radios de México en Vivo y Crónicas de Leyendas</a></h3>
+                <p>Emisoras de los 32 estados de la República Mexicana, música ranchera, norteña y banda, con 40 crónicas históricas y leyendas del orgullo mexicano.</p>
+                <a href="radios_mexico_blog/" class="btn" style="background:#10B981; color:#0d1117;">Explorar Radios de México &rarr;</a>
             </div>
         </div>
-
-        <a href="https://play.google.com/store/apps/developer?id=PB+Ideas+Virtuales" target="_blank" class="cta-button">Ver Portafolio en Google Play</a>
     </div>
 
     <footer>
-        <p>&copy; 2026 PB Ideas Virtuales. Todos los derechos reservados.</p>
-        <p><a href="privacidad.html">Políticas de Privacidad (Privacy Policy)</a></p>
+        <p>&copy; 2026 PB Ideas Virtuales &bull; <a href="privacidad-utilidades.html">Privacy Policy (Utilities)</a> &bull; <a href="privacidad.html">Privacy Policy (Media)</a> &bull; <a href="sitemap.xml">Sitemap</a></p>
     </footer>
-
 </body>
 </html>
