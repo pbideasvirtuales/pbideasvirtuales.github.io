@@ -19,8 +19,10 @@ sys.path.insert(0, str(EDITORIAL_DIR))
 
 from motor_nube import (  # noqa: E402
     ARG_TZ,
+    BLOG_CONFIGS,
     REPO_DIR,
     SITE_URL,
+    auditar_politicas_estrictas,
     rebuild_blogs,
     today_arg_str,
 )
@@ -100,6 +102,76 @@ def check_stock() -> dict:
         "pending_per_blog": per_blog,
     }
     return status
+
+
+def audit_vault() -> dict:
+    """Validate every queued vault article for schema, duplicates, assets, and policy compliance."""
+    vault = _load_json(VAULT_PATH, {})
+    queue = vault.get("queue", [])
+    published = _load_json(PUBLISHED_PATH, [])
+    published_slugs = {a["slug"] for a in published}
+
+    required_fields = (
+        "blog",
+        "slug",
+        "title",
+        "hero_img",
+        "hero_caption",
+        "summary",
+        "keywords",
+        "faq_q",
+        "faq_a",
+        "body_html",
+    )
+    seen_queue_slugs = set()
+    errors = []
+    per_blog = {}
+
+    for idx, art in enumerate(queue):
+        label = art.get("slug") or f"index_{idx}"
+        missing = [f for f in required_fields if not str(art.get(f, "")).strip()]
+        if missing:
+            errors.append(f"[{label}] Missing required fields: {', '.join(missing)}")
+            continue
+
+        blog_slug = art["blog"]
+        if blog_slug not in BLOG_CONFIGS:
+            errors.append(f"[{label}] Unknown blog slug: '{blog_slug}'")
+            continue
+
+        slug = art["slug"]
+        if slug in published_slugs:
+            errors.append(f"[{label}] Duplicate slug already present in articulos_publicados.json")
+        if slug in seen_queue_slugs:
+            errors.append(f"[{label}] Duplicate slug inside boveda_editorial.json queue")
+        seen_queue_slugs.add(slug)
+
+        hero_file = REPO_DIR / blog_slug / art["hero_img"]
+        if not hero_file.exists():
+            errors.append(f"[{label}] Missing hero_img file on disk: {hero_file}")
+
+        combined_text = " ".join(
+            str(art.get(k, "")) for k in ("title", "hero_caption", "summary", "keywords", "faq_q", "faq_a", "body_html")
+        )
+        try:
+            auditar_politicas_estrictas(combined_text, f"vault:{label}")
+        except SystemExit as exc:
+            errors.append(str(exc).strip())
+
+        per_blog[blog_slug] = per_blog.get(blog_slug, 0) + 1
+
+    if errors:
+        for err in errors:
+            print(err, file=sys.stderr)
+        raise SystemExit(f"Vault audit failed with {len(errors)} error(s).")
+
+    return {
+        "audit_passed": True,
+        "queued_count": len(queue),
+        "declared_remaining_count": vault.get("remaining_count"),
+        "matches_remaining_count": vault.get("remaining_count") == len(queue),
+        "per_blog": per_blog,
+    }
 
 
 def publish_daily(force: bool = False) -> int:
@@ -218,7 +290,13 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="PB Ideas Virtuales Cloud Daily Publisher")
     parser.add_argument("--force", action="store_true", help="Publish even if today already has an article")
     parser.add_argument("--check-stock", action="store_true", help="Print vault stock status as JSON and exit")
+    parser.add_argument("--audit-vault", action="store_true", help="Validate schema, duplicates, assets & policy rules")
     args = parser.parse_args()
+
+    if args.audit_vault:
+        result = audit_vault()
+        print(json.dumps(result, indent=2, ensure_ascii=False))
+        return 0
 
     if args.check_stock:
         status = check_stock()

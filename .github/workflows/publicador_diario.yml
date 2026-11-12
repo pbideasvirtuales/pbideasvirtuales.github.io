@@ -85,26 +85,49 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Emergency Low-Stock Alert Issue (<= 5 remaining)
-        if: github.event_name != 'push' && steps.publish.outputs.critical_alert == 'true'
+      - name: Manage Low-Stock Alert Issue
         uses: actions/github-script@v7
         env:
-          REMAINING_COUNT: ${{ steps.publish.outputs.remaining_count }}
+          EVENT_NAME: ${{ github.event_name }}
         with:
           script: |
-            const remaining = process.env.REMAINING_COUNT;
+            const fs = require('fs');
+            const vault = JSON.parse(fs.readFileSync('.github/editorial/boveda_editorial.json', 'utf8'));
+            const published = JSON.parse(fs.readFileSync('.github/editorial/articulos_publicados.json', 'utf8'));
+            const pubSlugs = new Set(published.map(a => a.slug));
+            const remaining = (vault.queue || []).filter(a => !pubSlugs.has(a.slug)).length;
+            const criticalThreshold = Number(vault.critical_alert_threshold ?? 5);
+
             const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'open',
               per_page: 20
             });
-            const alreadyOpen = issues.some(i => i.title.includes('[STOCK ALERT]'));
-            if (!alreadyOpen) {
-              await github.rest.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title: `[STOCK ALERT] Quedan solo ${remaining} articulos en la Boveda Editorial`,
-                body: `Alerta automatica del publicador en la nube:\n\nLa Boveda Editorial (\`.github/editorial/boveda_editorial.json\`) descendio a **${remaining} articulos restantes**.\n\nAbre Antigravity (o espera al proximo chequeo Lunes/Jueves 20:00 hs) para recargar 30 articulos nuevos.`
-              });
+            const stockIssues = issues.filter(i => i.title.includes('[STOCK ALERT]'));
+
+            if (process.env.EVENT_NAME !== 'push' && remaining <= criticalThreshold) {
+              if (stockIssues.length === 0) {
+                await github.rest.issues.create({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  title: `[STOCK ALERT] Quedan solo ${remaining} articulos en la Boveda Editorial`,
+                  body: `Alerta automatica del publicador en la nube:\n\nLa Boveda Editorial (\`.github/editorial/boveda_editorial.json\`) descendio a **${remaining} articulos restantes**.\n\nAbre Antigravity (o espera al proximo chequeo Lunes/Jueves 20:00 hs) para recargar 30 articulos nuevos.`
+                });
+              }
+            } else if (remaining > criticalThreshold && stockIssues.length > 0) {
+              for (const issue of stockIssues) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.number,
+                  body: `Recarga detectada automaticamente. Stock actual disponible en la Boveda Editorial: **${remaining} articulos**. Se cierra la alerta.`
+                });
+                await github.rest.issues.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.number,
+                  state: 'closed'
+                });
+              }
             }
