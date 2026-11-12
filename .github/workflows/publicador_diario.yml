@@ -1,0 +1,110 @@
+name: Publicador Autonomo Diario (PB Ideas Virtuales)
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # 13:07 UTC = 10:07 AM hora Argentina (UTC-3), todos los dias
+    - cron: '7 13 * * *'
+  workflow_dispatch:
+    inputs:
+      force_publish:
+        description: 'Forzar publicacion inmediata hoy aunque ya exista articulo del dia'
+        required: false
+        default: 'true'
+        type: string
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages-and-publisher"
+  cancel-in-progress: false
+
+jobs:
+  publish_and_deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Cloud Editorial Publisher
+        id: publish
+        if: github.event_name != 'push'
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          FORCE_PUBLISH: ${{ inputs.force_publish }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] && [ "$FORCE_PUBLISH" = "true" ]; then
+            python .github/editorial/publicar_desde_nube.py --force
+          else
+            python .github/editorial/publicar_desde_nube.py
+          fi
+
+      - name: Commit & Push New Daily Article
+        if: github.event_name != 'push' && steps.publish.outputs.changed == 'true'
+        env:
+          PUB_TITLE: ${{ steps.publish.outputs.published_title }}
+          STOCK_REM: ${{ steps.publish.outputs.remaining_count }}
+        run: |
+          git config user.name "PB Ideas Automation"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git commit -m "Auto-publish: $PUB_TITLE [stock=$STOCK_REM]"
+          git push
+
+      - name: Stage Clean Public Static Site
+        run: |
+          rm -rf _site
+          mkdir -p _site
+          cp -r index.html sitemap.xml app-ads.txt google*.html privacidad*.html *_blog _site/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Emergency Low-Stock Alert Issue (<= 5 remaining)
+        if: github.event_name != 'push' && steps.publish.outputs.critical_alert == 'true'
+        uses: actions/github-script@v7
+        env:
+          REMAINING_COUNT: ${{ steps.publish.outputs.remaining_count }}
+        with:
+          script: |
+            const remaining = process.env.REMAINING_COUNT;
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 20
+            });
+            const alreadyOpen = issues.some(i => i.title.includes('[STOCK ALERT]'));
+            if (!alreadyOpen) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `[STOCK ALERT] Quedan solo ${remaining} articulos en la Boveda Editorial`,
+                body: `Alerta automatica del publicador en la nube:\n\nLa Boveda Editorial (\`.github/editorial/boveda_editorial.json\`) descendio a **${remaining} articulos restantes**.\n\nAbre Antigravity (o espera al proximo chequeo Lunes/Jueves 20:00 hs) para recargar 30 articulos nuevos.`
+              });
+            }
