@@ -110,19 +110,104 @@
         </main>
         
     <aside class="sidebar-wrapper">
-        <div style="background:#121d18; border:2px solid #10B981; border-radius:14px; padding:18px; margin-bottom:24px; box-shadow:0 8px 24px rgba(0,0,0,0.5);">
-            <div style="color:#10B981; font-size:0.78em; font-weight:bold; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">
-                Herramienta Oficial Android
+        <!-- TARJETA PUBLICITARIA CON CARRUSEL ANIMADO Y ROTATIVO -->
+        <div style="background:#121d18; border:2px solid #10B981; border-radius:16px; padding:18px 16px; margin-bottom:24px; box-shadow:0 8px 24px rgba(0,0,0,0.5); position:relative;" id="adCardContainer">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; border-bottom:1px solid #30363d; padding-bottom:8px;">
+                <span style="color:#10B981; font-size:0.75em; font-weight:900; letter-spacing:1px; text-transform:uppercase;">
+                    SUITE PROFESIONAL • PARA ANDROID
+                </span>
+                <span style="color:#8b949e; font-size:0.75em; font-weight:bold;">PB IDEAS</span>
             </div>
-            <img src="assets/mexico_en_1.jpg" alt="Radios de México FM AM En Vivo Android" style="width:100%; height:190px; object-fit:cover; border-radius:10px; margin-bottom:12px; border:1px solid #30363d;">
-            <h3 style="margin:0 0 6px; font-size:1.15em; color:#ffffff;">Radios de México FM AM En Vivo</h3>
-            <p style="color:#c9d1d9; font-size:0.84em; line-height:1.45; margin-bottom:12px;">🇲🇽 Emisoras de los 32 Estados • Leyendas Mexicanas y Trivia</p>
-            <a href="https://play.google.com/store/apps/details?id=com.pbideasvirtuales.radiomexicofmam&hl=es_419&gl=US&referrer=utm_source%3Dgithub_mexico_blog%26utm_medium%3Dorganic_seo%26utm_campaign%3Dlaunch_v1" target="_blank" rel="noopener" style="display:block; text-align:center; background:#10B981; color:#0d1117; font-weight:900; font-size:0.95em; padding:12px 14px; border-radius:24px; text-decoration:none; text-transform:uppercase; letter-spacing:0.5px;">
+
+            <div id="sidebarCarousel" onmouseenter="pauseCarousel()" onmouseleave="resumeCarousel()">
+                
+        <div class="sidebar-slide" data-slide="0" style="display:block; text-align:center;">
+            <div style="display:inline-block; background:rgba(16, 185, 129, 0.2); color:#10B981; font-size:0.75em; font-weight:900; letter-spacing:0.8px; padding:3px 10px; border-radius:12px; text-transform:uppercase; margin-bottom:8px;">
+                🇲🇽 32 ESTADOS EN VIVO
+            </div>
+            <div style="background:#090d13; border:1px solid #21262d; border-radius:12px; padding:10px 8px; margin-bottom:10px; display:flex; justify-content:center; align-items:center; min-height:240px;">
+                <img src="assets/mexico_en_1.jpg" alt="Jalisco, Sinaloa, Monterrey y CDMX" style="max-height:230px; width:auto; max-width:100%; object-fit:contain; border-radius:8px; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.6));">
+            </div>
+            <h4 style="margin:4px 0 4px; color:#ffffff; font-size:0.98em; line-height:1.3;">Jalisco, Sinaloa, Monterrey y CDMX</h4>
+            <p style="color:#8b949e; font-size:0.82em; margin:0 0 10px; line-height:1.4;">Emisoras de toda la República con audio optimizado y cero cortes.</p>
+        </div>
+        
+        <div class="sidebar-slide" data-slide="1" style="display:none; text-align:center;">
+            <div style="display:inline-block; background:rgba(16, 185, 129, 0.2); color:#10B981; font-size:0.75em; font-weight:900; letter-spacing:0.8px; padding:3px 10px; border-radius:12px; text-transform:uppercase; margin-bottom:8px;">
+                🥊 GRANDES ÍDOLOS
+            </div>
+            <div style="background:#090d13; border:1px solid #21262d; border-radius:12px; padding:10px 8px; margin-bottom:10px; display:flex; justify-content:center; align-items:center; min-height:240px;">
+                <img src="assets/mexico_en_2.jpg" alt="Chávez, Hugo Sánchez y El Santo" style="max-height:230px; width:auto; max-width:100%; object-fit:contain; border-radius:8px; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.6));">
+            </div>
+            <h4 style="margin:4px 0 4px; color:#ffffff; font-size:0.98em; line-height:1.3;">Chávez, Hugo Sánchez y El Santo</h4>
+            <p style="color:#8b949e; font-size:0.82em; margin:0 0 10px; line-height:1.4;">Crónicas maestras del deporte y la cultura que marcaron a generaciones.</p>
+        </div>
+        
+        <div class="sidebar-slide" data-slide="2" style="display:none; text-align:center;">
+            <div style="display:inline-block; background:rgba(16, 185, 129, 0.2); color:#10B981; font-size:0.75em; font-weight:900; letter-spacing:0.8px; padding:3px 10px; border-radius:12px; text-transform:uppercase; margin-bottom:8px;">
+                📻 SIN INTERRUPCIONES
+            </div>
+            <div style="background:#090d13; border:1px solid #21262d; border-radius:12px; padding:10px 8px; margin-bottom:10px; display:flex; justify-content:center; align-items:center; min-height:240px;">
+                <img src="assets/mexico_en_3.jpg" alt="Trivia de Orgullo y Música" style="max-height:230px; width:auto; max-width:100%; object-fit:contain; border-radius:8px; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.6));">
+            </div>
+            <h4 style="margin:4px 0 4px; color:#ffffff; font-size:0.98em; line-height:1.3;">Trivia de Orgullo y Música</h4>
+            <p style="color:#8b949e; font-size:0.82em; margin:0 0 10px; line-height:1.4;">Lleva la voz y la emoción de tu tierra natal siempre en tu bolsillo.</p>
+        </div>
+        
+            </div>
+
+            <!-- Indicadores de puntos -->
+            <div style="text-align:center; margin:6px 0 12px;" id="carouselDots">
+                <span class="carousel-dot" onclick="switchSidebarSlide(0)" data-dot="0" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#10B981; margin:0 4px; cursor:pointer; transition:background 0.3s;"></span><span class="carousel-dot" onclick="switchSidebarSlide(1)" data-dot="1" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#4b5563; margin:0 4px; cursor:pointer; transition:background 0.3s;"></span><span class="carousel-dot" onclick="switchSidebarSlide(2)" data-dot="2" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#4b5563; margin:0 4px; cursor:pointer; transition:background 0.3s;"></span>
+            </div>
+
+            <a href="https://play.google.com/store/apps/details?id=com.pbideasvirtuales.radiomexicofmam&hl=es_419&gl=US&referrer=utm_source%3Dgithub_mexico_blog%26utm_medium%3Dorganic_seo%26utm_campaign%3Dlaunch_v1" target="_blank" rel="noopener" style="display:block; text-align:center; background:#10B981; color:#0d1117; font-weight:900; font-size:0.95em; padding:12px 14px; border-radius:24px; text-decoration:none; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 4px 14px rgba(0,0,0,0.4);">
                 📲 Instalar Gratis (v1.0) &rarr;
             </a>
-            <p style="font-size:0.75em; color:#8b949e; text-align:center; margin:8px 0 0;">✓ 100% Offline • ✓ Google Play Verified</p>
+            <p style="font-size:0.74em; color:#8b949e; text-align:center; margin:8px 0 0;">✓ 100% Offline • ✓ Google Play Verified • ✓ No Ads in v1.0</p>
         </div>
 
+        <script>
+        let currentSlideIdx = 0;
+        const totalSlides = 3;
+        let slideTimer = null;
+
+        function switchSidebarSlide(idx) {
+            currentSlideIdx = idx;
+            document.querySelectorAll('.sidebar-slide').forEach((el, i) => {
+                el.style.display = (i === idx) ? 'block' : 'none';
+            });
+            document.querySelectorAll('.carousel-dot').forEach((el, i) => {
+                el.style.background = (i === idx) ? '#10B981' : '#4b5563';
+            });
+        }
+
+        function nextSidebarSlide() {
+            currentSlideIdx = (currentSlideIdx + 1) % totalSlides;
+            switchSidebarSlide(currentSlideIdx);
+        }
+
+        function startCarousel() {
+            if (!slideTimer && totalSlides > 1) {
+                slideTimer = setInterval(nextSidebarSlide, 3800);
+            }
+        }
+
+        function pauseCarousel() {
+            if (slideTimer) {
+                clearInterval(slideTimer);
+                slideTimer = null;
+            }
+        }
+
+        function resumeCarousel() {
+            startCarousel();
+        }
+
+        document.addEventListener('DOMContentLoaded', startCarousel);
+        </script>
+
+        <!-- NAVEGACIÓN A LOS OTROS ARTÍCULOS -->
         <div style="background:#121d18; border:1px solid #30363d; border-radius:14px; padding:18px;">
             <h4 style="margin:0 0 14px; font-size:0.98em; color:#F43F5E; border-bottom:1px solid #30363d; padding-bottom:8px;">
                 📚 Más Guías y Artículos de este Lab

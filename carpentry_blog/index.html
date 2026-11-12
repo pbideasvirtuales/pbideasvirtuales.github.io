@@ -151,19 +151,104 @@
         </main>
         
     <aside class="sidebar-wrapper">
-        <div style="background:#131a26; border:2px solid #F59E0B; border-radius:14px; padding:18px; margin-bottom:24px; box-shadow:0 8px 24px rgba(0,0,0,0.5);">
-            <div style="color:#F59E0B; font-size:0.78em; font-weight:bold; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px;">
-                Official Android Toolkit
+        <!-- TARJETA PUBLICITARIA CON CARRUSEL ANIMADO Y ROTATIVO -->
+        <div style="background:#131a26; border:2px solid #F59E0B; border-radius:16px; padding:18px 16px; margin-bottom:24px; box-shadow:0 8px 24px rgba(0,0,0,0.5); position:relative;" id="adCardContainer">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; border-bottom:1px solid #30363d; padding-bottom:8px;">
+                <span style="color:#F59E0B; font-size:0.75em; font-weight:900; letter-spacing:1px; text-transform:uppercase;">
+                    PRO CARPENTRY SUITE • FOR ANDROID
+                </span>
+                <span style="color:#8b949e; font-size:0.75em; font-weight:bold;">PB IDEAS</span>
             </div>
-            <img src="assets/carpentry_en_1.jpg" alt="Framing & Roof Calc: Tape 1/16 Android" style="width:100%; height:190px; object-fit:cover; border-radius:10px; margin-bottom:12px; border:1px solid #30363d;">
-            <h3 style="margin:0 0 6px; font-size:1.15em; color:#ffffff;">Framing & Roof Calc: Tape 1/16</h3>
-            <p style="color:#c9d1d9; font-size:0.84em; line-height:1.45; margin-bottom:12px;">🪚 Visual 1/16" Tape Zoom • Voice Readout • IRC Stair Code Check</p>
-            <a href="https://play.google.com/store/apps/details?id=com.pbideasvirtuales.constructioncarpentrycalc&hl=en_US&gl=US&referrer=utm_source%3Dgithub_carpentry_blog%26utm_medium%3Dorganic_seo%26utm_campaign%3Dlaunch_v1" target="_blank" rel="noopener" style="display:block; text-align:center; background:#F59E0B; color:#0d1117; font-weight:900; font-size:0.95em; padding:12px 14px; border-radius:24px; text-decoration:none; text-transform:uppercase; letter-spacing:0.5px;">
+
+            <div id="sidebarCarousel" onmouseenter="pauseCarousel()" onmouseleave="resumeCarousel()">
+                
+        <div class="sidebar-slide" data-slide="0" style="display:block; text-align:center;">
+            <div style="display:inline-block; background:rgba(245, 158, 11, 0.18); color:#F59E0B; font-size:0.75em; font-weight:900; letter-spacing:0.8px; padding:3px 10px; border-radius:12px; text-transform:uppercase; margin-bottom:8px;">
+                📏 ZERO DECIMAL MATH
+            </div>
+            <div style="background:#090d13; border:1px solid #21262d; border-radius:12px; padding:10px 8px; margin-bottom:10px; display:flex; justify-content:center; align-items:center; min-height:240px;">
+                <img src="assets/carpentry_en_1.jpg" alt="Visual 1/16" Tape Measure Zoom" style="max-height:230px; width:auto; max-width:100%; object-fit:contain; border-radius:8px; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.6));">
+            </div>
+            <h4 style="margin:4px 0 4px; color:#ffffff; font-size:0.98em; line-height:1.3;">Visual 1/16" Tape Measure Zoom</h4>
+            <p style="color:#8b949e; font-size:0.82em; margin:0 0 10px; line-height:1.4;">Laser needle points to exact 1/16" cut marks. 1-tap fraction keypad.</p>
+        </div>
+        
+        <div class="sidebar-slide" data-slide="1" style="display:none; text-align:center;">
+            <div style="display:inline-block; background:rgba(245, 158, 11, 0.18); color:#F59E0B; font-size:0.75em; font-weight:900; letter-spacing:0.8px; padding:3px 10px; border-radius:12px; text-transform:uppercase; margin-bottom:8px;">
+                📐 CODE COMPLIANCE
+            </div>
+            <div style="background:#090d13; border:1px solid #21262d; border-radius:12px; padding:10px 8px; margin-bottom:10px; display:flex; justify-content:center; align-items:center; min-height:240px;">
+                <img src="assets/carpentry_en_2.jpg" alt="Stair Stringer & IRC R311.7.5 Check" style="max-height:230px; width:auto; max-width:100%; object-fit:contain; border-radius:8px; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.6));">
+            </div>
+            <h4 style="margin:4px 0 4px; color:#ffffff; font-size:0.98em; line-height:1.3;">Stair Stringer & IRC R311.7.5 Check</h4>
+            <p style="color:#8b949e; font-size:0.82em; margin:0 0 10px; line-height:1.4;">Equal risers, run, 2x12 board length & 1st-step tread drop deduction.</p>
+        </div>
+        
+        <div class="sidebar-slide" data-slide="2" style="display:none; text-align:center;">
+            <div style="display:inline-block; background:rgba(245, 158, 11, 0.18); color:#F59E0B; font-size:0.75em; font-weight:900; letter-spacing:0.8px; padding:3px 10px; border-radius:12px; text-transform:uppercase; margin-bottom:8px;">
+                🗣️ HANDS-FREE ON LADDER
+            </div>
+            <div style="background:#090d13; border:1px solid #21262d; border-radius:12px; padding:10px 8px; margin-bottom:10px; display:flex; justify-content:center; align-items:center; min-height:240px;">
+                <img src="assets/carpentry_en_3.jpg" alt="Roof Rafters & Voice Readout" style="max-height:230px; width:auto; max-width:100%; object-fit:contain; border-radius:8px; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.6));">
+            </div>
+            <h4 style="margin:4px 0 4px; color:#ffffff; font-size:0.98em; line-height:1.3;">Roof Rafters & Voice Readout</h4>
+            <p style="color:#8b949e; font-size:0.82em; margin:0 0 10px; line-height:1.4;">Common, Hip/Valley & Jack rafters with cut angles spoken aloud.</p>
+        </div>
+        
+            </div>
+
+            <!-- Indicadores de puntos -->
+            <div style="text-align:center; margin:6px 0 12px;" id="carouselDots">
+                <span class="carousel-dot" onclick="switchSidebarSlide(0)" data-dot="0" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#F59E0B; margin:0 4px; cursor:pointer; transition:background 0.3s;"></span><span class="carousel-dot" onclick="switchSidebarSlide(1)" data-dot="1" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#4b5563; margin:0 4px; cursor:pointer; transition:background 0.3s;"></span><span class="carousel-dot" onclick="switchSidebarSlide(2)" data-dot="2" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#4b5563; margin:0 4px; cursor:pointer; transition:background 0.3s;"></span>
+            </div>
+
+            <a href="https://play.google.com/store/apps/details?id=com.pbideasvirtuales.constructioncarpentrycalc&hl=en_US&gl=US&referrer=utm_source%3Dgithub_carpentry_blog%26utm_medium%3Dorganic_seo%26utm_campaign%3Dlaunch_v1" target="_blank" rel="noopener" style="display:block; text-align:center; background:#F59E0B; color:#0d1117; font-weight:900; font-size:0.95em; padding:12px 14px; border-radius:24px; text-decoration:none; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 4px 14px rgba(0,0,0,0.4);">
                 📲 Get Free on Google Play (v1.0) &rarr;
             </a>
-            <p style="font-size:0.75em; color:#8b949e; text-align:center; margin:8px 0 0;">✓ 100% Offline • ✓ Google Play Verified</p>
+            <p style="font-size:0.74em; color:#8b949e; text-align:center; margin:8px 0 0;">✓ 100% Offline • ✓ Google Play Verified • ✓ No Ads in v1.0</p>
         </div>
 
+        <script>
+        let currentSlideIdx = 0;
+        const totalSlides = 3;
+        let slideTimer = null;
+
+        function switchSidebarSlide(idx) {
+            currentSlideIdx = idx;
+            document.querySelectorAll('.sidebar-slide').forEach((el, i) => {
+                el.style.display = (i === idx) ? 'block' : 'none';
+            });
+            document.querySelectorAll('.carousel-dot').forEach((el, i) => {
+                el.style.background = (i === idx) ? '#F59E0B' : '#4b5563';
+            });
+        }
+
+        function nextSidebarSlide() {
+            currentSlideIdx = (currentSlideIdx + 1) % totalSlides;
+            switchSidebarSlide(currentSlideIdx);
+        }
+
+        function startCarousel() {
+            if (!slideTimer && totalSlides > 1) {
+                slideTimer = setInterval(nextSidebarSlide, 3800);
+            }
+        }
+
+        function pauseCarousel() {
+            if (slideTimer) {
+                clearInterval(slideTimer);
+                slideTimer = null;
+            }
+        }
+
+        function resumeCarousel() {
+            startCarousel();
+        }
+
+        document.addEventListener('DOMContentLoaded', startCarousel);
+        </script>
+
+        <!-- NAVEGACIÓN A LOS OTROS ARTÍCULOS -->
         <div style="background:#131a26; border:1px solid #30363d; border-radius:14px; padding:18px;">
             <h4 style="margin:0 0 14px; font-size:0.98em; color:#38BDF8; border-bottom:1px solid #30363d; padding-bottom:8px;">
                 📚 More Lab Field Guides
