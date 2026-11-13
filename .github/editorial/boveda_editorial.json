@@ -1,10 +1,10 @@
 {
   "safety_threshold": 15,
   "critical_alert_threshold": 5,
-  "last_published": "2026-11-12",
-  "last_blog": "carpentry_blog",
-  "last_run_at": "2026-11-12T15:54:50-03:00",
-  "remaining_count": 45,
+  "last_published": "2026-11-13",
+  "last_blog": "electric_blog",
+  "last_run_at": "2026-11-13T17:27:07.289763-03:00",
+  "remaining_count": 44,
   "history": [
     {
       "slug": "california-corner-vs-three-stud-corner-framing-lumber-savings-insulation",
@@ -14,21 +14,18 @@
       "published_at": "2026-11-12T15:54:50-03:00",
       "url": "https://pbideasvirtuales.github.io/carpentry_blog/california-corner-vs-three-stud-corner-framing-lumber-savings-insulation.html",
       "remaining_after": 45
+    },
+    {
+      "slug": "ac-breakers-on-dc-solar-arrays-why-electric-arcs-never-extinguish",
+      "title": "Why Residential AC Breakers Catch Fire on DC Solar Panels (Zero-Crossing Physics)",
+      "blog": "electric_blog",
+      "published_date": "2026-11-13",
+      "published_at": "2026-11-13T17:27:07.289763-03:00",
+      "url": "https://pbideasvirtuales.github.io/electric_blog/ac-breakers-on-dc-solar-arrays-why-electric-arcs-never-extinguish.html",
+      "remaining_after": 44
     }
   ],
   "queue": [
-    {
-      "blog": "electric_blog",
-      "slug": "ac-breakers-on-dc-solar-arrays-why-electric-arcs-never-extinguish",
-      "title": "Why Residential AC Breakers Catch Fire on DC Solar Panels (Zero-Crossing Physics)",
-      "hero_img": "assets/so06_peligro_usar_termica_ac_en_continua_dc.webp",
-      "hero_caption": "AC voltage passes through zero 120 times per second to extinguish switch arcs; high-voltage solar DC holds a continuous welding plasma torch.",
-      "summary": "Never wire standard household AC circuit breakers into off-grid solar PV strings or 48V LiFePO4 battery banks. Understand DC arc plasma sustainment, polarity traps, and NEC DC-rated disconnects.",
-      "keywords": "DC circuit breaker vs AC breaker solar, solar PV isolator arc fire, polarized DC MCB wiring, 48V off-grid protection, electrical wire size app",
-      "faq_q": "What happens if you install a standard 120V/240V AC breaker on a high-voltage DC solar array?",
-      "faq_a": "Unlike alternating current, which drops to zero volts 100–120 times per second and naturally quenches sparks, direct current delivers continuous uninterrupted energy. Under fault load, AC breaker contacts pull apart slowly and draw an unstoppable ionized plasma arc that melts the enclosure and ignites combiner boxes.",
-      "body_html": "\n        <p>One of the deadliest shortcuts in DIY solar installations happens when an installer walks into a local hardware store, sees a clean DIN-rail miniature circuit breaker (MCB) labeled <strong>20A 240V AC</strong>, and snaps it directly onto a 150V DC solar string or 48V lithium bank. Under normal sunshine, everything appears to run quietly—until the first short circuit or hot-day shutdown turns the combiner box into a literal plasma torch.</p>\n\n        <h2>1. The Secret Superpower of Alternating Current: Zero-Crossing</h2>\n        <p>Every grid-powered AC circuit oscillates as a sine wave. On a 60 Hz North American supply, voltage drops all the way to <strong>0.0 Volts exactly 120 times every second</strong> (100 times on 50 Hz grids). The exact microsecond mechanical breaker contacts spring open, the next zero-crossing starves any spark of energy, allowing air inside the arc chute to de-ionize cleanly.</p>\n        <p><strong>Direct Current (DC) never crosses zero.</strong> A 200V solar array keeps pushing 200 continuous Volts across separated contacts. Instead of snapping out, the current superheats copper vapor into conducting plasma exceeding 3,500 °C—literally welding the switch open while roasting the DIN rail.</p>\n\n        <h2>2. How True DC Breakers Fight Sustained Plasma</h2>\n        <ul>\n            <li><strong>Permanent Blowout Magnets:</strong> Inside certified DC breakers, permanent neodymium magnets bend the Lorentz force of the electric arc sideways, stretching the flame physically upward into steel splitter plates until arc voltage exceeds battery/PV voltage.</li>\n            <li><strong>Polarized vs. Non-Polarized Traps:</strong> Pay close attention to <code>+</code> and <code>-</code> markings on cheaper polarized DC MCBs! Because bidirectional currents flow both <em>from</em> solar panels and <em>back out</em> of battery banks during charge/discharge or faults, wiring a polarized DC breaker backward blows the arc straight into the plastic handle instead of the ceramic arc chamber. Always specify <strong>non-polarized DC breakers</strong> for battery/inverter feeds.</li>\n        </ul>\n\n        <h2>3. Coordinating DC Cables &amp; Breaker Curves Together</h2>\n        <p>Even with a true DC breaker or Class-T fuse installed, your wiring fails inspection if conductor ampacity does not outlast the trip delay. In <strong>Wire Size &amp; Voltage Drop Calc</strong>, our DC solar module locks voltage drop targets cleanly and shows the compatible continuous conductor rating alongside commercial NEC AWG and IEC mm² sizes.</p>\n        "
-    },
     {
       "blog": "carpentry_blog",
       "slug": "why-your-first-stair-step-is-too-tall-the-stringer-drop-mistake",
