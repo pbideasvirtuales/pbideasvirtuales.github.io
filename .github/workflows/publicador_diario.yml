@@ -96,8 +96,21 @@ jobs:
             const vault = JSON.parse(fs.readFileSync('.github/editorial/boveda_editorial.json', 'utf8'));
             const published = JSON.parse(fs.readFileSync('.github/editorial/articulos_publicados.json', 'utf8'));
             const pubSlugs = new Set(published.map(a => a.slug));
-            const remaining = (vault.queue || []).filter(a => !pubSlugs.has(a.slug)).length;
-            const criticalThreshold = Number(vault.critical_alert_threshold ?? 5);
+            const pending = (vault.queue || []).filter(a => !pubSlugs.has(a.slug));
+            const remaining = pending.length;
+
+            const techBlogs = ['carpentry_blog', 'rv_camper_blog', 'electric_blog'];
+            const radioBlogs = ['country_radio_blog', 'christmas_radio_blog', 'radios_mexico_blog'];
+            const counts = {};
+            for (const b of [...techBlogs, ...radioBlogs]) counts[b] = 0;
+            for (const item of pending) counts[item.blog] = (counts[item.blog] || 0) + 1;
+
+            const minTechStock = Math.min(...techBlogs.map(b => counts[b]));
+            const criticalTotal = Number(vault.critical_alert_threshold ?? 5);
+            const criticalTech = Number(vault.tech_critical_threshold ?? 3);
+            const isLow = (remaining <= criticalTotal) || (minTechStock <= criticalTech);
+
+            const breakdown = `Carpentry: ${counts.carpentry_blog} | RV Camper: ${counts.rv_camper_blog} | Electric: ${counts.electric_blog} | Radios: ${radioBlogs.reduce((s, b) => s + counts[b], 0)}`;
 
             const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
@@ -107,22 +120,22 @@ jobs:
             });
             const stockIssues = issues.filter(i => i.title.includes('[STOCK ALERT]'));
 
-            if (process.env.EVENT_NAME !== 'push' && remaining <= criticalThreshold) {
+            if (process.env.EVENT_NAME !== 'push' && isLow) {
               if (stockIssues.length === 0) {
                 await github.rest.issues.create({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
-                  title: `[STOCK ALERT] Quedan solo ${remaining} articulos en la Boveda Editorial`,
-                  body: `Alerta automatica del publicador en la nube:\n\nLa Boveda Editorial (\`.github/editorial/boveda_editorial.json\`) descendio a **${remaining} articulos restantes**.\n\nAbre Antigravity (o espera al proximo chequeo Lunes/Jueves 20:00 hs) para recargar 30 articulos nuevos.`
+                  title: `[STOCK ALERT] Quedan solo ${minTechStock} dias en un blog tecnico (Total: ${remaining})`,
+                  body: `Alerta automatica del publicador en la nube:\n\n- **Minimo en blogs tecnicos:** **${minTechStock} articulos** (umbral critico: <= ${criticalTech} dias al ritmo 1/dia/blog)\n- **Total en cola:** ${remaining}\n- **Detalle:** ${breakdown}\n\nAbre Antigravity (o espera al proximo chequeo Lunes/Jueves 20:00 hs) para recargar articulos tecnicos nuevos con calidad investigada.`
                 });
               }
-            } else if (remaining > criticalThreshold && stockIssues.length > 0) {
+            } else if (!isLow && stockIssues.length > 0) {
               for (const issue of stockIssues) {
                 await github.rest.issues.createComment({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: issue.number,
-                  body: `Recarga detectada automaticamente. Stock actual disponible en la Boveda Editorial: **${remaining} articulos**. Se cierra la alerta.`
+                  body: `Recarga detectada automaticamente. Minimo tecnico: **${minTechStock}** | Total en Boveda: **${remaining}** (${breakdown}). Se cierra la alerta.`
                 });
                 await github.rest.issues.update({
                   owner: context.repo.owner,
