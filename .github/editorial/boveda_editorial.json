@@ -1,10 +1,10 @@
 {
   "safety_threshold": 15,
   "critical_alert_threshold": 5,
-  "last_published": "2026-11-14",
-  "last_blog": "christmas_radio_blog",
-  "last_run_at": "2026-11-14T12:44:32.545776-03:00",
-  "remaining_count": 41,
+  "last_published": "2026-11-15",
+  "last_blog": "electric_blog",
+  "last_run_at": "2026-11-15T16:21:02.151147-03:00",
+  "remaining_count": 38,
   "history": [
     {
       "slug": "california-corner-vs-three-stud-corner-framing-lumber-savings-insulation",
@@ -59,6 +59,33 @@
       "published_at": "2026-11-14T12:44:32.545776-03:00",
       "url": "https://pbideasvirtuales.github.io/christmas_radio_blog/acoustic-magic-1914-christmas-truce-no-mans-land-silent-night.html",
       "remaining_after": 41
+    },
+    {
+      "slug": "deck-joist-span-table-irc-r507-cantilever-framing-guide",
+      "title": "Deck Joist Span Chart (IRC Table R507.6): 2x8, 2x10, 2x12 Limits & The 1/4 Cantilever Rule",
+      "blog": "carpentry_blog",
+      "published_date": "2026-11-15",
+      "published_at": "2026-11-15T16:21:02.151147-03:00",
+      "url": "https://pbideasvirtuales.github.io/carpentry_blog/deck-joist-span-table-irc-r507-cantilever-framing-guide.html",
+      "remaining_after": 38
+    },
+    {
+      "slug": "silicone-caulk-destroys-rv-roofs-butyl-tape-vs-dicor-lap-sealant",
+      "title": "Why Bathroom Silicone Ruined Your RV Roof: EPDM, TPO &amp; Dicor Self-Leveling Lap Sealant",
+      "blog": "rv_camper_blog",
+      "published_date": "2026-11-15",
+      "published_at": "2026-11-15T16:21:02.151147-03:00",
+      "url": "https://pbideasvirtuales.github.io/rv_camper_blog/silicone-caulk-destroys-rv-roofs-butyl-tape-vs-dicor-lap-sealant.html",
+      "remaining_after": 38
+    },
+    {
+      "slug": "smart-alternators-euro-6-why-auxiliary-batteries-never-reach-100-percent",
+      "title": "Euro 6 Smart Alternators: Why Simple Battery Isolators Starve Camper &amp; Work-Truck Lithium Banks",
+      "blog": "electric_blog",
+      "published_date": "2026-11-15",
+      "published_at": "2026-11-15T16:21:02.151147-03:00",
+      "url": "https://pbideasvirtuales.github.io/electric_blog/smart-alternators-euro-6-why-auxiliary-batteries-never-reach-100-percent.html",
+      "remaining_after": 38
     }
   ],
   "queue": [
@@ -88,18 +115,6 @@
     },
     {
       "blog": "carpentry_blog",
-      "slug": "deck-joist-span-table-irc-r507-cantilever-framing-guide",
-      "title": "Deck Joist Span Chart (IRC Table R507.6): 2x8, 2x10, 2x12 Limits & The 1/4 Cantilever Rule",
-      "hero_img": "assets/fr18_wood_deck_ledger_joists.webp",
-      "hero_caption": "Matching #2 pressure-treated deck joist depth and 12\" vs. 16\" on-center spacing to clear span prevents springy composite bounce and keeps cantilevers legal.",
-      "summary": "Field-ready IRC Section R507.6 deck joist span reference for No. 2 Southern Pine & Douglas Fir-Larch/SPF (2x8, 2x10, 2x12), 1/4 cantilever max overhang, and composite 12\"/16\" OC limits.",
-      "keywords": "IRC R507.6 deck joist span table, 2x8 2x10 2x12 deck joist max span, 1/4 deck cantilever overhang rule, Southern Pine vs Douglas Fir deck joists, framing calculator deck joists",
-      "faq_q": "How far can a 2x8 or 2x10 deck joist safely span and cantilever under IRC R507.6?",
-      "faq_a": "Under IRC Table R507.6 (40 psf live + 10 psf dead load, No. 2 wet lumber), a 2x8 Southern Pine joist spans up to 11 ft 10 in at 16 inches OC (13 ft 1 in at 12 inches OC), while a 2x10 spans 14 ft 0 in at 16 inches OC (16 ft 2 in at 12 inches OC). Any cantilever past a drop beam cannot exceed 1/4 of the actual back-span or the table cap, whichever is less.",
-      "body_html": "\n        <p>Nothing ruins a brand-new backyard deck faster than bouncy joists or sagging outer corners. Even worse, builders frequently mix up dry interior floor joist tables with wet exterior deck requirements—over-spanning pressure-treated <code>2x8</code> lumber by two feet or cantilevering half the deck past a drop beam.</p>\n\n        <h2>1. IRC Table R507.6: Maximum Residential Deck Joist Spans (No. 2 Grade)</h2>\n        <p>The values below reflect standard <strong>IRC Section R507.6 / Table R507.6</strong> exterior deck design loads (<strong>40 psf live load + 10 psf dead load</strong>, wet-service factors, <code>L/360</code> main-span deflection limit). Measure clear unsupported span strictly between the inner bearing faces of supports (ledger face to drop beam), excluding overhangs:</p>\n        <div style=\"overflow-x:auto; margin:18px 0;\">\n            <table style=\"width:100%; border-collapse:collapse; font-size:0.95em; background:#0d1117; border:1px solid #30363d;\">\n                <thead>\n                    <tr style=\"background:#161b22; color:#F59E0B;\">\n                        <th style=\"padding:10px; border:1px solid #30363d; text-align:left;\">Species Group (No. 2)</th>\n                        <th style=\"padding:10px; border:1px solid #30363d; text-align:left;\">Joist Size</th>\n                        <th style=\"padding:10px; border:1px solid #30363d; text-align:left;\">12\" OC Max</th>\n                        <th style=\"padding:10px; border:1px solid #30363d; text-align:left;\">16\" OC Max</th>\n                        <th style=\"padding:10px; border:1px solid #30363d; text-align:left;\">24\" OC Max</th>\n                    </tr>\n                </thead>\n                <tbody>\n                    <tr>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><strong>Southern Pine</strong></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>2x8</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>13'-1\"</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>11'-10\"</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>9'-8\"</code></td>\n                    </tr>\n                    <tr>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><strong>Southern Pine</strong></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>2x10</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>16'-2\"</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>14'-0\"</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>11'-5\"</code></td>\n                    </tr>\n                    <tr>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><strong>Southern Pine</strong></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>2x12</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>18'-0\"</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>16'-6\"</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>13'-6\"</code></td>\n                    </tr>\n                    <tr>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><strong>Douglas Fir-Larch / Hem-Fir / SPF</strong></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>2x8</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>12'-6\"</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>11'-1\"</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>9'-1\"</code></td>\n                    </tr>\n                    <tr>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><strong>Douglas Fir-Larch / Hem-Fir / SPF</strong></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>2x10</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>15'-8\"</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>13'-7\"</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>11'-1\"</code></td>\n                    </tr>\n                    <tr>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><strong>Douglas Fir-Larch / Hem-Fir / SPF</strong></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>2x12</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>18'-0\"</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>15'-9\"</code></td>\n                        <td style=\"padding:10px; border:1px solid #30363d;\"><code>12'-10\"</code></td>\n                    </tr>\n                </tbody>\n            </table>\n        </div>\n\n        <h2>2. Three Field Traps That Fail Deck Inspections</h2>\n        <ul>\n            <li><strong>Over-Cantilevering Past Drop Beams:</strong> IRC Section R507.6 strictly caps joist overhangs at <strong>1/4 of the actual back-span</strong> (or the code table's specific cantilever limit, whichever is smaller). If your beam sits at <code>10 ft</code> from the house ledger, your overhang cannot exceed <code>2 ft 6 in</code>!</li>\n            <li><strong>Composite Decking Spacing Override:</strong> Even when structural tables allow <code>24\" OC</code> joists, composite boards and 45&deg; diagonal wood decking patterns typically force tighter <strong>16\" OC or 12\" OC spacing</strong> under IRC Table R507.7 and manufacturer warranties.</li>\n            <li><strong>Regional Snow Loads &amp; Code Editions:</strong> Heavy northern ground snow loads (50–70 psf) and local municipal amendments (2018, 2021, or 2024 IRC) reduce allowable spans—always verify your local permit office before cutting pressure-treated stock.</li>\n        </ul>\n        <p>Need fast fractional board cuts, beam spans, concrete pier cubic yards (<code>1.35 voids</code>), or staircase math on the job site? Check your numbers cleanly with <strong>Framing &amp; Roof Calc: Tape 1/16</strong> right off your phone offline.</p>\n    "
-    },
-    {
-      "blog": "carpentry_blog",
       "slug": "hip-rafter-16-97-base-math-and-45-degree-double-cheek-cuts",
       "title": "Why Hip Rafters Use 16.97 (Not 12) and How to Mark 45° Double Cheek Cuts Cleanly",
       "hero_img": "assets/fr06_hip_valley_rafters.webp",
@@ -109,18 +124,6 @@
       "faq_q": "Why does a regular 90-degree corner hip or valley rafter run on 16.97 (17) instead of 12 per foot of rise?",
       "faq_a": "While a Common Rafter travels straight across a 12-inch horizontal run to gain X inches of rise, a 45-degree Hip Rafter travels across the diagonal corner of a 12-inch by 12-inch floor square. By Pythagoras, sqrt(12^2 + 12^2) = 16.97 inches (commonly rounded to 17 on traditional steel framing squares).",
       "body_html": "\n        <p>Ask twenty experienced residential carpenters how to cut Common Rafters, and nineteen will snap out clean cuts in minutes. Ask those same twenty carpenters to lay out a Hip &amp; Valley intersection freehand without pre-made trusses, and half start sweating around the ridge.</p>\n\n        <h2>1. The Geometry Trap: Common Run vs. Corner Diagonal Run</h2>\n        <p>Think of looking straight down onto a hip roof from a drone above. Common rafters march perpendicularly away from exterior walls: for every <strong>12 inches</strong> of building span, roof peak rises <code>X</code> inches (say, 6\" on a 6/12 pitch). Wait—now trace the <strong>Hip Rafter</strong> slicing diagonally out of that 90-degree corner at 45 degrees:</p>\n        <ul>\n            <li>To reach the exact same roof peak elevation at the end of 12 inches side-by-side (<code>12\"</code> X and <code>12\"</code> Y), the hip rafter spans the square's diagonal: <code>&radic;(12&sup2; + 12&sup2;) = &radic;288 = 16.9705\"</code>!</li>\n            <li>For a <code>6/12</code> roof, a Common Rafter slopes <code>&radic;(12&sup2; + 6&sup2;) = 13.42\"</code> per foot of common run, whereas the Hip Rafter slopes <code>&radic;(16.97&sup2; + 6&sup2;) = 18.00\"</code> per foot of common run!</li>\n        </ul>\n\n        <h2>2. Plumb Cuts, Double Cheek Bevels &amp; Birdsmouth Drop</h2>\n        <ol>\n            <li><strong>Lower Plumb Pitch Angle:</strong> Because the hip runs longer horizontally (<code>16.97\"</code>) to climb the identical <code>6\"</code> rise, its vertical plumb cut leans flatter (~<code>19.5°</code> vs. Common's <code>26.6°</code>). Never cut a hip plumb angle using your Common pitch mark—your Speed Square has a dedicated <strong>HIP/VAL</strong> edge specifically for this!</li>\n            <li><strong>The 45° Double Cheek Cut:</strong> At the ridge junction, your hip slides cleanly into the V-pocket between two common end rafters. Tilt your circular saw base plate cleanly to <strong>45 degrees</strong> and make opposing bevel slices meeting precisely down the board's centerline.</li>\n            <li><strong>Hip Drop or Backing:</strong> Notice too that because a thick 1-1/2\" hip sits higher along its edges than common slopes, framers either deepen its birdsmouth seat cut slightly (\"hip drop\") or bevel-plane top edges so sheathing lands flat!</li>\n        </ol>\n        <p>Stop wasting expensive <code>2x10</code> or <code>2x12</code> hip stock to trial-and-error math: calculate Common, Hip/Valley, and stepped Jack rafter shortening down to exact <strong>1/16\" tape fractions</strong> inside <strong>Framing &amp; Roof Calc: Tape 1/16</strong>.</p>\n        "
-    },
-    {
-      "blog": "rv_camper_blog",
-      "slug": "silicone-caulk-destroys-rv-roofs-butyl-tape-vs-dicor-lap-sealant",
-      "title": "Why Bathroom Silicone Ruined Your RV Roof: EPDM, TPO &amp; Dicor Self-Leveling Lap Sealant",
-      "hero_img": "assets/rv13_infiltraciones_agua_sellado_techo.webp",
-      "hero_caption": "Standard hardware store silicone peels rapidly under RV road flex and roof UV thermal cycling—and leaves microscopic silicone oil residue that blocks real RV sealants from sticking later.",
-      "summary": "Spot a crack around a camper skylight or roof AC gasket? Put down that tube of clear household silicone! Master EPDM vs TPO roof identification, Dicor lap sealant, and butyl tape maintenance.",
-      "keywords": "silicone caulk on RV roof mistake, Dicor self leveling lap sealant vs non sag, butyl tape camper vent repair, EPDM vs TPO RV roof repair",
-      "faq_q": "Why should you never use household bathroom silicone caulk on an RV roof?",
-      "faq_a": "RVs flex dramatically on highways while rubber EPDM/TPO roofs expand and shrink wildly under summer UV sun. Silicone lacks strong peel adhesion to RV membranes, separates cleanly along microscopic edges to trap water underneath, and leaves oily residue that stops proper elastomeric sealants from bonding forever without aggressive grinding.",
-      "body_html": "\n        <p>A single unsealed hairline pinhole around a roof TV antenna can quietly trickle rainwater into laminated ceiling luan boards for months, delaminating exterior fiberglass walls before a single drip ever shows above your mattress. Naturally, worried camper owners rush to hardware stores and squeeze clear <strong>100% Bathroom Silicone</strong> along every roof vent screw—unwittingly creating an adhesive nightmare.</p>\n\n        <h2>1. Why Household Silicone Detaches Under Highway Vibration</h2>\n        <p>Fixed houses barely move. Moving campers vibrate across washboard roads at 65 mph while roof skin temperatures bounce from 35 °F at night to 150 °F by noon. Household acetic silicone grips poorly to chalky <strong>EPDM rubber</strong>, <strong>TPO</strong>, and fiberglass crowns. When edges inevitably curl upward, capillary water sucks straight underneath while the bead still looks sealed from ground level!</p>\n\n        <h2>2. The Exact Professional Two-Layer Seal System</h2>\n        <ul>\n            <li><strong>Underneath Every Flange (<code>Non-Hardening Butyl Tape</code>):</strong> Whenever reinstalling roof vents, AC shrouds, or solar panel feet, squeeze continuous 1/8\"-thick grey putty-like <strong>butyl rubber tape</strong> under screws before tightening. It stays permanently pliable forever without drying brittle.</li>\n            <li><strong>Over Top Screw Heads (<code>Self-Leveling Lap Sealant</code>):</strong> Coat horizontal roof flange seams and exposed screws exclusively with elastomeric RV sealants like <strong>Dicor 501LSW</strong> (Self-Leveling for flat surfaces, Non-Sag for vertical wall trim). Avoid aggressive scraping; inspect joints twice every spring and autumn alongside your pre-trip leveling/solar checklist inside <strong>RV &amp; Home Leveler: Solar, HVAC</strong>.</li>\n        </ul>\n        "
     },
     {
       "blog": "country_radio_blog",
@@ -157,18 +160,6 @@
       "faq_q": "¿Por qué la NASA eligió 'El Cascabel' de Lorenzo Barcelata para representar la música de México y América Latina en la sonda Voyager?",
       "faq_a": "El comité liderado por el astrónomo Carl Sagan buscaba piezas musicales con complejidad rítmica vibrante y alma puramente humana. El contrapunto sincopado entre violines, guitarrón, trompetas y arpa jarocha en 'El Cascabel' (interpretado por Antonio Maciel y Los Aguilillas con Mariachi México) destacó entre miles de cintas mundiales como emblema de alegría viva.",
       "body_html": "\n        <p>A más de <strong>24 mil millones de kilómetros</strong> de nuestro planeta —mucho más allá de la órbita helada de Plutón, surcando el vacío silencioso del espacio interestelar— viaja un disco de cobre chapado en oro puro de 12 pulgadas. Si alguna civilización avanzada llegara a interceptar la sonda <strong>Voyager 1</strong> dentro de millones de años, escuchará el saludo de 55 idiomas, las sinfonías de Mozart y Beethoven... ¡y el grito alegre del <strong>Mariachi mexicano</strong>!</p>\n\n        <h2>1. Carl Sagan Buscando el Pulso Vivo de la Tierra</h2>\n        <p>Cuando la NASA encargó al célebre astrónomo <strong>Carl Sagan</strong> en 1977 diseñar un mensaje eterno en una botella cósmica, las grabaciones musicales debían capturar toda la riqueza espiritual de la humanidad sin sonar repetitivas. Tras audicionar cientos de cintas étnicas y folclóricas de los cinco continentes, los folkloristas Alan Lomax y Robert Brown quedaron electrizados frente a una pieza jarocha/mariachi escrita por el maestro veracruzano <strong>Lorenzo Barcelata</strong>: <em>\"El Cascabel\"</em>.</p>\n\n        <h2>2. El Ritmo Que Desafía Al Silencio Cósmico</h2>\n        <p>Su endiablado compás hemiólico (cruzando tiempos de 6/8 y 3/4 con precisión matemática casi imposible para quien no creció en México!) junto al golpe vigoroso del guitarrón y las trompetas de Jalisco simbolizaban exactamente la vitalidad luminosa de un planeta vivo. Así, la música regional mexicana se volvió literalmente <strong>patrimonio inmortal del universo</strong>.</p>\n        <p>Siente en vivo esa misma alegría de Jalisco, Michoacán y todo el país con estaciones de mariachi y banda sin interrupciones en <strong>Radios de México FM AM En Vivo</strong>.</p>\n        "
-    },
-    {
-      "blog": "electric_blog",
-      "slug": "smart-alternators-euro-6-why-auxiliary-batteries-never-reach-100-percent",
-      "title": "Euro 6 Smart Alternators: Why Simple Battery Isolators Starve Camper &amp; Work-Truck Lithium Banks",
-      "hero_img": "assets/so11_alternador_inteligente_booster_dc_dc.webp",
-      "hero_caption": "Modern ECU-controlled smart alternators cut field voltage down to ~12.4V–12.7V while cruising to save fuel, making standard VSR relays disconnect halfway through drives.",
-      "summary": "Building a campervan, overland rig, or utility service truck on a post-2016 chassis? Discover why voltage-sensing relays (VSR) stop charging on highways and how DC-DC boosters protect your alternator.",
-      "keywords": "smart alternator Euro 6 lithium charging, DC DC charger vs VSR isolator, vanlife battery alternator burning, wire gauge 12v dc dc charger",
-      "faq_q": "Why does connecting a LiFePO4 battery directly to a vehicle alternator risk burning out the alternator?",
-      "faq_a": "Lithium iron phosphate (LiFePO4) cells exhibit extremely low internal resistance and act like a massive electrical vacuum. While lead-acid starter batteries naturally limit incoming amps as their surface voltage rises, a depleted LiFePO4 bank can pull 100% of the alternator's maximum cold-rated output continuously at idle, overheating copper stator windings within minutes.",
-      "body_html": "\n        <p>Twenty years ago, charging a secondary deep-cycle house battery while driving required nothing more than a $40 Voltage Sensitive Relay (VSR) bridged between your starter battery and auxiliary bank. Today, on post-2016 pickups, Transit/Sprinter vans, and Euro 5/Euro 6 diesel trucks, that classic relay leaves travelers waking up with dead refrigerators after six hours of highway driving.</p>\n\n        <h2>1. The Fuel-Economy Sabotage Inside Your ECU</h2>\n        <p>To shave fleet emissions, engine computers actively decouple alternator drag once your starter battery tops off. While you cruise down the interstate at 65 mph, your \"smart\" alternator intentionally lowers bus voltage to <strong>12.5V–12.7V</strong>, only spiking to 14.8V during coasting and regenerative deceleration. A VSR waiting for 13.3V assumes the engine shut off and instantly disconnects your camper bank!</p>\n\n        <h2>2. Why Lithium Banks Destroy Unregulated Alternators</h2>\n        <p>Switching to a direct manual switch creates the opposite nightmare. LiFePO4 internal impedance is tiny; a 300Ah lithium pack sitting at 30% state of charge will greedily suck <strong>120+ Amps non-stop</strong> at stoplights when alternator cooling fans spin slowly—baking stator diodes quickly.</p>\n\n        <h2>3. Sizing Cable Runs for Isolated &amp; Non-Isolated DC-DC Chargers</h2>\n        <p>A <strong>DC-DC Battery Charger (30A, 50A, or 60A)</strong> acts as both an ignition-triggered voltage booster (turning 12.2V highway droop into clean 14.4V multi-stage lithium bulk/absorption power) and a strict current governor protecting the alternator. Remember that round-trip engine-bay to rear-garage cable length counts <em>both</em> positive and negative paths! Keep 12V DC line losses under 2% using <strong>Wire Size &amp; Voltage Drop Calc</strong> so your booster doesn't trigger low-input shutdown.</p>\n        "
     },
     {
       "blog": "carpentry_blog",
@@ -559,9 +550,9 @@
   "tech_critical_threshold": 3,
   "radio_interval_days": 2,
   "last_published_per_blog": {
-    "electric_blog": "2026-11-14",
-    "carpentry_blog": "2026-11-14",
-    "rv_camper_blog": "2026-11-14",
+    "electric_blog": "2026-11-15",
+    "carpentry_blog": "2026-11-15",
+    "rv_camper_blog": "2026-11-15",
     "country_radio_blog": "2026-11-10",
     "christmas_radio_blog": "2026-11-14",
     "radios_mexico_blog": "2026-11-08"
