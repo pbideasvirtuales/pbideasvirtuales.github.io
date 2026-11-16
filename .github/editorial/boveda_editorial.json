@@ -1,10 +1,10 @@
 {
   "safety_threshold": 15,
   "critical_alert_threshold": 5,
-  "last_published": "2026-11-15",
-  "last_blog": "electric_blog",
-  "last_run_at": "2026-11-15T16:21:02.151147-03:00",
-  "remaining_count": 38,
+  "last_published": "2026-11-16",
+  "last_blog": "radios_mexico_blog",
+  "last_run_at": "2026-11-16T19:50:45.926531-03:00",
+  "remaining_count": 34,
   "history": [
     {
       "slug": "california-corner-vs-three-stud-corner-framing-lumber-savings-insulation",
@@ -86,6 +86,42 @@
       "published_at": "2026-11-15T16:21:02.151147-03:00",
       "url": "https://pbideasvirtuales.github.io/electric_blog/smart-alternators-euro-6-why-auxiliary-batteries-never-reach-100-percent.html",
       "remaining_after": 38
+    },
+    {
+      "slug": "hip-rafter-16-97-base-math-and-45-degree-double-cheek-cuts",
+      "title": "Why Hip Rafters Use 16.97 (Not 12) and How to Mark 45° Double Cheek Cuts Cleanly",
+      "blog": "carpentry_blog",
+      "published_date": "2026-11-16",
+      "published_at": "2026-11-16T19:50:45.926531-03:00",
+      "url": "https://pbideasvirtuales.github.io/carpentry_blog/hip-rafter-16-97-base-math-and-45-degree-double-cheek-cuts.html",
+      "remaining_after": 34
+    },
+    {
+      "slug": "mini-split-btu-sizing-mistakes-why-oversized-ac-causes-clammy-mold",
+      "title": "HVAC BTU Oversizing Trap: Why Buying a Larger Split AC Makes Your Room Cold &amp; Clammy",
+      "blog": "rv_camper_blog",
+      "published_date": "2026-11-16",
+      "published_at": "2026-11-16T19:50:45.926531-03:00",
+      "url": "https://pbideasvirtuales.github.io/rv_camper_blog/mini-split-btu-sizing-mistakes-why-oversized-ac-causes-clammy-mold.html",
+      "remaining_after": 34
+    },
+    {
+      "slug": "cold-weather-solar-voc-spike-why-frosty-mornings-fry-mppt-controllers",
+      "title": "Cold Weather Solar Voc Spikes: How Freezing Dawns Permanently Fry MPPT Charge Controllers",
+      "blog": "electric_blog",
+      "published_date": "2026-11-16",
+      "published_at": "2026-11-16T19:50:45.926531-03:00",
+      "url": "https://pbideasvirtuales.github.io/electric_blog/cold-weather-solar-voc-spike-why-frosty-mornings-fry-mppt-controllers.html",
+      "remaining_after": 34
+    },
+    {
+      "slug": "la-noche-de-1930-cuando-la-xew-unio-a-toda-america-latina",
+      "title": "18 de Septiembre de 1930: La Noche en que la XEW 'La Catedral de la Radio' Unió a Todo un Continente",
+      "blog": "radios_mexico_blog",
+      "published_date": "2026-11-16",
+      "published_at": "2026-11-16T19:50:45.926531-03:00",
+      "url": "https://pbideasvirtuales.github.io/radios_mexico_blog/la-noche-de-1930-cuando-la-xew-unio-a-toda-america-latina.html",
+      "remaining_after": 34
     }
   ],
   "queue": [
@@ -100,30 +136,6 @@
       "faq_q": "Why do music historians call the 1927 Bristol Sessions 'The Big Bang of Country Music'?",
       "faq_a": "Over twelve hot days in July–August 1927, Victor Talking Machine producer Ralph Peer used cutting-edge electric recording microphones in Bristol, Tennessee/Virginia to discover both The Carter Family and Jimmie Rodgers simultaneously—creating the dual vocal/acoustic blueprint for the entire modern country industry.",
       "body_html": "\n        <p>Before late July 1927, rural Appalachian ballads and railroad blues lived almost completely unseen beyond local porch steps and medicine shows. Within two sweltering summer weeks inside a dusty second-floor Taylor-Christian Hat Company warehouse straddling the Tennessee-Virginia state line, one shrewd talent scout altered American sound forever.</p>\n\n        <h2>1. New Electric Microphones Changed Everything</h2>\n        <p>Producer <strong>Ralph Peer</strong> wasn't chasing fame—he needed cheap regional masters using Victor's new <strong>Western Electric condenser microphone</strong>, which replaced clumsy brass acoustic horns. For the first time, soft weeping fiddle slides, whispered Carter family three-part harmonies, and crisp fingerpicked guitars recorded with shocking emotional intimacy onto wax.</p>\n\n        <h2>2. Two Titans Walked Up the Same Stairs 48 Hours Apart</h2>\n        <ul>\n            <li><strong>August 1, 1927 — The Carter Family:</strong> A.P., Sara, and teenaged Mother Maybelle Carter bounced 25 miles over rough mountain roads in an old rattletrap from Maces Spring, Virginia. Their thumb-lead guitar plucking (\"The Carter Scratch\") on <em>\"Wildwood Flower\"</em> and <em>\"Keep On the Sunny Side\"</em> gave every future country picker their DNA.</li>\n            <li><strong>August 4, 1927 — Jimmie Rodgers:</strong> A sickly former railroad brakeman nursing early tuberculosis cut just two modest tracks in Bristol before conquering America months later with his signature <em>Blue Yodel</em>—proving hillbilly folk music could sell millions coast-to-coast!</li>\n        </ul>\n\n        <h2>3. Relive Authentic Roots History Live 24/7</h2>\n        <p>Whenever modern slick pop radio feels synthetic, hear the raw heartbeat tracing straight back to Bristol inside <strong>Country Radio: Live Music</strong>—streaming authentic Classic Country, Americana, and Heritage legends free 24/7 alongside interactive trivia.</p>\n        "
-    },
-    {
-      "blog": "radios_mexico_blog",
-      "slug": "la-noche-de-1930-cuando-la-xew-unio-a-toda-america-latina",
-      "title": "18 de Septiembre de 1930: La Noche en que la XEW 'La Catedral de la Radio' Unió a Todo un Continente",
-      "hero_img": "assets/his13_xew1930_vozamericaradio.webp",
-      "hero_caption": "Desde los estudios en la calle Ayuntamientos de la CDMX, la XEW 'La Voz de la América Latina' proyectó por primera vez mariachi, boleros y radionovelas desde Monterrey hasta la Patagonia.",
-      "summary": "Conoce la fascinante historia sonora de la XEW fundada en 1930 por Emilio Azcárraga Vidaurreta: el origen de Pedro Infante, Agustín Lara y el lazo eterno de México con el dial.",
-      "keywords": "historia XEW 1930 la voz de america latina, emilio azcarraga epoca oro radio mexico, radios de mexico en vivo app, cronica radio mexicana",
-      "faq_q": "¿Por qué la XEW de 1930 recibió el apodo de 'La Catedral de la Radio' en América Latina?",
-      "faq_a": "Con transmisores de potencia inédita para su tiempo y orquestas ejecutando 100% en vivo sin grabaciones previas, la XEW convirtió los estudios de la Ciudad de México en el gran escenario continental donde debutaron Agustín Lara, Cri-Cri, Pedro Infante y las primeras grandes radionovelas familiares.",
-      "body_html": "\n        <p>Hubo un tiempo antes de la televisión, el internet y los celulares donde el pulso completo de una nación entera latía alrededor de un mueble cálido de madera con bulbos incandescentes en el centro de la sala. Todo cambió para siempre exactamente a las <strong>8:00 de la noche del 18 de septiembre de 1930</strong>.</p>\n\n        <h2>1. Un Transmisor Gigante Desde el Centro de la Ciudad de México</h2>\n        <p>El visionario empresario <strong>Emilio Azcárraga Vidaurreta</strong> —quien había comenzado vendiendo fonógrafos y llantas en el norte— comprendió que la radio no debía ser solo un artefacto técnico de aficionados, sino la gran plaza pública del pueblo mexicano. Desde los altos del histórico Cine Olimpia en la calle 16 de Septiembre arrancó transmisiones la mítica <strong>XEW</strong> con una potencia tan brutal que sus ondas rebotaban en la ionósfera cubriendo desde Texas hasta Cuba, Colombia y Argentina.</p>\n\n        <h2>2. Música en Vivo, Nervios y Estrellas Inmortales</h2>\n        <ul>\n            <li><strong>Cero Pistas Grabadas:</strong> Cada comercial, cada efecto de truenos (sacudiendo láminas de zinc!) y cada trompeta de mariachi sucedían en tiempo real frente al micrófono de carbón.</li>\n            <li><strong>La Cuna de los Ídolos:</strong> De esas cabinas salieron las notas bohemias de <em>Agustín Lara</em>, las fábulas eternas de <em>Francisco Gabilondo Soler \"Cri-Cri\"</em>, la picardía de Tin Tan y las primeras audiciones temblorosas de un joven carpintero sinaloense llamado <strong>Pedro Infante</strong>.</li>\n        </ul>\n        <p>Esa tradición viva que acompaña al comerciante, al chofer y al paisano lejos de casa sigue respirando hoy las 24 horas desde cualquier estado de la República en <strong>Radios de México FM AM En Vivo</strong>.</p>\n        "
-    },
-    {
-      "blog": "carpentry_blog",
-      "slug": "hip-rafter-16-97-base-math-and-45-degree-double-cheek-cuts",
-      "title": "Why Hip Rafters Use 16.97 (Not 12) and How to Mark 45° Double Cheek Cuts Cleanly",
-      "hero_img": "assets/fr06_hip_valley_rafters.webp",
-      "hero_caption": "Running at a 45-degree corner diagonal turns every 12-inch common run into a sqrt(12² + 12²) = 16.97-inch diagonal base per foot of roof rise.",
-      "summary": "Why standard 12-inch Speed Square marks fail completely on hip and valley roofs. Discover the 16.97 diagonal geometry, hip backing bevels, and ridge thickness deduction tricks.",
-      "keywords": "hip rafter 16.97 math explained, double cheek cut 45 degrees framing, hip roof calculator fractions, framing roof calc app",
-      "faq_q": "Why does a regular 90-degree corner hip or valley rafter run on 16.97 (17) instead of 12 per foot of rise?",
-      "faq_a": "While a Common Rafter travels straight across a 12-inch horizontal run to gain X inches of rise, a 45-degree Hip Rafter travels across the diagonal corner of a 12-inch by 12-inch floor square. By Pythagoras, sqrt(12^2 + 12^2) = 16.97 inches (commonly rounded to 17 on traditional steel framing squares).",
-      "body_html": "\n        <p>Ask twenty experienced residential carpenters how to cut Common Rafters, and nineteen will snap out clean cuts in minutes. Ask those same twenty carpenters to lay out a Hip &amp; Valley intersection freehand without pre-made trusses, and half start sweating around the ridge.</p>\n\n        <h2>1. The Geometry Trap: Common Run vs. Corner Diagonal Run</h2>\n        <p>Think of looking straight down onto a hip roof from a drone above. Common rafters march perpendicularly away from exterior walls: for every <strong>12 inches</strong> of building span, roof peak rises <code>X</code> inches (say, 6\" on a 6/12 pitch). Wait—now trace the <strong>Hip Rafter</strong> slicing diagonally out of that 90-degree corner at 45 degrees:</p>\n        <ul>\n            <li>To reach the exact same roof peak elevation at the end of 12 inches side-by-side (<code>12\"</code> X and <code>12\"</code> Y), the hip rafter spans the square's diagonal: <code>&radic;(12&sup2; + 12&sup2;) = &radic;288 = 16.9705\"</code>!</li>\n            <li>For a <code>6/12</code> roof, a Common Rafter slopes <code>&radic;(12&sup2; + 6&sup2;) = 13.42\"</code> per foot of common run, whereas the Hip Rafter slopes <code>&radic;(16.97&sup2; + 6&sup2;) = 18.00\"</code> per foot of common run!</li>\n        </ul>\n\n        <h2>2. Plumb Cuts, Double Cheek Bevels &amp; Birdsmouth Drop</h2>\n        <ol>\n            <li><strong>Lower Plumb Pitch Angle:</strong> Because the hip runs longer horizontally (<code>16.97\"</code>) to climb the identical <code>6\"</code> rise, its vertical plumb cut leans flatter (~<code>19.5°</code> vs. Common's <code>26.6°</code>). Never cut a hip plumb angle using your Common pitch mark—your Speed Square has a dedicated <strong>HIP/VAL</strong> edge specifically for this!</li>\n            <li><strong>The 45° Double Cheek Cut:</strong> At the ridge junction, your hip slides cleanly into the V-pocket between two common end rafters. Tilt your circular saw base plate cleanly to <strong>45 degrees</strong> and make opposing bevel slices meeting precisely down the board's centerline.</li>\n            <li><strong>Hip Drop or Backing:</strong> Notice too that because a thick 1-1/2\" hip sits higher along its edges than common slopes, framers either deepen its birdsmouth seat cut slightly (\"hip drop\") or bevel-plane top edges so sheathing lands flat!</li>\n        </ol>\n        <p>Stop wasting expensive <code>2x10</code> or <code>2x12</code> hip stock to trial-and-error math: calculate Common, Hip/Valley, and stepped Jack rafter shortening down to exact <strong>1/16\" tape fractions</strong> inside <strong>Framing &amp; Roof Calc: Tape 1/16</strong>.</p>\n        "
     },
     {
       "blog": "country_radio_blog",
@@ -174,18 +186,6 @@
       "body_html": "\n        <p>Nothing ruins the clean mirror finish of brand-new architectural roof shingles quite like seeing horizontal snake-like waves telegraph straight through six months after completion. Usually the roofer gets blamed—but 90% of the time, the culprit happened weeks earlier during framing when sheets of <code>7/16\"</code> or <code>1/2\"</code> OSB were slammed dead-flush together without expansion gaps.</p>\n\n        <h2>1. Never Butt 4x8 Sheets Tightly (\"10d Nail Spacing\")</h2>\n        <p>Wood expands hydroscopically across panel dimensions whenever moisture shifts from kiln-dry warehouse air to rainstorms or humid attics. Structural panels mandate an explicit <strong>1/8-inch (3 mm) air gap</strong> along ALL four sides of every 4x8 sheet.</p>\n        <ul>\n            <li><strong>Metal H-Clips on 24\" O.C. Trusses:</strong> Dropping one stamped aluminum H-clip halfway between every 24-inch rafter/truss pair automatically dials in an exact 1/8\" seam gap while preventing foot traffic or snow loads from bowing unsupported middle edges unevenly.</li>\n            <li><strong>Long Vertical Butt Joints:</strong> Slip a <code>10d framing nail</code> temporarily as a spacer gauge between panel ends atop the rafter before tacking edges down.</li>\n        </ul>\n\n        <h2>2. Skid-Resistant Grip Side UP &amp; Staggered Running Bond</h2>\n        <p>Flip every OSB sheet before nailing: one face looks glass-smooth (waxed during hot pressing), while the reverse displays a textured screen pattern stamped <code>THIS SIDE UP / STRENGTH AXIS</code>. Installing slick wax-side up turns misty morning roofs into deadly ice rinks! Always lay the strength axis perpendicular across rafters and stagger joints by 4 feet like brickwork so weak continuous lines never cross two trusses at once.</p>\n        <p>Before hauling bundles up ladders, measure total roof slope area cleanly inside <strong>Framing &amp; Roof Calc: Tape 1/16</strong> (calculating true pitched area rather than flat footprint!) plus automatic waste buffers.</p>\n        "
     },
     {
-      "blog": "rv_camper_blog",
-      "slug": "mini-split-btu-sizing-mistakes-why-oversized-ac-causes-clammy-mold",
-      "title": "HVAC BTU Oversizing Trap: Why Buying a Larger Split AC Makes Your Room Cold &amp; Clammy",
-      "hero_img": "assets/ho01_calculo_aire_acondicionado_inverter.webp",
-      "hero_caption": "Short-cycling an oversized air conditioner cools air rapidly in 6 minutes before moisture ever condenses off the evaporator coil—breeding stuffy indoor humidity and mold.",
-      "summary": "Sizing a home split inverter AC or off-grid camper van mini-split? Understand sensible vs. latent BTU heat loads, short-cycling dampness, and how sun exposure shifts wattage requirements.",
-      "keywords": "AC BTU calculator oversized short cycling, inverter air conditioner room sizing, latent humidity cooling failure, RV solar HVAC calculator app",
-      "faq_q": "Why does an oversized air conditioner feel cold yet damp and clammy indoors?",
-      "faq_a": "Air conditioners remove indoor moisture (latent heat) strictly during steady continuous compressor runs of 15+ minutes when evaporator aluminum fins drop cold enough to drip water out the drain pipe. An oversized unit blasts ambient air cold in 5 minutes and shuts off repeatedly—never running long enough to dehumidify the room.",
-      "body_html": "\n        <p>Homeowners shopping for bedroom or workshop cooling routinely fall into the <em>\"Bigger Is Always Better\"</em> hardware trap: their insulated 160-sq-ft room calculates cleanly to a 9,000 BTU unit, so they pay extra for an 18,000 BTU split system expecting freezing luxury. Within weeks they complain of cold clammy sheets, moldy closet scents, and shockingly high electric bills.</p>\n\n        <h2>1. Sensible Cooling vs. Latent Dehumidification</h2>\n        <p>Real comfort requires two synchronized operations from your air conditioner:</p>\n        <ol>\n            <li><strong>Sensible Cooling:</strong> Dropping thermometer dry-bulb temperature (<code>78 °F &rarr; 71 °F</code>).</li>\n            <li><strong>Latent Dehumidification:</strong> Pulling heavy vapor condensation out across chilled coils (<code>68% RH &rarr; 48% RH</code>). That condensation process demands continuous steady airflow across deeply chilled fins!</li>\n        </ol>\n        <p>Drop a gigantic 18,000 BTU compressor inside a modest space and it blasts temperature down in 4 minutes, snaps the thermostat off, waits 7 minutes while stagnant humidity clings to every wall, then slams back on—burning high startup amperage spikes and destroying compressor oil lubrication.</p>\n\n        <h2>2. Getting Accurate BTU / Frigoría Math Every Time</h2>\n        <p>Don't rely solely on vague floor square-footage charts! Actual cooling capacity depends on <strong>ceiling height</strong>, unshaded <strong>west-facing windows</strong>, tin roof vs. insulated attic R-values, kitchen stoves, and regional climate zones. Dial in room volume, glass exposure, and insulation type seamlessly inside the <strong>Home &amp; RV Climate Calculator</strong> in <strong>RV &amp; Home Leveler: Solar, HVAC</strong>—keeping Inverter runtimes smooth and battery inverters happy.</p>\n        "
-    },
-    {
       "blog": "country_radio_blog",
       "slug": "bakersfield-sound-telecaster-twang-that-rebelled-against-nashville",
       "title": "The Bakersfield Sound: Why Buck Owens &amp; Merle Haggard Cranked Fender Telecasters Against Nashville",
@@ -220,18 +220,6 @@
       "faq_q": "¿Por qué Pedro Infante conectó más profundamente con la clase trabajadora mexicana que cualquier otro galán de su época?",
       "faq_a": "A diferencia de estrellas distantes, Pedro vivió en carne propia oficios reales —carpintero de muebles, aprendiz de peluquero y músico de banda regional en Guamúchil— conservando hasta el último día la cercanía campechana, el humor noble y el amor por el pueblo humilde que interpretaba en pantalla.",
       "body_html": "\n        <p>Nació en Mazatlán pero su alma creció en las calles polvorosas de <strong>Guamúchil, Sinaloa</strong>. Cuando el locutor de la radio interrumpió la transmisión matutina aquel lunes <strong>15 de abril de 1957</strong> confirmando la caída del avión carguero en Mérida, Yucatán, miles de amas de casa dejaron caer las cacerolas, obreros detuvieron las fábricas y más de 300,000 personas abarrotaron las calles bajo un silencio desgarrador. Ningún presidente jamás recibió una despedida tan íntima.</p>\n\n        <h2>1. Carpintero, Peluquero y Piloto Apasionado</h2>\n        <p>Mucho antes de iluminar marquesinas con <em>\"Nosotros los Pobres\"</em> o <em>\"Pepe el Toro\"</em>, Pedro aprendió a subsistir con sus propias manos: fabricó su primera guitarra de niño usando madera sobrante en el taller de carpintería, cortaba cabello con navaja en su pueblo natal y tocaba con la pequeña orquesta familiar de su padre Delfino. Incluso ya convertido en el astro más taquillero de México, instaló un taller de carpintería completo y una peluquería privada dentro de su propia casa en Cuajimalpa para afeitar gratis a sus amigos y mecánicos!</p>\n\n        <h2>2. El Secreto de Su Voz: Cantaba Sonriendo</h2>\n        <p>A pesar de no saber leer música académica, poseía una memoria prodigiosa y un don irrepetible: transmitía <strong>ternura masculina genuina sin arrogancia</strong>. Cuando interpretaba <em>\"Amorcito Corazón\"</em> o <em>\"Cien Años\"</em> en la radio, cualquier padre, hijo o mecánico sentía que quien cantaba era su propio compadre fiel.</p>\n        <p>Revive cada mañana esos clásicos inmortalizados del repertorio nacional sintonizando emisoras rancheras y nostalgia de oro en <strong>Radios de México FM AM En Vivo</strong>.</p>\n        "
-    },
-    {
-      "blog": "electric_blog",
-      "slug": "cold-weather-solar-voc-spike-why-frosty-mornings-fry-mppt-controllers",
-      "title": "Cold Weather Solar Voc Spikes: How Freezing Dawns Permanently Fry MPPT Charge Controllers",
-      "hero_img": "assets/so08_paneles_solares_serie_paralelo_voc_frio.webp",
-      "hero_caption": "Silicon photovoltaic cells produce significantly higher open-circuit voltage in sub-zero cold; exceeding MPPT max input by even 5 Volts on a frosty dawn causes instant silicon failure.",
-      "summary": "Why solar arrays that ran flawlessly all July blow up MPPT regulators on the very first frosty morning of November. Learn how to compute Open-Circuit Voltage (Voc) temperature coefficients.",
-      "keywords": "solar panel Voc cold weather calculator, MPPT max voltage fried freezing, series vs parallel solar string math, negative temperature coefficient Voc",
-      "faq_q": "Why do solar panels generate higher voltage in freezing winter weather than in hot summer sun?",
-      "faq_a": "Photovoltaic semiconductor bandgap widens as silicon temperatures drop. For every degree Celsius below 25°C (77°F), monocrystalline panel Open-Circuit Voltage rises roughly 0.28% to 0.35%. On a -20°C winter morning, a string that hits 138V in summer can suddenly spike past 158V and blow a 150V-rated MPPT controller before load wakes up.",
-      "body_html": "\n        <p>It feels completely backwards: your solar system survived relentless August desert heat without flinching, yet the very first crisp frost of late autumn triggers a whiff of burnt electronics from your power closet and an irreversible MPPT error fault. You didn't exceed current amps—you fell victim to the <strong>Cold-Morning Open-Circuit Voltage (Voc) Spike</strong>.</p>\n\n        <h2>1. The 25 °C STC Lab Illusion</h2>\n        <p>Every solar module sticker states its <strong>Open-Circuit Voltage (Voc)</strong> measured under Standard Test Conditions (STC) at exactly <strong>25 °C (77 °F)</strong> cell temperature. In reality, semiconductors hate heat (which drops voltage) and love cold (which pumps pressure voltage dramatically upward).</p>\n        <ul>\n            <li>Check your datasheet for <strong>Temperature Coefficient of Voc</strong> (commonly <code>-0.28% / °C</code> to <code>-0.36% / °C</code>).</li>\n            <li>Take a trio of large residential panels wired in series rated at <code>45.5V Voc</code> each = <strong>136.5V</strong> at 25 °C. Looks comfortably below a 150V Victron or EPEver MPPT ceiling, right?</li>\n            <li>On a clear <strong>-15 °C (5 °F)</strong> dawn (a <code>-40 °C</code> shift below STC): <code>40 × 0.32% = +12.8%</code> voltage surge! Your string immediately awakens at <strong>154.0 Volts</strong>—zero amps flowing yet, just pure open-circuit pressure before the controller closes its charging switch—instantly popping the 150V input capacitors!</li>\n        </ul>\n\n        <h2>2. Safe Series vs. Parallel Reconfiguration</h2>\n        <p>Always calculate worst-case record low winter ambient temperatures (using <code>2S2P</code> instead of <code>4S1P</code> when Voc nears controller limits), and make sure parallel string cables stepping current up are sized cleanly against thermal ampacity and DC voltage drop inside <strong>Wire Size &amp; Voltage Drop Calc</strong>.</p>\n        "
     },
     {
       "blog": "carpentry_blog",
@@ -550,13 +538,13 @@
   "tech_critical_threshold": 3,
   "radio_interval_days": 2,
   "last_published_per_blog": {
-    "electric_blog": "2026-11-15",
-    "carpentry_blog": "2026-11-15",
-    "rv_camper_blog": "2026-11-15",
+    "electric_blog": "2026-11-16",
+    "carpentry_blog": "2026-11-16",
+    "rv_camper_blog": "2026-11-16",
     "country_radio_blog": "2026-11-10",
     "christmas_radio_blog": "2026-11-14",
-    "radios_mexico_blog": "2026-11-08"
+    "radios_mexico_blog": "2026-11-16"
   },
-  "last_radio_published": "2026-11-14",
-  "last_radio_blog": "christmas_radio_blog"
+  "last_radio_published": "2026-11-16",
+  "last_radio_blog": "radios_mexico_blog"
 }
