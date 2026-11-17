@@ -1,10 +1,10 @@
 {
   "safety_threshold": 15,
   "critical_alert_threshold": 5,
-  "last_published": "2026-11-16",
-  "last_blog": "radios_mexico_blog",
-  "last_run_at": "2026-11-16T19:50:45.926531-03:00",
-  "remaining_count": 64,
+  "last_published": "2026-11-17",
+  "last_blog": "electric_blog",
+  "last_run_at": "2026-11-17T18:42:57.994664-03:00",
+  "remaining_count": 61,
   "history": [
     {
       "slug": "california-corner-vs-three-stud-corner-framing-lumber-savings-insulation",
@@ -122,6 +122,33 @@
       "published_at": "2026-11-16T19:50:45.926531-03:00",
       "url": "https://pbideasvirtuales.github.io/radios_mexico_blog/la-noche-de-1930-cuando-la-xew-unio-a-toda-america-latina.html",
       "remaining_after": 34
+    },
+    {
+      "slug": "osb-roof-sheathing-rough-side-up-h-clips-one-eighth-expansion-gap",
+      "title": "OSB Roof Sheathing Mistakes: Why Missing 1/8\" H-Clip Gaps &amp; Upside-Down Panels Buckle",
+      "blog": "carpentry_blog",
+      "published_date": "2026-11-17",
+      "published_at": "2026-11-17T18:42:57.994664-03:00",
+      "url": "https://pbideasvirtuales.github.io/carpentry_blog/osb-roof-sheathing-rough-side-up-h-clips-one-eighth-expansion-gap.html",
+      "remaining_after": 61
+    },
+    {
+      "slug": "the-2-percent-drain-slope-law-for-van-showers-and-home-plumbing",
+      "title": "The 2% Drain Slope Sweet Spot: Why Plumbing Lines Clog When Sloped Too Steeply",
+      "blog": "rv_camper_blog",
+      "published_date": "2026-11-17",
+      "published_at": "2026-11-17T18:42:57.994664-03:00",
+      "url": "https://pbideasvirtuales.github.io/rv_camper_blog/the-2-percent-drain-slope-law-for-van-showers-and-home-plumbing.html",
+      "remaining_after": 61
+    },
+    {
+      "slug": "neutral-loss-open-neutral-240v-split-phase-burns-120v-appliances",
+      "title": "The Open Neutral Nightmare: Why One Broken Return Wire Sends 200V Through 120V Outlets",
+      "blog": "electric_blog",
+      "published_date": "2026-11-17",
+      "published_at": "2026-11-17T18:42:57.994664-03:00",
+      "url": "https://pbideasvirtuales.github.io/electric_blog/neutral-loss-open-neutral-240v-split-phase-burns-120v-appliances.html",
+      "remaining_after": 61
     }
   ],
   "queue": [
@@ -174,18 +201,6 @@
       "body_html": "\n        <p>A más de <strong>24 mil millones de kilómetros</strong> de nuestro planeta —mucho más allá de la órbita helada de Plutón, surcando el vacío silencioso del espacio interestelar— viaja un disco de cobre chapado en oro puro de 12 pulgadas. Si alguna civilización avanzada llegara a interceptar la sonda <strong>Voyager 1</strong> dentro de millones de años, escuchará el saludo de 55 idiomas, las sinfonías de Mozart y Beethoven... ¡y el grito alegre del <strong>Mariachi mexicano</strong>!</p>\n\n        <h2>1. Carl Sagan Buscando el Pulso Vivo de la Tierra</h2>\n        <p>Cuando la NASA encargó al célebre astrónomo <strong>Carl Sagan</strong> en 1977 diseñar un mensaje eterno en una botella cósmica, las grabaciones musicales debían capturar toda la riqueza espiritual de la humanidad sin sonar repetitivas. Tras audicionar cientos de cintas étnicas y folclóricas de los cinco continentes, los folkloristas Alan Lomax y Robert Brown quedaron electrizados frente a una pieza jarocha/mariachi escrita por el maestro veracruzano <strong>Lorenzo Barcelata</strong>: <em>\"El Cascabel\"</em>.</p>\n\n        <h2>2. El Ritmo Que Desafía Al Silencio Cósmico</h2>\n        <p>Su endiablado compás hemiólico (cruzando tiempos de 6/8 y 3/4 con precisión matemática casi imposible para quien no creció en México!) junto al golpe vigoroso del guitarrón y las trompetas de Jalisco simbolizaban exactamente la vitalidad luminosa de un planeta vivo. Así, la música regional mexicana se volvió literalmente <strong>patrimonio inmortal del universo</strong>.</p>\n        <p>Siente en vivo esa misma alegría de Jalisco, Michoacán y todo el país con estaciones de mariachi y banda sin interrupciones en <strong>Radios de México FM AM En Vivo</strong>.</p>\n        "
     },
     {
-      "blog": "carpentry_blog",
-      "slug": "osb-roof-sheathing-rough-side-up-h-clips-one-eighth-expansion-gap",
-      "title": "OSB Roof Sheathing Mistakes: Why Missing 1/8\" H-Clip Gaps &amp; Upside-Down Panels Buckle",
-      "hero_img": "assets/fr17_osb_roof_subfloor_sheathing.webp",
-      "hero_caption": "Knocking 4x8 OSB sheets tight together with zero 1/8-inch perimeter expansion spacing traps moisture swelling, causing giant shingle ridges across the entire roof.",
-      "summary": "Installing 4x8 roof decking or subfloor OSB? Avoid the two silent errors that trigger shingle telegraph waves, roofer slip hazards, and failed municipal framing inspections.",
-      "keywords": "OSB sheathing rough side up, H clips 1/8 expansion gap roof, staggered sheathing layout math, construction calculator plywood estimator",
-      "faq_q": "Why must you install 1/8-inch H-clips and avoid tightly butting 4x8 OSB roof sheets?",
-      "faq_a": "Engineered wood strands swell slightly when absorbing morning dew, rain before shingling, or attic humidity. If sheets are slammed dead-tight with zero gap, expanding seams push violently against each other, buckling roof planes upward in wavy telegraph ridges. Metal H-clips automatically enforce the mandatory 1/8-inch expansion gap while locking unsupported edges between rafters.",
-      "body_html": "\n        <p>Nothing ruins the clean mirror finish of brand-new architectural roof shingles quite like seeing horizontal snake-like waves telegraph straight through six months after completion. Usually the roofer gets blamed—but 90% of the time, the culprit happened weeks earlier during framing when sheets of <code>7/16\"</code> or <code>1/2\"</code> OSB were slammed dead-flush together without expansion gaps.</p>\n\n        <h2>1. Never Butt 4x8 Sheets Tightly (\"10d Nail Spacing\")</h2>\n        <p>Wood expands hydroscopically across panel dimensions whenever moisture shifts from kiln-dry warehouse air to rainstorms or humid attics. Structural panels mandate an explicit <strong>1/8-inch (3 mm) air gap</strong> along ALL four sides of every 4x8 sheet.</p>\n        <ul>\n            <li><strong>Metal H-Clips on 24\" O.C. Trusses:</strong> Dropping one stamped aluminum H-clip halfway between every 24-inch rafter/truss pair automatically dials in an exact 1/8\" seam gap while preventing foot traffic or snow loads from bowing unsupported middle edges unevenly.</li>\n            <li><strong>Long Vertical Butt Joints:</strong> Slip a <code>10d framing nail</code> temporarily as a spacer gauge between panel ends atop the rafter before tacking edges down.</li>\n        </ul>\n\n        <h2>2. Skid-Resistant Grip Side UP &amp; Staggered Running Bond</h2>\n        <p>Flip every OSB sheet before nailing: one face looks glass-smooth (waxed during hot pressing), while the reverse displays a textured screen pattern stamped <code>THIS SIDE UP / STRENGTH AXIS</code>. Installing slick wax-side up turns misty morning roofs into deadly ice rinks! Always lay the strength axis perpendicular across rafters and stagger joints by 4 feet like brickwork so weak continuous lines never cross two trusses at once.</p>\n        <p>Before hauling bundles up ladders, measure total roof slope area cleanly inside <strong>Framing &amp; Roof Calc: Tape 1/16</strong> (calculating true pitched area rather than flat footprint!) plus automatic waste buffers.</p>\n        "
-    },
-    {
       "blog": "country_radio_blog",
       "slug": "bakersfield-sound-telecaster-twang-that-rebelled-against-nashville",
       "title": "The Bakersfield Sound: Why Buck Owens &amp; Merle Haggard Cranked Fender Telecasters Against Nashville",
@@ -234,18 +249,6 @@
       "body_html": "\n        <p>Ask any masonry crew mixing slabs, footings, or fence post bases from raw bulk stockpiles, and almost every novice suffers the exact same shock: <em>\"My footing math required exactly 1.0 cubic meter, I dumped 0.5m³ sand plus 0.5m³ stone plus 7 bags of cement into the mixer—and my forms still finished 6 inches short before dark!\"</em></p>\n\n        <h2>1. Solving the Missing Volume Puzzle: The 1.35 Compaction Multiplier</h2>\n        <p>Dry crushed stone (<code>3/4\"</code>) sits loosely with nearly <strong>40% hollow empty air</strong> trapped between stone edges. The moment water and Portland cement enter the drum, fine sand grains wash neatly inside empty pockets between larger stones. Your combined dry heaps pack tightly together, shrinking raw unmixed volume down by nearly <strong>26% to 35%</strong>!</p>\n        <ul>\n            <li>When ordering <strong>pre-mixed ready-mix concrete trucks</strong> or pre-blended 80-lb bags, volume stays nearly 1:1 (only adding ~5–10% ground unevenness waste).</li>\n            <li>When batching <strong>dry raw stone, sand, and loose Portland bags separately</strong> (<code>1:2:3</code> or <code>1:2:4</code> mix), ALWAYS scale raw bulk aggregate purchases upward by the <strong>1.35 Voids Compaction Factor</strong>!</li>\n        </ul>\n\n        <h2>2. Abrams' Law: Never \"Splash a Little Water\" to Make Raking Easier</h2>\n        <p>When a ready-mix truck arrives looking stiff on a 90 °F afternoon, lazy finishers scream at the driver: <em>\"Add 15 gallons to the drum so it flows faster!\"</em> That convenience ruins structural concrete. Cement only needs roughly <strong>0.25 to 0.40 lb of water per lb of cement</strong> chemically to hydrate into crystal strength. Excess \"slush water\" evaporates weeks later—leaving behind millions of microscopic capillary tunnels that slash slab strength from 4,000 PSI down to 2,200 PSI crumbling dust prone to freeze-thaw spalling.</p>\n        <p><strong>Framing &amp; Roof Calc: Tape 1/16</strong> eliminates batch math nightmares automatically applying the <code>1.35</code> bulk aggregate factor vs. pre-mix bags, cubic yards, wheelbarrows, and water limits in one tap.</p>\n        "
     },
     {
-      "blog": "rv_camper_blog",
-      "slug": "the-2-percent-drain-slope-law-for-van-showers-and-home-plumbing",
-      "title": "The 2% Drain Slope Sweet Spot: Why Plumbing Lines Clog When Sloped Too Steeply",
-      "hero_img": "assets/ho05_pendiente_desagues_pisos_plomeria.webp",
-      "hero_caption": "Counterintuitively, sloping PVC waste pipes steeper than 4% causes flush water to outrun heavy paper/solids—leaving dry clogs stuck halfway to your septic line.",
-      "summary": "Plumbing a campervan shower pan, basement bathroom remodel, or patio drain? Master the 2% hydrodynamic pitch rule (`1/4\" per foot`), bubble level degree conversions, and air-vent trap protection.",
-      "keywords": "2 percent plumbing drain slope rule, 1/4 inch per foot degree angle, shower pan drain slope too steep clogs, digital level percentage slope app",
-      "faq_q": "Why do plumbing codes forbid making horizontal sewage drain pipes excessively steep (above 4%)?",
-      "faq_a": "Liquid must carry suspended solids cohesively down the pipe. On overly steep pipes above 4% grade, fast water sprints cleanly ahead of heavy waste and toilet paper, leaving solids sitting dry on bare PVC walls where layer after layer hardens into stubborn clogs.",
-      "body_html": "\n        <p>When DIY renovators slope outdoor patio gutters, campervan grey-water runs, or bathroom PVC waste branches for the first time, instinct tells them: <em>\"Water runs downhill—so let's tilt this pipe steeply at 10 degrees so it practically jets to the septic tank!\"</em> Six months later, an emergency plumbing snake pulls five feet of hardened dry solids straight out of that ultra-steep run.</p>\n\n        <h2>1. Hydrodynamic Transport Balance (<code>1/4\"</code> Per Foot = 2.08% = <code>1.19°</code>)</h2>\n        <p>Sanitary plumbing works on gentle hydraulic carrying floats, not gravity chutes. Master plumbers worldwide aim right at <strong>2% grade</strong> (<code>2 cm</code> vertical drop per <code>100 cm</code> horizontal length, or roughly <code>1/4 inch per foot</code> of pipe):</p>\n        <ul>\n            <li><strong>Too Flat (&lt; 1% / &lt; 0.57°):</strong> Sluggish laminar water lacks velocity to push paper past couplings, letting silt and kitchen grease settle along pipe bellies.</li>\n            <li><strong>Too Steep (&gt; 4% / &gt; 2.3°):</strong> Rapid shallow water streams sprint underneath and outrun heavy solids, stranding dry obstacles mid-pipe while also threatening to siphon water cleanly out of protective P-traps!</li>\n        </ul>\n\n        <h2>2. Using Smartphone Percentage Grade Mode on Job Sites</h2>\n        <p>Trying to judge an exact <code>1.2°</code> (<code>2%</code>) slope off tiny curved glass spirit bubbles leads to wild errors across 20-foot PVC runs. Switch <strong>RV &amp; Home Leveler: Solar, HVAC</strong> into <strong>Home / Construction Mode</strong>, tap <strong>Slope % Mode</strong> (<code>cm/m</code>), calibrate zero flat against your floor reference (<code>Tare</code>), and lay your phone directly atop PVC pipe—locking in exact <code>2.0%</code> pitch effortlessly.</p>\n        "
-    },
-    {
       "blog": "country_radio_blog",
       "slug": "charley-pride-breaking-color-line-with-pure-heartland-voice",
       "title": "Charley Pride: How a Blind Demo Tape With Zero Photos Conquered Country Music Forever",
@@ -280,18 +283,6 @@
       "faq_q": "¿Por qué tomó casi 90 años completar la vía del tren Chihuahua al Pacífico (El Chepe)?",
       "faq_a": "La Sierra Tarahumara presentaba abismos verticales de granito sólido sin caminos previos, interrumpidos además por la Revolución Mexicana y la quiebra de varios consorcios extranjeros. Recién en los años 50 ingenieros mexicanos dinamitaron 86 túneles y erigieron 37 puentes sobre gargantas imposibles hasta inaugurarlo en 1961.",
       "body_html": "\n        <p>Cuando uno contempla el tren <strong>El Chepe</strong> serpentear silencioso sobre puentes suspendidos entre nubes blancas encima de la <strong>Sierra Tarahumara</strong>, parece tan natural como el río abajo. Sin embargo, detrás de aquellos rieles que conectan Chihuahua con el puerto de Topolobampo, Sinaloa, yace una de las hazañas más tercas y heroicas de la ingeniería mexicana.</p>\n\n        <h2>1. Un Sueño Que Quebró Imperios Extranjeros</h2>\n        <p>En <strong>1872</strong>, el promotor estadounidense Albert Kimsey Owen trazó en mapas lo que parecía una ruta comercial brillante: el camino férreo más corto desde Kansas City hasta el Pacífico asiático. Empezaron entusiastas desde ambos extremos... hasta chocar de frente contra un muro colosal: las <strong>Barrancas del Cobre</strong>, un sistema de cañones cuatro veces mayor en extensión y más profundo en ciertos tramos que el Gran Cañón de Arizona.</p>\n        <p>Tras quedar atrapados entre barrancos sin fondo y luego estallar la Revolución Mexicana en 1910, las compañías extranjeras tiraron la toalla dejando dos tramos muertos separados por cientos de kilómetros de peñascos impasables.</p>\n\n        <h2>2. El Triunfo de la Ingeniería Mexicana en 1961</h2>\n        <ul>\n            <li>En la década de 1950, el gobierno y brigadas de <strong>ingenieros y dinamiteros mexicanos</strong> asumieron el reto imposible colgados literalmente con cuerdas sobre precipicios de 1,500 metros.</li>\n            <li>Perforaron <strong>86 túneles</strong> (destacando el legendario Túnel El Descanso de casi dos kilómetros) y levantaron <strong>37 puentes monumentales</strong> incluyendo curvas cerradas donde el ferrocarril da vueltas completas de 180 grados dentro de la montaña (\"El Lazo\") para vencer desniveles brutales, inaugurando la ruta completa en <strong>noviembre de 1961</strong>.</li>\n        </ul>\n        <p>Mientras planeas tu próximo viaje norteño o sueñas desde casa, sintoniza hoy mismo las estaciones en vivo de Chihuahua, Los Mochis y Culiacán en <strong>Radios de México FM AM En Vivo</strong>.</p>\n        "
-    },
-    {
-      "blog": "electric_blog",
-      "slug": "neutral-loss-open-neutral-240v-split-phase-burns-120v-appliances",
-      "title": "The Open Neutral Nightmare: Why One Broken Return Wire Sends 200V Through 120V Outlets",
-      "hero_img": "assets/el06_corte_neutro_protector_tension.webp",
-      "hero_caption": "In split-phase 120V/240V or 3-phase 230V/400V networks, losing the neutral turns household outlets into an unbalanced series voltage divider.",
-      "summary": "Discover the physics behind glowing incandescent bulbs, flickering LED drivers, and burnt refrigerator compressors when a utility or panel neutral lug loosens—plus surge protection solutions.",
-      "keywords": "open neutral symptom flickering lights 240v, lost neutral appliance damage, split phase voltage imbalance, voltage protector relay panel",
-      "faq_q": "What causes household outlets to swing wildly between 50V and 200V when heavy appliances turn on?",
-      "faq_a": "That erratic voltage seesaw is the textbook warning of an Open or High-Resistance Neutral on the main service feed. Because the two opposite hot legs can no longer return current independently to the transformer center-tap, 120V circuits get forced in series across 240V, shifting voltage heavily toward whichever leg has fewer watts running.",
-      "body_html": "\n        <p>Every licensed troubleshooter knows the unmistakable dread of this homeowner call: <em>\"Half my LED lights just flared blindingly bright and popped, while the microwave slowed to a crawl and my toaster smells weird.\"</em> Before anyone replaces another appliance, kill the main breaker immediately—you likely have a <strong>Broken or Corroded Neutral Conductor</strong>.</p>\n\n        <h2>1. Ohm's Law Voltage Divider Across Two Legs</h2>\n        <p>North American homes run on <code>120V / 240V Split-Phase</code> systems (while international installations run <code>230V / 400V 3-Phase Wye</code>). Under normal operation, the white/blue <strong>Neutral</strong> wire acts as the rigid zero-volt anchor keeping Leg A at 120V and Leg B at 120V.</p>\n        <p>The instant wind snaps the utility service neutral splice or corrosion loosens the main panel neutral screw, both hot legs remain connected in series across <strong>240V total</strong>, bridged exclusively through whatever household plugs happen to be powered on!</p>\n        <ul>\n            <li>Suppose a <strong>1,500W space heater</strong> (low electrical resistance) sits plugged into Leg A, while your <strong>15W Wi-Fi router &amp; OLED TV</strong> (high resistance) sit on Leg B.</li>\n            <li>By series resistance ratios, the heavy heater hogs minimal voltage (~35V) while starving cold—leaving the remaining <strong>~205 Volts</strong> of the 240V differential slamming straight into your delicate 120V TV power supply!</li>\n        </ul>\n\n        <h2>2. Preventing Catastrophic Motor &amp; Board Failures</h2>\n        <p>Undersize or overloaded shared neutral conductors (Multi-Wire Branch Circuits sharing one neutral without phase balance) overheat silently behind drywall. Use balanced-phase sizing checks in <strong>Wire Size &amp; Voltage Drop Calc</strong> and consider installing DIN-rail programmable over/undervoltage protective relays on sensitive refrigerator and workshop circuits.</p>\n        "
     },
     {
       "blog": "carpentry_blog",
@@ -898,9 +889,9 @@
   "tech_critical_threshold": 3,
   "radio_interval_days": 2,
   "last_published_per_blog": {
-    "electric_blog": "2026-11-16",
-    "carpentry_blog": "2026-11-16",
-    "rv_camper_blog": "2026-11-16",
+    "electric_blog": "2026-11-17",
+    "carpentry_blog": "2026-11-17",
+    "rv_camper_blog": "2026-11-17",
     "country_radio_blog": "2026-11-10",
     "christmas_radio_blog": "2026-11-14",
     "radios_mexico_blog": "2026-11-16"
