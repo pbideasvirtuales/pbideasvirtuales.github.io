@@ -1,10 +1,10 @@
 {
   "safety_threshold": 15,
   "critical_alert_threshold": 5,
-  "last_published": "2026-11-18",
-  "last_blog": "country_radio_blog",
-  "last_run_at": "2026-11-18T18:21:48.540672-03:00",
-  "remaining_count": 57,
+  "last_published": "2026-11-19",
+  "last_blog": "electric_blog",
+  "last_run_at": "2026-11-19T18:25:25.293064-03:00",
+  "remaining_count": 54,
   "history": [
     {
       "slug": "california-corner-vs-three-stud-corner-framing-lumber-savings-insulation",
@@ -185,6 +185,33 @@
       "published_at": "2026-11-18T18:21:48.540672-03:00",
       "url": "https://pbideasvirtuales.github.io/country_radio_blog/bristol-sessions-1927-two-weeks-that-birthed-modern-country-music.html",
       "remaining_after": 57
+    },
+    {
+      "slug": "blondels-law-stair-ergonomics-vs-irc-r311-building-codes",
+      "title": "Blondel's 1675 Stair Law vs. IRC Codes: Why 'Technically Legal' Stairs Still Feel Unnatural",
+      "blog": "carpentry_blog",
+      "published_date": "2026-11-19",
+      "published_at": "2026-11-19T18:25:25.293064-03:00",
+      "url": "https://pbideasvirtuales.github.io/carpentry_blog/blondels-law-stair-ergonomics-vs-irc-r311-building-codes.html",
+      "remaining_after": 54
+    },
+    {
+      "slug": "six-year-rv-tire-dry-rot-invisible-uv-blowout-hazard",
+      "title": "The 6-Year RV Tire Clock: Why Brand-New-Looking Camper Tread Explodes at 65 MPH",
+      "blog": "rv_camper_blog",
+      "published_date": "2026-11-19",
+      "published_at": "2026-11-19T18:25:25.293064-03:00",
+      "url": "https://pbideasvirtuales.github.io/rv_camper_blog/six-year-rv-tire-dry-rot-invisible-uv-blowout-hazard.html",
+      "remaining_after": 54
+    },
+    {
+      "slug": "type-b-c-d-mcb-trip-curves-why-submersible-pumps-nuisance-trip",
+      "title": "Type B, C &amp; D Breaker Trip Curves: Why Motors Nuisance-Trip Correct Amperage Breakers",
+      "blog": "electric_blog",
+      "published_date": "2026-11-19",
+      "published_at": "2026-11-19T18:25:25.293064-03:00",
+      "url": "https://pbideasvirtuales.github.io/electric_blog/type-b-c-d-mcb-trip-curves-why-submersible-pumps-nuisance-trip.html",
+      "remaining_after": 54
     }
   ],
   "queue": [
@@ -297,18 +324,6 @@
       "body_html": "\n        <p>Cuando uno contempla el tren <strong>El Chepe</strong> serpentear silencioso sobre puentes suspendidos entre nubes blancas encima de la <strong>Sierra Tarahumara</strong>, parece tan natural como el río abajo. Sin embargo, detrás de aquellos rieles que conectan Chihuahua con el puerto de Topolobampo, Sinaloa, yace una de las hazañas más tercas y heroicas de la ingeniería mexicana.</p>\n\n        <h2>1. Un Sueño Que Quebró Imperios Extranjeros</h2>\n        <p>En <strong>1872</strong>, el promotor estadounidense Albert Kimsey Owen trazó en mapas lo que parecía una ruta comercial brillante: el camino férreo más corto desde Kansas City hasta el Pacífico asiático. Empezaron entusiastas desde ambos extremos... hasta chocar de frente contra un muro colosal: las <strong>Barrancas del Cobre</strong>, un sistema de cañones cuatro veces mayor en extensión y más profundo en ciertos tramos que el Gran Cañón de Arizona.</p>\n        <p>Tras quedar atrapados entre barrancos sin fondo y luego estallar la Revolución Mexicana en 1910, las compañías extranjeras tiraron la toalla dejando dos tramos muertos separados por cientos de kilómetros de peñascos impasables.</p>\n\n        <h2>2. El Triunfo de la Ingeniería Mexicana en 1961</h2>\n        <ul>\n            <li>En la década de 1950, el gobierno y brigadas de <strong>ingenieros y dinamiteros mexicanos</strong> asumieron el reto imposible colgados literalmente con cuerdas sobre precipicios de 1,500 metros.</li>\n            <li>Perforaron <strong>86 túneles</strong> (destacando el legendario Túnel El Descanso de casi dos kilómetros) y levantaron <strong>37 puentes monumentales</strong> incluyendo curvas cerradas donde el ferrocarril da vueltas completas de 180 grados dentro de la montaña (\"El Lazo\") para vencer desniveles brutales, inaugurando la ruta completa en <strong>noviembre de 1961</strong>.</li>\n        </ul>\n        <p>Mientras planeas tu próximo viaje norteño o sueñas desde casa, sintoniza hoy mismo las estaciones en vivo de Chihuahua, Los Mochis y Culiacán en <strong>Radios de México FM AM En Vivo</strong>.</p>\n        "
     },
     {
-      "blog": "carpentry_blog",
-      "slug": "blondels-law-stair-ergonomics-vs-irc-r311-building-codes",
-      "title": "Blondel's 1675 Stair Law vs. IRC Codes: Why 'Technically Legal' Stairs Still Feel Unnatural",
-      "hero_img": "assets/fr08_irc_stair_code_blondel.webp",
-      "hero_caption": "Royal architect François Blondel discovered that human natural gait cadence requires 2 Risers + 1 Tread ≈ 24\"–25\" (60–64 cm), beyond rigid IRC legal bounds.",
-      "summary": "Stairs can pass strict building inspections yet feel exhausting or awkwardly cramped to climb. Explore Blondel's ergonomic comfort formula alongside IRC R311.7.5 riser/tread limits and headroom rules.",
-      "keywords": "Blondel law stair formula 2R plus T, comfortable stair riser tread ratio, IRC R311.7.5 stair code, minimum stair headroom 6 foot 8",
-      "faq_q": "What is Blondel's Law for ergonomic staircase comfort?",
-      "faq_a": "Formulated in 1675 by French architect Nicolas-François Blondel, human stride geometry feels most effortless when twice the riser height plus one tread run falls cleanly between 24 and 25 inches (60 to 64 cm): 2R + T = 24\" to 25\".",
-      "body_html": "\n        <p>Have you ever walked up steps inside a modern townhouse that felt mysteriously tiring—too shallow for full steps, yet slightly cramped for one foot at a time—while a century-old craftsman porch lets you glide up without thinking? You just experienced the invisible difference between checking bare legal minimums and designing for <strong>Blondel's Ergonomic Law</strong>.</p>\n\n        <h2>1. IRC Legal Limits vs. The Stride Sweet Spot</h2>\n        <p>Modern International Residential Code (<strong>IRC R311.7.5</strong>) dictates firm boundaries:</p>\n        <ul>\n            <li><strong>Max Riser Height (<code>R</code>):</strong> Never exceed <code>7-3/4\"</code> (19.7 cm).</li>\n            <li><strong>Min Tread Depth (<code>T</code>):</strong> At least <code>10\"</code> (25.4 cm), ignoring bullnose overhangs.</li>\n            <li><strong>Max Variance:</strong> Never over <code>3/8\"</code> difference across the flight.</li>\n            <li><strong>Min Vertical Headroom (<code>R311.7.2</code>):</strong> Continuous <code>6 ft 8 in</code> (80 inches / 2.03 m) clear space above tread nosing slopes.</li>\n        </ul>\n        <p>Yet notice an ugly loophole: <code>7-3/4\"</code> risers paired with <code>10\"</code> treads pass inspection legally, summing to <code>2(7.75) + 10 = 25.5\"</code>—slightly strained and steep for children or carrying laundry. By contrast, a golden <strong>7\" riser + 11\" tread</strong> yields <code>2(7) + 11 = 25.0\"</code> right inside Blondel's classic comfort target!</p>\n\n        <h2>2. Using Software to Optimize Both Comfort &amp; Lumber Fit</h2>\n        <p>Before scribing notches into pricey stringers, slide total floor-to-floor rise into <strong>Framing &amp; Roof Calc: Tape 1/16</strong>. It calculates exact integer riser counts, compares Blondel's ratio instantly, flags IRC code violations in red, and reads cuts aloud via Voice Mode while your hands stay on the framing square.</p>\n        "
-    },
-    {
       "blog": "country_radio_blog",
       "slug": "jimmie-rodgers-the-singing-brakeman-yodeling-railroad-revolution",
       "title": "Jimmie Rodgers: How a Tuberculosis-Stricken Brakeman Forged Country's Blueprint in 6 Years",
@@ -357,18 +372,6 @@
       "body_html": "\n        <p>Walk onto any professional production framing crew at 7:30 AM and watch the lead carpenter pick up each <code>2x10</code> joist off the bunk. Before lifting a single nail gun, they shut one eye, peer swiftly down the narrow edge like aiming a rifle, and slash a bold upward pencil chevron (<code>&wedge;</code>) on one side. They are <strong>crowning the lumber</strong>.</p>\n\n        <h2>1. Fighting Gravity Before Drywall Is Ever Hung</h2>\n        <p>Dimension lumber comes from natural trees; kiln drying locks minor curvature into nearly every long framing board. If you install a <code>1/4\"</code> upward arch, subfloor plywood plus bedroom furniture weight settles that joist dead-level over two seasons.</p>\n        <p>Flip even <strong>one board</strong> belly-down between two crowned neighbors and two disasters hit: ceramic bathroom tiles crack right along that dipped joist seam, and ceiling sheetrock below shows wavy shadows forever.</p>\n\n        <h2>2. Protecting the Uncut Throat on Stair Stringers</h2>\n        <p>Lumber strength also collapses instantly when novice builders saw too fast on notched <strong>2x12 stair stringers</strong>. To save time cutting inside notch corners, installers often drive a circular saw blade straight past the vertex until the curved blade bottom finishes the back line cleanly.</p>\n        <ul>\n            <li>Each extra 1-inch diagonal kerf slice chews straight into the critical continuous uncut lumber beam running beneath the steps—called the <strong>Effective Stringer Throat</strong>!</li>\n            <li>American Wood Council <strong>DCA 6</strong> prescriptive deck standards mandate at least <strong>5 inches (12.7 cm)</strong> of unbroken solid throat beneath every cut <code>2x12</code> stringer notch. Always pull the circular saw back right at the line corner and clean the final 1-inch triangle gently with a jigsaw or hand pull-saw!</li>\n        </ul>\n        <p>Track exact uncut stringer throats alongside board lengths cleanly inside <strong>Framing &amp; Roof Calc: Tape 1/16</strong> before ever dropping chalk lines.</p>\n        "
     },
     {
-      "blog": "rv_camper_blog",
-      "slug": "six-year-rv-tire-dry-rot-invisible-uv-blowout-hazard",
-      "title": "The 6-Year RV Tire Clock: Why Brand-New-Looking Camper Tread Explodes at 65 MPH",
-      "hero_img": "assets/rv09_neumaticos_edad_presion_reventon.webp",
-      "hero_caption": "Special Trailer (ST) rubber oils cure dry while campers sit parked for months—turning un-worn deep tread into ticking highway blowout time bombs after Year 5 or 6.",
-      "summary": "Why camper blowouts shred wheel wells even when tire tread looks brand new. Learn how to decode 4-digit DOT birth dates, protect sidewalls from UV dry rot, and match cold PSI to axle scale weight.",
-      "keywords": "RV tire age 6 year rule DOT date code, trailer ST tire blowout speed limit, camper tire UV dry rot, overland RV safety checklist app",
-      "faq_q": "How do you check the exact age of an RV or travel trailer tire even if the tread looks untouched?",
-      "faq_a": "Locate the stamped 'DOT' serial line on the tire sidewall and read the final oval-boxed 4-digit number (for example, '2821'). The first two digits mark the week of manufacture (Week 28) and the last two mark the year (2021). Regardless of deep unused tread, RV specialists recommend replacing trailer tires every 5 to 6 years.",
-      "body_html": "\n        <p>Spend any sunny July weekend cruising Interstate 70 and you'll pass at least two travel trailers stranded on dusty shoulders with torn sheet-metal fenders dangling above shredded rubber shreds. Ask the stunned owners what happened, and you'll hear the identical tragedy: <em>\"I checked them in the driveway! They still had 80% tread left!\"</em></p>\n\n        <h2>1. Stationary Dry Rot vs. Highway Flexing</h2>\n        <p>Car tires wear away tread through daily mileage long before structural rubber belts expire. RV and travel-trailer tires suffer the opposite fate: they sit motionless in sun-drenched driveways 48 weeks per year.</p>\n        <ul>\n            <li>Manufacturers blend anti-ozonant waxes into rubber compounds that normally migrate smoothly outward to shield sidewalls <em>exclusively when flexing at speed</em>. Sitting parked stalls this chemical protection, letting solar UV rays oxidize inner steel-belt adhesive seams invisibly!</li>\n            <li>Equally dangerous, standard <strong>Special Trailer (ST)</strong> tires historically capped maximum sustained rating at <strong>65 mph</strong> unless upgraded to Speed-M/N heavy LT alternatives. Pushing an un-weighed overloaded camper down desert asphalt at 75 mph superheats aging dry carcass layers straight into catastrophic sidewall separation.</li>\n        </ul>\n\n        <h2>2. Decoding Your Sidewalls Before Departure Day</h2>\n        <ol>\n            <li>Inspect every single outer AND inner dual sidewall for the oval <strong>4-digit DOT Code</strong> (<code>WWYY</code> — e.g., <code>1420</code> means manufactured April 2020, already entering dangerous blowout territory regardless of mileage!).</li>\n            <li>Always check cold tire PSI in morning shade using actual certified truck-stop CAT scale individual axle weight charts—and slip white vinyl UV tire covers over parked wheels every off-season!</li>\n        </ol>\n        "
-    },
-    {
       "blog": "country_radio_blog",
       "slug": "rca-studio-b-christmas-lights-and-birth-of-the-nashville-sound",
       "title": "Why Chet Atkins Hung Colorful Christmas Lights Inside RCA Studio B Year-Round",
@@ -403,18 +406,6 @@
       "faq_q": "¿Qué papel fundamental jugó la radio mexicana durante las primeras horas tras el sismo de 1985?",
       "faq_a": "Con todas las líneas telefónicas colapsadas y señales de televisión interrumpidas al principio, los locutores y unidades móviles de radio operaron con plantas de emergencia informando minuto a minuto dónde faltaban picos, palas, agua, oxígeno o sangre—convirtiéndose literalmente en el sistema nervioso de coordinación ciudadana.",
       "body_html": "\n        <p>Eran las <strong>7:17 de la mañana del jueves 19 de septiembre de 1985</strong> cuando el suelo de la Ciudad de México rugió durante dos minutos interminables bajo un sismo de magnitud 8.1. En cuestión de instantes cayeron centrales telefónicas internacionales, se cortó la luz eléctrica en colonias enteras y densas nubes de polvo taparon el amanecer sobre Tlatelolco, la Roma y el Centro Histórico.</p>\n\n        <h2>1. El Puente Invisible: Radios a Pilas y Locutores Sin Dormir</h2>\n        <p>Sin internet ni redes sociales, la única voz capaz de mantener conectada a la inmensa urbe fueron los pequeños <strong>radios portátiles a baterías</strong>. En cuanto emisoras capitalinas encendieron generadores diésel de respaldo, periodistas como <strong>Jacobo Zabludovsky</strong> (narrando en vivo desde el teléfono único de su coche entre edificios caídos) junto a decenas de cabinas AM y FM abrieron sus micrófonos 100% al pueblo: <em>\"Se necesitan sueros urgentes en el Hospital Juárez... Se piden linternas y seguetas en Álvaro Obregón...\"</em></p>\n\n        <h2>2. El Nacimiento Espontáneo de \"Los Topos\"</h2>\n        <p>Mientras la burocracia tardaba en dimensionar la tragedia, miles de ciudadanos comunes, estudiantes y albañiles se lanzaron con manos desnudas a remover losas. Aquellos jóvenes delgados y valientes que se arrastraban por túneles estrechos de treinta centímetros bajo bloques colapsados sin otro equipo que linternas y cuerdas fueron bautizados por la prensa con admiración eterna como <strong>\"Los Topos\"</strong>—dando origen a la legendaria Brigada Internacional de Rescate admirada en terremotos desde Japón hasta Turquía.</p>\n        <p>Honra la grandeza humana de nuestro país sintonizando hoy mismo las emisoras de la CDMX y los 32 estados en <strong>Radios de México FM AM En Vivo</strong>.</p>\n        "
-    },
-    {
-      "blog": "electric_blog",
-      "slug": "type-b-c-d-mcb-trip-curves-why-submersible-pumps-nuisance-trip",
-      "title": "Type B, C &amp; D Breaker Trip Curves: Why Motors Nuisance-Trip Correct Amperage Breakers",
-      "hero_img": "assets/el04_curvas_disparo_b_c_d_termicas.webp",
-      "hero_caption": "Magnetic instant-trip thresholds differentiate Curve B (3–5x In), Curve C (5–10x In), and Curve D (10–20x In) to handle heavy inductive startup surges safely.",
-      "summary": "Your 16A air compressor or shop saw trips a brand-new 16A breaker the exact millisecond you flip the switch. Understand thermal vs magnetic trip curves (B, C, D) and HACR HVAC ratings.",
-      "keywords": "breaker trip curve B C D explained, motor tripping breaker on startup, inductive inrush current MCB, air compressor breaker curve",
-      "faq_q": "Why should you change breaker curve type (e.g., Curve C to Curve D) rather than upsizing breaker amperage for motor nuisance trips?",
-      "faq_a": "Upsizing a 16A breaker to 25A compromises thermal protection for 14 AWG / 2.5 mm2 cable during slow overloads (violating Ib <= In <= Iz). Switching to a higher magnetic trip curve (such as Curve C or Curve D at the same 16A thermal rating) tolerates brief 100ms motor start surges while keeping long-term cable thermal protection intact.",
-      "body_html": "\n        <p>Picture this frustrating job-site scene: you wire a dedicated circuit for a 1.5 HP workshop dust collector drawing 11 Amps steady, protected cleanly by 12 AWG copper and a fresh 16-Amp breaker. You press the green start button, and <em>CLACK!</em>—the breaker snaps shut instantaneously before the motor finishes its first revolution.</p>\n        <p>Many amateurs immediately make a fatal code violation: swapping in a 25A or 32A breaker. That protects nothing—your cable becomes the fuse. The real answer lies inside the dual-trigger anatomy of every miniature circuit breaker.</p>\n\n        <h2>1. Two Separate Trip Mechanisms Under One Toggle</h2>\n        <ul>\n            <li><strong>The Thermal Bimetallic Strip (Slow Overload):</strong> Defends against gradual continuous heat (e.g., plugging two space heaters into a 15A branch). At <code>1.13x</code> to <code>1.45x</code> rated current, the bimetal warms and unlatches safely in minutes.</li>\n            <li><strong>The Magnetic Solenoid Coil (Instant Short-Circuit):</strong> Reacts in <strong>&lt;10 milliseconds</strong> to sudden extreme spikes. The exact multiplier separating a normal motor start from a dead short defines the letter printed right before amperage (e.g., <code>C16</code> vs <code>B16</code>).</li>\n        </ul>\n\n        <h2>2. Choosing Curve B, C, or D (and US HACR Equivalents)</h2>\n        <ul>\n            <li><strong>Curve B (3&times; to 5&times; In):</strong> Trips instantly at 48–80A on a 16A breaker. Built strictly for resistive lighting, ovens, and long low-fault-current feeders. Inductive compressors will trip it instantly.</li>\n            <li><strong>Curve C (5&times; to 10&times; In):</strong> The commercial &amp; residential workhorse (80–160A magnetic window for a 16A unit). Handles household refrigerators, microwaves, and medium AC blowers effortlessly.</li>\n            <li><strong>Curve D (10&times; to 20&times; In):</strong> Reserved for heavy transformers, welders, and deep-well pumps pulling massive locked-rotor amperage (LRA) for half a second without raising continuous thermal ceiling!</li>\n        </ul>\n        <p>Need to confirm both steady current <code>Ib</code> and safe conductor thermal capacity <code>Iz</code> before locking in your panel? Verify exact coordination curves inside <strong>Wire Size &amp; Voltage Drop Calc</strong>.</p>\n        "
     },
     {
       "blog": "carpentry_blog",
@@ -877,9 +868,9 @@
   "tech_critical_threshold": 3,
   "radio_interval_days": 2,
   "last_published_per_blog": {
-    "electric_blog": "2026-11-18",
-    "carpentry_blog": "2026-11-18",
-    "rv_camper_blog": "2026-11-18",
+    "electric_blog": "2026-11-19",
+    "carpentry_blog": "2026-11-19",
+    "rv_camper_blog": "2026-11-19",
     "country_radio_blog": "2026-11-18",
     "christmas_radio_blog": "2026-11-14",
     "radios_mexico_blog": "2026-11-16"
