@@ -1,10 +1,10 @@
 {
   "safety_threshold": 15,
   "critical_alert_threshold": 5,
-  "last_published": "2026-11-19",
-  "last_blog": "electric_blog",
-  "last_run_at": "2026-11-19T18:25:25.293064-03:00",
-  "remaining_count": 54,
+  "last_published": "2026-11-20",
+  "last_blog": "christmas_radio_blog",
+  "last_run_at": "2026-11-20T18:01:39.921005-03:00",
+  "remaining_count": 50,
   "history": [
     {
       "slug": "california-corner-vs-three-stud-corner-framing-lumber-savings-insulation",
@@ -212,6 +212,42 @@
       "published_at": "2026-11-19T18:25:25.293064-03:00",
       "url": "https://pbideasvirtuales.github.io/electric_blog/type-b-c-d-mcb-trip-curves-why-submersible-pumps-nuisance-trip.html",
       "remaining_after": 54
+    },
+    {
+      "slug": "crowning-floor-joists-and-never-overcutting-stair-stringer-throats",
+      "title": "Crown Facing UP (^): Floor Joist Bow, Drywall Pops &amp; Stringer Throat Splitting",
+      "blog": "carpentry_blog",
+      "published_date": "2026-11-20",
+      "published_at": "2026-11-20T18:01:39.921005-03:00",
+      "url": "https://pbideasvirtuales.github.io/carpentry_blog/crowning-floor-joists-and-never-overcutting-stair-stringer-throats.html",
+      "remaining_after": 50
+    },
+    {
+      "slug": "pure-sine-wave-vs-modified-sine-wave-inverters-killing-induction-loads",
+      "title": "Modified Sine vs. Pure Sine Inverters: Why Cheap Boxy Waveforms Burn Coffee Makers &amp; CPAPs",
+      "blog": "rv_camper_blog",
+      "published_date": "2026-11-20",
+      "published_at": "2026-11-20T18:01:39.921005-03:00",
+      "url": "https://pbideasvirtuales.github.io/rv_camper_blog/pure-sine-wave-vs-modified-sine-wave-inverters-killing-induction-loads.html",
+      "remaining_after": 50
+    },
+    {
+      "slug": "submersible-well-pump-wire-sizing-12-volt-or-240v-deep-borehole-drop",
+      "title": "Deep Borehole Well Pump Wiring: Why Voltage Drop Slashes Motor Starting Torque Squared",
+      "blog": "electric_blog",
+      "published_date": "2026-11-20",
+      "published_at": "2026-11-20T18:01:39.921005-03:00",
+      "url": "https://pbideasvirtuales.github.io/electric_blog/submersible-well-pump-wire-sizing-12-volt-or-240v-deep-borehole-drop.html",
+      "remaining_after": 50
+    },
+    {
+      "slug": "irving-berlin-california-poolside-paradox-behind-white-christmas",
+      "title": "The Poolside Paradox: Why Irving Berlin Wrote 'White Christmas' After Unimaginable Tragedy",
+      "blog": "christmas_radio_blog",
+      "published_date": "2026-11-20",
+      "published_at": "2026-11-20T18:01:39.921005-03:00",
+      "url": "https://pbideasvirtuales.github.io/christmas_radio_blog/irving-berlin-california-poolside-paradox-behind-white-christmas.html",
+      "remaining_after": 50
     }
   ],
   "queue": [
@@ -226,18 +262,6 @@
       "faq_q": "What makes the 'In The Round' seating format at The Bluebird Cafe unique in Nashville?",
       "faq_a": "Instead of facing a traditional raised end-stage, four acoustic songwriters sit knee-to-knee in a tight circle right in the dead center of the dining floor, taking turns sharing the honest inspiration and raw guitar chords behind hits they wrote before major stars recorded them.",
       "body_html": "\n        <p>Outwardly, it looks bizarre to first-time tourists stepping out of a Nashville taxi: squeezed cleanly between a dry cleaner and a hairdresser in an ordinary suburban Hillsboro Pike strip mall sits a weathered blue awning shielding barely <strong>90 chairs</strong>. Yet for four decades, <strong>The Bluebird Cafe</strong> has quietly anchored the poetic conscience of country music.</p>\n\n        <h2>1. Born From Acoustic Necessity, Protected By Silence</h2>\n        <p>When baker <strong>Amy Kurland</strong> opened the cozy restaurant in 1982, she wanted writers—normally trapped backstage watching big vocalists take applause—to sing their own songs cleanly in person. Because narrow plaster walls bounced loud band drums harshly, Kurland shifted performers off the side corner and placed four barstools straight under soft ceiling lights right in the dead middle of tables, hanging a polite legendary sign: <strong>\"SHHH! Respect the Writers.\"</strong></p>\n\n        <h2>2. Lightning Strikes in 90-Seat Intimacy</h2>\n        <ul>\n            <li>On a slow winter night in 1989, an unheralded young Oklahoma honky-tonk singer stepped in to replace a sick writer—when Capitol Records exec Lynn Shults heard <strong>Garth Brooks</strong> strum <em>\"If Tomorrow Never Comes\"</em>, he signed him straight off the floor!</li>\n            <li>Teenage <strong>Taylor Swift</strong> caught Scott Borchetta's attention right inside those exact walls in 2004, while giants like <strong>Townes Van Zandt, Kris Kristofferson, and Vince Gill</strong> routinely drop in unannounced just to try untested verses.</li>\n        </ul>\n        <p>Feel that same raw, honest songwriter intimacy every evening on the road—stream Nashville &amp; Classic Country stations non-stop inside <strong>Country Radio: Live Music</strong>.</p>\n        "
-    },
-    {
-      "blog": "christmas_radio_blog",
-      "slug": "irving-berlin-california-poolside-paradox-behind-white-christmas",
-      "title": "The Poolside Paradox: Why Irving Berlin Wrote 'White Christmas' After Unimaginable Tragedy",
-      "hero_img": "assets/his15_whitechristmas_generacionenguerra.webp",
-      "hero_caption": "Immigrant songwriter Irving Berlin penned world history's bestselling winter single beside a sunny California hotel pool—masking quiet heartbreak over an infant son lost on Christmas morning.",
-      "summary": "Why does 'White Christmas' ache gently underneath warm nostalgic bells? Uncover the untold true pain behind Irving Berlin's 1942 Bing Crosby masterpiece and its wartime radio lifeline for GIs.",
-      "keywords": "White Christmas Irving Berlin hidden grief story, Bing Crosby 1942 WWII radio, bestselling holiday song history, vintage christmas crooners app",
-      "faq_q": "Why do the opening verses of 'White Christmas' sound surprisingly wistful rather than loudly cheerful?",
-      "faq_a": "Jewish immigrant Irving Berlin originally framed the song during sunny warm California days while privately mourning his infant son, who tragically died on Christmas Day 1928—turning the song into a bittersweet longing for simple innocent peace that resonated profoundly with millions of homesick soldiers in 1942.",
-      "body_html": "\n        <p>Turn on vintage 1940s holiday stations and within minutes Bing Crosby's velvet baritone sighs smoothly through loudspeakers: <em>\"I'm dreaming of a White Christmas...\"</em> On the surface it sounds like cozy postcard nostalgia—yet musicians immediately notice minor nostalgic chords whispering gently underneath that peaceful refrain.</p>\n\n        <h2>1. Two Untold Origins Behind The 50-Million-Copy Classic</h2>\n        <ul>\n            <li><strong>Sunny California &amp; Secret Tears:</strong> Penned by Russian-born Jewish refugee <strong>Irving Berlin</strong> (who arrived fleeing pogroms inside steerage cabins) at the sunny Arizona Biltmore pool in 1940, Berlin famously refused to talk openly about why Christmas tugged so painfully at his chest: in 1928, his three-week-old baby son died tragically on Christmas morning. Every year afterward, Berlin &amp; his wife visited their child's grave quietly every December 25th.</li>\n            <li><strong>December 1941 — Pearl Harbor Changed Its Meaning:</strong> Originally shrugged off as a modest film cue for <em>Holiday Inn</em>, Pearl Harbor dragged millions of young American troops across muddy Pacific jungles and frozen European trenches. Armed Forces Radio spun Crosby's simple yearning lyric relentlessly—and homesick soldiers weeping beside foxhole radios turned it into history's highest-selling physical single (<strong>50+ million copies!</strong>).</li>\n        </ul>\n\n        <h2>2. Rediscover Golden Era Vinyl Warmth</h2>\n        <p>Skip shrill plastic mall loops this winter: bring authentic 1940s–1950s golden crooner recordings—Crosby, Sinatra, Nat King Cole, and Ella Fitzgerald—straight to your living room anytime with <strong>Christmas Radio: Holiday Music</strong>.</p>\n        "
     },
     {
       "blog": "radios_mexico_blog",
@@ -360,18 +384,6 @@
       "body_html": "\n        <p>En cualquier conservatorio musical del mundo parece un imposible absoluto: escribir más de <strong>mil canciones</strong> traducidas y cantadas hasta en Japón, Europa y toda Latinoamérica sin dominar jamás tres acordes básicos de guitarra ni distinguir una clave de sol en un pentagrama. Ese misterio prodigioso llevó nombre y apellido de pueblo: <strong>José Alfredo Jiménez</strong>.</p>\n\n        <h2>1. Mesero de Tenampa y Portero Antes Que Rey</h2>\n        <p>Nacido en la cuna de la Independencia (<strong>Dolores Hidalgo, Guanajuato</strong>), tras perder a su padre boticario siendo niño, el joven José Alfredo emigró a la capital trabajando en todo: lavaplatos, mesero en el mítico restaurante <em>La Sirena</em> (y cercano al entorno mariachero de Garibaldi) e incluso defendiendo el arco como <strong>portero profesional</strong> en la primera división del Marte y Oviedo al lado de Antonio \"La Tota\" Carbajal!</p>\n\n        <h2>2. Silbando Obra Maestra Tras Obra Maestra</h2>\n        <p>Mientras caminaba de madrugada por avenidas capitalinas o servía mesas, versos enteros le estallaban de golpe en el pecho: <em>\"Con dinero y sin dinero, hago siempre lo que quiero...\"</em> o la desgarradora dignidad de <em>\"Ella\"</em>.</p>\n        <ul>\n            <li>Anotaba poemas crudos, directos y filosóficos sin palabras rebuscadas.</li>\n            <li>Sentado junto al brillante arreglista del Mariachi Vargas, <strong>Rubén Fuentes</strong>, José Alfredo simplemente <strong>silbaba la tonada entera</strong> especificando dónde entraban las trompetas tristes o los violines dulces! El propio Fuentes confesó años después que sus melodías desafiaban armonías escolares con una belleza instintiva irrepetible.</li>\n        </ul>\n        <p>Lleva las guitarras y los gritos del Rey a cada tarde en tu teléfono escuchando las mejores estaciones regionales en <strong>Radios de México FM AM En Vivo</strong>.</p>\n        "
     },
     {
-      "blog": "carpentry_blog",
-      "slug": "crowning-floor-joists-and-never-overcutting-stair-stringer-throats",
-      "title": "Crown Facing UP (^): Floor Joist Bow, Drywall Pops &amp; Stringer Throat Splitting",
-      "hero_img": "assets/fr20_crowning_lumber_joists.webp",
-      "hero_caption": "Sight down every floor joist and roof rafter edge before tacking: aiming the natural arch upward prevents spongy bounce and cracked ceiling seams under dead loads.",
-      "summary": "Why experienced framers mark giant pencil arrows down structural framing boards before nailing, plus why circular saw over-cuts in 2x12 stringers snap residential staircases prematurely.",
-      "keywords": "crown up framing floor joists, why stair stringer cracks overcut, 3.5 inch throat rule 2x12, carpentry framing errors to avoid",
-      "faq_q": "Why must structural floor joists and roof rafters always be installed with the crown curving upward?",
-      "faq_a": "As live loads (furniture, drywall, snow) press down over decades, upward-crowned lumber settles downward into dead-flat stability. Installing a joist crown-downward lets gravity amplify the existing belly sag, causing noticeable floor bounce, squeaks, and popped ceiling drywall nails.",
-      "body_html": "\n        <p>Walk onto any professional production framing crew at 7:30 AM and watch the lead carpenter pick up each <code>2x10</code> joist off the bunk. Before lifting a single nail gun, they shut one eye, peer swiftly down the narrow edge like aiming a rifle, and slash a bold upward pencil chevron (<code>&wedge;</code>) on one side. They are <strong>crowning the lumber</strong>.</p>\n\n        <h2>1. Fighting Gravity Before Drywall Is Ever Hung</h2>\n        <p>Dimension lumber comes from natural trees; kiln drying locks minor curvature into nearly every long framing board. If you install a <code>1/4\"</code> upward arch, subfloor plywood plus bedroom furniture weight settles that joist dead-level over two seasons.</p>\n        <p>Flip even <strong>one board</strong> belly-down between two crowned neighbors and two disasters hit: ceramic bathroom tiles crack right along that dipped joist seam, and ceiling sheetrock below shows wavy shadows forever.</p>\n\n        <h2>2. Protecting the Uncut Throat on Stair Stringers</h2>\n        <p>Lumber strength also collapses instantly when novice builders saw too fast on notched <strong>2x12 stair stringers</strong>. To save time cutting inside notch corners, installers often drive a circular saw blade straight past the vertex until the curved blade bottom finishes the back line cleanly.</p>\n        <ul>\n            <li>Each extra 1-inch diagonal kerf slice chews straight into the critical continuous uncut lumber beam running beneath the steps—called the <strong>Effective Stringer Throat</strong>!</li>\n            <li>American Wood Council <strong>DCA 6</strong> prescriptive deck standards mandate at least <strong>5 inches (12.7 cm)</strong> of unbroken solid throat beneath every cut <code>2x12</code> stringer notch. Always pull the circular saw back right at the line corner and clean the final 1-inch triangle gently with a jigsaw or hand pull-saw!</li>\n        </ul>\n        <p>Track exact uncut stringer throats alongside board lengths cleanly inside <strong>Framing &amp; Roof Calc: Tape 1/16</strong> before ever dropping chalk lines.</p>\n        "
-    },
-    {
       "blog": "country_radio_blog",
       "slug": "rca-studio-b-christmas-lights-and-birth-of-the-nashville-sound",
       "title": "Why Chet Atkins Hung Colorful Christmas Lights Inside RCA Studio B Year-Round",
@@ -420,18 +432,6 @@
       "body_html": "\n        <p>Standing up an entire 28-foot gable roof looks impressive until you stretch a chalk line along the front eaves and discover your fascia snakes 1-1/2 inches out of parallel. Usually two tiny geometric habits cause 95% of alignment failures on DIY roofs and sheds.</p>\n\n        <h2>1. Scalable 3-4-5 Triangles Instead of Tiny Framing Squares</h2>\n        <p>Resting a short 24-inch framing square inside a muddy corner won't keep a 24-foot shed square—even a hairline tilt grows into 3 inches of drift at the far end! Stretch your tape far with scaled <strong>Pythagorean Triples</strong>:</p>\n        <ul>\n            <li>Small Porch Slab: <strong>3 ft &ndash; 4 ft &ndash; 5 ft</strong></li>\n            <li>Standard Deck / Garage Corner: <strong>6 ft &ndash; 8 ft &ndash; 10 ft</strong> or <strong>9 ft &ndash; 12 ft &ndash; 15 ft</strong></li>\n            <li>Verify full slab diagonals directly corner-to-corner: when both opposing diagonals match identically down to <code>1/16\"</code>, all four corners sit true 90°.</li>\n        </ul>\n\n        <h2>2. Don't Forget Half the Ridge Board Thickness (<code>3/4\"</code>)!</h2>\n        <p>Trigonometric rafter formulas calculate hypothetically to an infinitely thin centerline peak. Real houses insert a <code>2x8</code> or <code>2x10</code> ridge board measuring <strong>1-1/2 inches wide</strong> cleanly straddling center. Because each rafter butts flat against the vertical face of the ridge, subtract <code>3/4 inch</code> horizontal run (measuring perpendicularly square from the first plumb line, NOT along the sloped hypotenuse!) so your birdsmouth heel locks effortlessly onto exterior top plates.</p>\n        <p>Inside <strong>Framing &amp; Roof Calc: Tape 1/16</strong>, simply toggle Ridge Thickness (default <code>1-1/2\"</code>) and our visual laser tape ruler highlights your net deducted cut mark instantly down to 1/16\".</p>\n        "
     },
     {
-      "blog": "rv_camper_blog",
-      "slug": "pure-sine-wave-vs-modified-sine-wave-inverters-killing-induction-loads",
-      "title": "Modified Sine vs. Pure Sine Inverters: Why Cheap Boxy Waveforms Burn Coffee Makers &amp; CPAPs",
-      "hero_img": "assets/rv15_inversores_onda_pura_calibres_12v.webp",
-      "hero_caption": "Modified sine inverters chop DC power into stepped blocky staircases full of high-frequency harmonics that quietly roast inductive motors and transformer chargers.",
-      "summary": "Before buying a bargain camper inverter to power coffee makers, laptops, microwave ovens, or medical CPAP breathing units, understand Total Harmonic Distortion (THD) and peak efficiency losses.",
-      "keywords": "pure sine wave vs modified sine wave RV inverter, modified sine wave ruins tool battery chargers, CPAP off grid camper inverter, 12v RV solar power calculator",
-      "faq_q": "What appliances get permanently damaged or overheat on a cheap Modified Sine Wave RV inverter?",
-      "faq_a": "Inductive AC motors (refrigerator compressors, variable-speed power drills), capacitive battery chargers (DeWalt/Milwaukee lithium tool docks, e-bike packs), medical CPAP humidifiers, laser printers, and digital microwaves run drastically hotter, hum loudly, or burn transformer coils cleanly out due to sharp high-frequency voltage spikes.",
-      "body_html": "\n        <p>Shopping online for a 2,000-Watt campervan power inverter reveals baffling price gaps: one shiny unit sells for $110 labeled <em>\"2000W Modified Sine\"</em> while a true <em>\"2000W Pure Sine Wave\"</em> sits beside it for $340. Since both claim 120V/230V AC output, thousands of van builders buy the $110 deal—only to smell melted plastic coming out of their toothbrush charger and microwave two days into camp.</p>\n\n        <h2>1. Smooth Fluid Sine vs. Square Staircase Hammering</h2>\n        <p>Wall power at home flows gently across a curved <strong>Pure Sine Wave</strong>—zero sudden edges. A cheap <strong>Modified Sine Wave</strong> (more accurately a <em>Modified Square Wave</em>) slams voltage instantly from <code>0V</code> straight up to <code>+165V</code>, pauses awkwardly, drops sharply back to <code>0V</code>, and plunges straight to <code>-165V</code> sixty times per second.</p>\n        <ul>\n            <li><strong>Harmonic Eddy-Current Fever:</strong> Electric motors, transformers, and induction heaters hate jagged vertical wave jumps. High-frequency step edges generate parasitic eddy currents inside laminated iron cores—turning silent 120V energy straight into wasted heat (running 20–30% hotter than utility power!).</li>\n            <li><strong>Audible Buzz &amp; Tripped GFCI Breakers:</strong> Audio speakers whine persistently, CPAP respiratory pumps buzz loudly, variable-speed drills run sluggishly, and lithium drill battery chargers cook internal mosfets without tripping standard breakers.</li>\n        </ul>\n\n        <h2>2. Protecting Sensitive Electronics &amp; Sizing Inverter Idle Draw</h2>\n        <p>Always demand <strong>Pure Sine Wave (&lt;3% Total Harmonic Distortion)</strong> for any modern camper living quarters—and carefully compute no-load standby inverter draw (<code>~0.8A–1.8A</code> drained quietly every hour when left switched on overnight!). Use the off-grid battery &amp; solar sizing module in <strong>RV &amp; Home Leveler: Solar, HVAC</strong> to ensure your LiFePO4 reserve comfortably outlasts daily AC surges.</p>\n        "
-    },
-    {
       "blog": "country_radio_blog",
       "slug": "the-highwaymen-four-outlaw-giants-who-forged-country-supergroup",
       "title": "The Highwaymen: When Music Row Left Four Outlaw Kings for Dead—and They Ruled the World",
@@ -466,18 +466,6 @@
       "faq_q": "¿Quién compuso 'Cielito Lindo' y en quién se inspiró para la famosa frase del lunar?",
       "faq_a": "La compuso el profesor rural de música Quirino Mendoza y Cortés en 1882 en Xochimilco, dedicando los coplas iniciales a su prometida Catalina Martínez, quien tenía precisamente un pequeño lunar distintivo junto a la boca antes de convertirse en su esposa durante sesenta años.",
       "body_html": "\n        <p>Pon a tres o cuatro mexicanos juntos en una estación del tren en Tokio, en una plaza lluviosa de Madrid o en las gradas calientes de un Mundial de Futbol. No hace falta director de orquesta ni ensayo previo: basta que alguien lance el primer suspiro —<em>\"¡Ay, ay, ay, ay!\"</em>— para que diez mil gargantas desconocidas estallen al unísono en el himno emocional más contagioso de América Latina: <strong>\"¡Canta y no llores!\"</strong></p>\n\n        <h2>1. Una Declaración de Amor en Xochimilco (1882)</h2>\n        <p>Su autor no fue un artista famoso de teatro elegante, sino un humilde profesor rural oriundo de Tulyehualco, Xochimilco: <strong>Quirino Mendoza y Cortés</strong>. En <strong>1882</strong>, el joven maestro conoció a una muchacha originaria de la Sierra de Puebla llamada Catalina Martínez, dueña de una sonrisa inolvidable marcada por un pequeño lunar junto al labio.</p>\n        <p>Enamorado hasta los huesos, don Quirino entrelazó antiguas coplas populares andaluzas (\"De la Sierra Morena, Cielito Lindo, vienen bajando...\") con el compás alegre del huapango huasteco, conquistando el corazón de Catalina con quien vivió felizmente casado más de seis décadas!</p>\n\n        <h2>2. Filosofía Mexicana en Tres Palabras: \"Canta y No Llores\"</h2>\n        <p>A diferencia de himnos solemnes de guerra, <em>Cielito Lindo</em> resume el secreto de resistencia emocional del pueblo mexicano frente a cualquier tormenta económica, distancia o derrota deportiva: <strong>porque cantando se alegran, cielito lindo, los corazones</strong>.</p>\n        <p>Donde quiera que estés hoy fuera de casa, lleva siempre la música viva y las crónicas de nuestra tierra contigo dentro de <strong>Radios de México FM AM En Vivo</strong>.</p>\n        "
-    },
-    {
-      "blog": "electric_blog",
-      "slug": "submersible-well-pump-wire-sizing-12-volt-or-240v-deep-borehole-drop",
-      "title": "Deep Borehole Well Pump Wiring: Why Voltage Drop Slashes Motor Starting Torque Squared",
-      "hero_img": "assets/el14_bombas_sumergibles_cable_arranque.webp",
-      "hero_caption": "Submersible pump runs combine surface trench distance PLUS vertical borehole depth—forcing massive motor starting voltage sag unless upsized properly.",
-      "summary": "Wiring a 250-foot deep farm well or remote solar DC bore pump? Learn why total round-trip length includes borehole depth, how V² torque loss stalls motors underwater, and waterproof splice rules.",
-      "keywords": "submersible well pump wire size calculator, deep well voltage drop torque loss, 240v pump cable depth chart, underground heat shrink splice",
-      "faq_q": "Why must you add both horizontal trench distance and vertical well depth when sizing submersible pump wire?",
-      "faq_a": "Electricity doesn't care whether wire lies horizontally underground or drops vertically down a steel casing—every foot adds conductor resistance. A well located 150 ft from the barn with a pump hanging 250 ft deep equals a 400-foot one-way circuit (800 ft total copper path!).",
-      "body_html": "\n        <p>Submersible deep-well pumps endure the toughest electrical environment on any rural property: suspended 300 feet underwater inside cramped casings, starting against heavy water-column head pressure, at the far tail end of long agricultural wire runs. When installers forget to include vertical submergence depth in their wire calculation, pumps burn up windings underground—costing thousands in crane pulling bills.</p>\n\n        <h2>1. The Brutal <code>V&sup2;</code> Motor Torque Penalty</h2>\n        <p>Locked-rotor starting torque in induction pump motors scales roughly with the <strong>square of terminal voltage</strong>. If an under-gauged wire drops 12% of line voltage the instant the pressure switch clicks closed (<code>240V &rarr; 211V</code>), your pump doesn't just lose 12% twist—it loses <strong>~23% of starting breakaway torque!</strong></p>\n        <p>Sluggish spinning prevents centrifugal start switches from disengaging start capacitors promptly, cooking enameled copper coils submerged out of sight.</p>\n\n        <h2>2. Don't Forget Total Two-Segment Path &amp; Waterproof Joints</h2>\n        <ol>\n            <li><strong>Measure Surface + Submergence Together:</strong> Input total one-way distance from main panel all the way to pump depth inside <strong>Wire Size &amp; Voltage Drop Calc</strong> (keeping voltage drop strictly under 2–3% at <em>locked-rotor / service-factor amperage</em>).</li>\n            <li><strong>Step Up 240V Instead of 120V Over 100 Feet:</strong> Doubling operating voltage halves load amps and quarters cable cross-section expense immediately.</li>\n            <li><strong>Stagger Underwater Crimps &amp; Dual-Wall Heat Shrink:</strong> Never twist wire nuts underwater! Stagger adhesive-lined marine butt splices by 2 inches each so splices stay slim inside well casings with triple moisture protection.</li>\n        </ol>\n        "
     },
     {
       "blog": "carpentry_blog",
@@ -868,13 +856,13 @@
   "tech_critical_threshold": 3,
   "radio_interval_days": 2,
   "last_published_per_blog": {
-    "electric_blog": "2026-11-19",
-    "carpentry_blog": "2026-11-19",
-    "rv_camper_blog": "2026-11-19",
+    "electric_blog": "2026-11-20",
+    "carpentry_blog": "2026-11-20",
+    "rv_camper_blog": "2026-11-20",
     "country_radio_blog": "2026-11-18",
-    "christmas_radio_blog": "2026-11-14",
+    "christmas_radio_blog": "2026-11-20",
     "radios_mexico_blog": "2026-11-16"
   },
-  "last_radio_published": "2026-11-18",
-  "last_radio_blog": "country_radio_blog"
+  "last_radio_published": "2026-11-20",
+  "last_radio_blog": "christmas_radio_blog"
 }
