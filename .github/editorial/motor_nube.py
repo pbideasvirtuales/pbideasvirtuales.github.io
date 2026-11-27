@@ -815,6 +815,9 @@ def render_article_page(blog_cfg: dict, art: dict, all_arts: list) -> str:
     <meta name="description" content="{art['summary']}">
     <meta name="keywords" content="{art['keywords']}">
     <link rel="canonical" href="{SITE_URL}/{blog_cfg['slug']}/{art['slug']}.html">
+    <link rel="icon" href="assets/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <script type="application/ld+json">{json.dumps(schema_ld, ensure_ascii=False)}</script>
     <style>
         body {{ font-family: 'Segoe UI', system-ui, sans-serif; background:#0d1117; color:#e6edf3; margin:0; line-height:1.75; }}
@@ -920,6 +923,9 @@ def render_blog_index(blog_cfg: dict, articles: list) -> str:
     <title>{blog_cfg['title']} | {blog_cfg['app_name']}</title>
     <meta name="description" content="{blog_cfg['subtitle']}">
     <link rel="canonical" href="{SITE_URL}/{blog_cfg['slug']}/">
+    <link rel="icon" href="assets/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <style>
         body {{ font-family: 'Segoe UI', system-ui, sans-serif; background:#0d1117; color:#e6edf3; margin:0; line-height:1.65; }}
         .top-bar {{ background:#161b22; border-bottom:2px solid {accent2}; padding:10px 20px; text-align:center; font-size:0.9em; color:#fff; }}
@@ -1014,6 +1020,10 @@ def build_master_index() -> None:
     <meta name="description" content="Official hub of PB Ideas Virtuales — independent Android utility apps (Electrical, Carpentry, RV Camper), technical engineering blogs, and thematic live streaming radio apps &amp; chronicles.">
     <meta name="p:domain_verify" content="32f5e448e9ac4fe74014e22e49efd97a"/>
     <link rel="canonical" href="{SITE_URL}/">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <style>
         * {{ box-sizing: border-box; }}
         html {{ scroll-behavior: smooth; }}

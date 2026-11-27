@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#05070a"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E676"/>
+      <stop offset="100%" stop-color="#00C853"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bg)" stroke="url(#neon)" stroke-width="6"/>
+  <text x="64" y="83" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="900" font-size="60" letter-spacing="-2" fill="url(#neon)">PB</text>
+  <circle cx="102" cy="26" r="7" fill="#00F2FE"/>
+</svg>
