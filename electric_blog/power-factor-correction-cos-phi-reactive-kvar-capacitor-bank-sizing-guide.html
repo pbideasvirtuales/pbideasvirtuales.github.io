@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Factor Correction (Cos &Phi;): How Reactive Current Heats Cables and How to Size Capacitors | Electrical Engineering & Solar Wiring Lab</title>
+    <meta name="description" content="Low power factor wastes transformer capacity, drops line voltage, and incurs massive utility penalties. Learn how to calculate reactive kVAR and size power factor correction capacitor banks.">
+    <meta name="keywords" content="power factor correction cos phi, reactive power kVAR calculation, sizing shunt capacitor bank, apparent power kVA vs active power kW">
+    <link rel="canonical" href="https://pbideasvirtuales.github.io/electric_blog/power-factor-correction-cos-phi-reactive-kvar-capacitor-bank-sizing-guide.html">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Power Factor Correction (Cos &Phi;): How Reactive Current Heats Cables and How to Size Capacitors", "datePublished": "2026-11-27", "description": "Low power factor wastes transformer capacity, drops line voltage, and incurs massive utility penalties. Learn how to calculate reactive kVAR and size power factor correction capacitor banks.", "author": {"@type": "Organization", "name": "PB Ideas Virtuales"}}, {"@type": "SoftwareApplication", "name": "Wire Size & Voltage Drop Calc", "operatingSystem": "Android", "applicationCategory": "UtilitiesApplication", "url": "https://play.google.com/store/apps/details?id=com.pbideasvirtuales.voltagedropwiresizecalc&hl=en_US&gl=US&referrer=utm_source%3Dgithub_electric_blog%26utm_medium%3Dorganic_seo%26utm_campaign%3Dlaunch_v1", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do electric utilities penalize commercial customers for low power factor, and how do capacitors solve it?", "acceptedAnswer": {"@type": "Answer", "text": "Inductive loads (motors, transformers, ballasts) require alternating magnetic fields, drawing reactive current (kVAR) that oscillates back and forth across utility lines without performing real work (kW). This reactive current congests power lines, causes voltage drop, and generates parasitic I²R heat in transformers. Shunt capacitors act as local reactive energy reservoirs, supplying magnetizing kVAR on-site so utility lines only supply active working power (kW), bringing power factor close to 1.0."}}]}]}</script>
+    <style>
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background:#0d1117; color:#e6edf3; margin:0; line-height:1.75; }
+        .top-bar { background:#161b22; border-bottom:2px solid #00F2FE; padding:10px 20px; text-align:center; font-size:0.9em; color:#fff; }
+        .top-bar a { color:#00F2FE; font-weight:800; text-decoration:underline; }
+        header { background:linear-gradient(135deg, #0F172A 0%, #020617 100%); padding:28px 20px; border-bottom:3px solid #00E676; text-align:center; }
+        header a { color:#00E676; text-decoration:none; font-weight:bold; font-size:1.05em; }
+        
+        .layout-container { max-width:1220px; margin:0 auto; padding:32px 20px; display:flex; gap:36px; align-items:flex-start; }
+        .main-content { flex:1; min-width:0; }
+        .sidebar-wrapper { width:340px; flex-shrink:0; position:sticky; top:20px; }
+        
+        @media (max-width: 960px) {
+            .layout-container { flex-direction:column; }
+            .sidebar-wrapper { width:100%; position:static; margin-top:20px; }
+        }
+
+        h1 { color:#ffffff; font-size:2.2em; line-height:1.25; margin-bottom:10px; }
+        h2 { color:#00F2FE; margin-top:36px; border-bottom:1px solid #21262d; padding-bottom:8px; }
+        code { background:#161b22; color:#00E676; padding:2px 6px; border-radius:4px; font-size:0.95em; }
+        .meta { color:#8b949e; font-size:0.9em; margin-bottom:22px; }
+        .cta-card { background:#161b22; border:2px solid #00F2FE; border-radius:18px; padding:30px 24px; margin:38px 0; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.65); }
+        .cta-badge { display:inline-block; background:rgba(0, 230, 118, 0.15); color:#00F2FE; padding:6px 16px; border-radius:20px; font-size:0.86em; font-weight:bold; margin-bottom:12px; }
+        .fomo-box { background:rgba(255,255,255,0.06); border:1px dashed #00E676; color:#e6edf3; padding:12px 16px; border-radius:10px; max-width:660px; margin:12px auto 18px; font-size:0.92em; }
+        .cta-btn { display:inline-block; margin-top:10px; padding:16px 36px; background:#00F2FE; color:#0d1117; font-weight:900; font-size:1.1em; text-decoration:none; border-radius:30px; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 4px 15px rgba(0,0,0,0.4); }
+        .faq-box { background:#161b22; padding:22px; border-left:4px solid #00E676; border-radius:8px; margin-top:34px; }
+        footer { text-align:center; padding:30px 20px; color:#8b949e; border-top:1px solid #21262d; margin-top:50px; font-size:0.9em; }
+        footer a { color:#00E676; text-decoration:none; }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        🔥 LAUNCH EDITION (v1.0) — EARLY ADOPTER ACCESS: Download free on Android right now and lock in full access to all core calculators & 40 offline guides before our upcoming Pro subscription update! <a href="https://play.google.com/store/apps/details?id=com.pbideasvirtuales.voltagedropwiresizecalc&hl=en_US&gl=US&referrer=utm_source%3Dgithub_electric_blog%26utm_medium%3Dorganic_seo%26utm_campaign%3Dlaunch_v1" target="_blank" rel="noopener">Get v1.0 on Google Play &rarr;</a>
+    </div>
+    <header>
+        <a href="index.html">&larr; Back to Electrical Engineering & Solar Wiring Lab Home</a>
+    </header>
+    
+    <div class="layout-container">
+        <main class="main-content">
+            <h1>Power Factor Correction (Cos &Phi;): How Reactive Current Heats Cables and How to Size Capacitors</h1>
+            <div class="meta">Updated 2026-11-27 • By PB Ideas Virtuales Team</div>
+            
+        <div style="margin:24px 0;">
+            <img src="assets/el12_factor_potencia_cos_fi_capacitores.webp" alt="Power Factor Correction (Cos &Phi;): How Reactive Current Heats Cables and How to Size Capacitors" style="width:100%; max-height:420px; object-fit:cover; border-radius:14px; border:2px solid #30363d;">
+            <p style="font-size:0.88em; color:#8b949e; margin-top:8px; text-align:center;">Inductive loads draw magnetizing reactive power (kVAR) that sloshes back and forth through supply lines without doing mechanical work—adding power-factor shunt capacitors cleans up line current.</p>
+        </div>
+        
+            
+        <p>If you examine the monthly electrical utility bill of any commercial manufacturing plant, machine shop, or large farm, you will often find an extra surcharge running into thousands of dollars labeled <em>"Low Power Factor Penalty"</em> or <em>"Reactive Energy Demand"</em>. To many facility managers, this feels like an arbitrary tax. In reality, poor <strong>Power Factor (Cos &Phi;)</strong> represents massive electrical inefficiency and unnecessary conductor heating.</p>
+
+        <h2>1. The Power Triangle: kW, kVAR, and kVA</h2>
+        <p>In alternating current circuits, electrical power is composed of three interconnected vector components forming a right triangle:</p>
+        <ul>
+            <li><strong>Active Power (P in Kilowatts - kW):</strong> The real, working energy converted into mechanical shaft torque, heat, or light.</li>
+            <li><strong>Reactive Power (Q in Kilovolt-Amperes Reactive - kVAR):</strong> The magnetizing energy required to establish magnetic fields in induction motor windings and transformers. It does zero physical work and oscillates back and forth between generator and load twice per cycle.</li>
+            <li><strong>Apparent Power (S in Kilovolt-Amperes - kVA):</strong> The vector hypotenuse (<code>S = &radic;(P&sup2; + Q&sup2;)</code>). This is the total load that cables, switchgear, and utility transformers must physically carry.</li>
+            <li><strong>Power Factor:</strong> <code>PF = Cos &Phi; = Real Power (kW) / Apparent Power (kVA)</code>.</li>
+        </ul>
+
+        <h2>2. Why Low Power Factor Cooks Distribution Lines</h2>
+        <p>Consider a facility drawing <code>100 kW</code> of active power at <code>480V 3-Phase</code>:</p>
+        <ul>
+            <li><strong>At PF = 1.0 (Unity):</strong> Current is: <code>I = 100,000 / (&radic;3 &times; 480 &times; 1.0) = 120.3 Amperes</code>.</li>
+            <li><strong>At PF = 0.70 (Poor Inductive Load):</strong> Current explodes to: <code>I = 100,000 / (&radic;3 &times; 480 &times; 0.70) = 171.8 Amperes</code>.</li>
+        </ul>
+        <p>That extra <strong>51.5 Amperes</strong> is pure reactive current. Because conductor heating is proportional to current squared (<code>P_loss = I&sup2; &times; R</code>), cable heat losses increase by <strong>104%</strong>! Main breaker panels run hotter, voltage drops along feeder conduits worsen, and transformer capacity is bottlenecked.</p>
+
+        <h2>3. Sizing Shunt Capacitors (The Mathematics)</h2>
+        <p>Because capacitors produce leading reactive current that is exactly 180 degrees out of phase with the lagging reactive current of inductors, connecting a capacitor bank in parallel cancels out inductive kVAR locally. The formula to calculate required capacitor bank capacity (<code>Q_C</code>) is:</p>
+        <p><code>Q_C = P &times; [tan(&Phi;_initial) - tan(&Phi;_target)]</code></p>
+        <p>For example, to boost a <code>200 kW</code> load from <code>PF = 0.75</code> (<code>&Phi; = 41.41&deg;</code>, <code>tan = 0.8819</code>) to <code>PF = 0.95</code> (<code>&Phi; = 18.19&deg;</code>, <code>tan = 0.3287</code>):</p>
+        <p><code>Q_C = 200 &times; (0.8819 - 0.3287) = 200 &times; 0.5532 = 110.6 kVAR</code>.</p>
+        <p>Installing a <code>110 kVAR</code> capacitor bank eliminates utility demand charges and immediately reduces feeder current by over 20%.</p>
+
+        <h2>4. The Danger of Over-Correction and Resonance</h2>
+        <p>Never over-correct beyond <code>0.98</code> or <code>1.0</code>! A leading power factor (capacitive) can cause dangerous overvoltages (the Ferranti effect) and harmonic resonance with variable frequency drives (VFDs), destroying capacitor dielectric films. In modern facilities with high harmonic distortion, always specify detuned capacitor banks with series blocking reactors.</p>
+        <p>When sizing electrical feeders, evaluating circuit breaker ampacities, and converting kVA to actual cable load currents, rely on <strong>Wire Size &amp; Voltage Drop Calc</strong> to keep every panel engineered to professional standards.</p>
+        
+            
+        <div style="background:#161b22; border:2px solid #00E676; border-radius:14px; padding:22px; margin:34px 0;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+                <h3 style="margin:0; color:#00E676; font-size:1.25em;">⚡ Live Interactive Mini-Calculator: Voltage Drop &amp; Joule Heat</h3>
+                <span style="background:rgba(0,230,118,0.15); color:#00E676; padding:3px 10px; border-radius:12px; font-size:0.8em; font-weight:bold;">Ohm's Law Engine</span>
+            </div>
+            <p style="color:#c9d1d9; font-size:0.92em; margin-bottom:16px;">Test conductor resistance (R = &rho;&middot;L/A) and see heat wasted in the cable before installation:</p>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:14px; margin-bottom:16px;">
+                <div style="background:#0d1117; padding:12px; border-radius:10px; border:1px solid #30363d;">
+                    <label style="font-weight:bold; font-size:0.88em; color:#8b949e;">System Voltage:</label><br>
+                    <select id="sysVolt" style="width:100%; margin-top:6px; background:#161b22; color:#fff; border:1px solid #30363d; padding:8px; border-radius:6px;" onchange="calcWireMini()">
+                        <option value="12">12V DC (Caravan / Off-Grid)</option>
+                        <option value="24">24V DC (Solar / Marine)</option>
+                        <option value="48">48V DC (Off-Grid Lithium)</option>
+                        <option value="120">120V AC (US Single-Phase)</option>
+                        <option value="230" selected>230V / 240V AC (Single-Phase)</option>
+                    </select>
+                </div>
+                <div style="background:#0d1117; padding:12px; border-radius:10px; border:1px solid #30363d;">
+                    <label style="font-weight:bold; font-size:0.88em; color:#8b949e;">Load Current: <span id="ampVal" style="color:#00E676;">20 A</span></label><br>
+                    <input type="range" id="ampSlider" min="5" max="40" step="1" value="20" style="width:100%; margin-top:10px;" oninput="calcWireMini()">
+                </div>
+                <div style="background:#0d1117; padding:12px; border-radius:10px; border:1px solid #30363d;">
+                    <label style="font-weight:bold; font-size:0.88em; color:#8b949e;">One-Way Distance: <span id="distVal" style="color:#00E676;">45 m (148 ft)</span></label><br>
+                    <input type="range" id="distSlider" min="5" max="100" step="5" value="45" style="width:100%; margin-top:10px;" oninput="calcWireMini()">
+                </div>
+            </div>
+            <div id="wireResult" style="padding:14px; background:#0d1117; border-left:4px solid #ff5252; border-radius:8px; margin-top:10px; font-size:0.95em;">
+                Voltage Drop on 4 mm² (12 AWG): <strong>7.88V (3.43%)</strong> &mdash; <strong style="color:#ff5252;">⚠️ EXCEEDS 3% LIMIT!</strong><br>
+                <span style="font-size:0.9em; color:#8b949e;">Joule Heat Loss in Cable: <strong>157.5 Watts</strong></span>
+            </div>
+            <script>
+            function calcWireMini() {
+                let V = parseFloat(document.getElementById('sysVolt').value);
+                let I = parseFloat(document.getElementById('ampSlider').value);
+                let L = parseFloat(document.getElementById('distSlider').value);
+                document.getElementById('ampVal').innerText = I + ' A';
+                document.getElementById('distVal').innerText = L + ' m (' + Math.round(L*3.28084) + ' ft)';
+                let R = (2 * L * 0.0175) / 4.0;
+                let vdrop = (I * R).toFixed(2);
+                let pct = ((vdrop / V) * 100).toFixed(2);
+                let watts = (I * I * R).toFixed(1);
+                let box = document.getElementById('wireResult');
+                let col = pct > 3.0 ? '#ff5252' : '#00e676';
+                box.style.borderLeftColor = col;
+                let msg = pct > 3.0
+                    ? '⚠️ EXCEEDS 3% LIMIT! Use the full Android app to auto-size the exact AWG / mm² gauge & breaker.'
+                    : '✅ SAFE (<3% Voltage Drop). Verify thermal capacity (Ib ≤ In ≤ Iz) before installing.';
+                box.innerHTML = 'Voltage Drop on 4 mm² (~12 AWG): <strong>' + vdrop + 'V (' + pct + '%)</strong> &mdash; <strong style="color:' + col + ';">' + msg + '</strong><br><span style="font-size:0.9em; color:#8b949e;">Joule Heat Loss in Cable: <strong>' + watts + ' Watts</strong></span>';
+            }
+            </script>
+            <div style="margin-top:14px; padding-top:12px; border-top:1px solid #30363d; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+                <span style="font-size:0.88em; color:#00F2FE; font-weight:bold;">💡 Need auto AWG/mm² sizing, 8 conductor metals &amp; breaker trip math?</span>
+                <a href="https://play.google.com/store/apps/details?id=com.pbideasvirtuales.voltagedropwiresizecalc&hl=en_US&gl=US&referrer=utm_source%3Dgithub_electric_blog%26utm_medium%3Dorganic_seo%26utm_campaign%3Dlaunch_v1" target="_blank" rel="noopener" style="background:#00E676; color:#0d1117; font-weight:800; padding:8px 18px; border-radius:20px; text-decoration:none; font-size:0.88em;">Unlock Android Toolkit &rarr;</a>
+            </div>
+        </div>
+        
+            <div class="cta-card">
+                <div class="cta-badge">⚡ Dual Standard NEC AWG + IEC mm² • Auto Breaker (Ib ≤ In ≤ Iz)</div>
+                <h2 style="margin-top:4px; color:#fff; border:none;">Wire Size & Voltage Drop Calc</h2>
+                <p style="color:#c9d1d9; max-width:680px; margin:10px auto;">Stop testing wire gauges one by one! Automatically calculates commercial AWG & metric mm² sizes, breaker trip ratings (Ib ≤ In ≤ Iz), 8 conductor metals (Copper, Aluminum, Pure Nickel, Nichrome), AC Mains, 12V/24V/48V Solar, 40% Conduit Fill, and 40 Offline Guides.</p>
+                <div class="fomo-box">🔥 LAUNCH EDITION (v1.0) — EARLY ADOPTER ACCESS: Download free on Android right now and lock in full access to all core calculators & 40 offline guides before our upcoming Pro subscription update!</div>
+                <a href="https://play.google.com/store/apps/details?id=com.pbideasvirtuales.voltagedropwiresizecalc&hl=en_US&gl=US&referrer=utm_source%3Dgithub_electric_blog%26utm_medium%3Dorganic_seo%26utm_campaign%3Dlaunch_v1" target="_blank" rel="noopener" class="cta-btn">📲 Download Free on Google Play (v1.0)</a>
+                <p style="font-size:0.82em; color:#8b949e; margin-top:12px; margin-bottom:0;">✓ Free on Android (Google Play) • ✓ Works 100% Offline • ✓ 0% Crashes</p>
+            </div>
+            <div class="faq-box">
+                <h3 style="margin-top:0; color:#00E676;">Frequently Asked Technical Question</h3>
+                <p><strong>Why do electric utilities penalize commercial customers for low power factor, and how do capacitors solve it?</strong></p>
+                <p style="margin-bottom:0;">Inductive loads (motors, transformers, ballasts) require alternating magnetic fields, drawing reactive current (kVAR) that oscillates back and forth across utility lines without performing real work (kW). This reactive current congests power lines, causes voltage drop, and generates parasitic I²R heat in transformers. Shunt capacitors act as local reactive energy reservoirs, supplying magnetizing kVAR on-site so utility lines only supply active working power (kW), bringing power factor close to 1.0.</p>
+            </div>
+        </main>
+        
+    <aside class="sidebar-wrapper">
+        <!-- TARJETA PUBLICITARIA CON CARRUSEL ANIMADO Y ROTATIVO -->
+        <div style="background:#161b22; border:2px solid #00E676; border-radius:16px; padding:18px 16px; margin-bottom:24px; box-shadow:0 8px 24px rgba(0,0,0,0.5); position:relative;" id="adCardContainer">
+            <div style="text-align:center; margin-bottom:12px; border-bottom:1px solid #30363d; padding-bottom:8px;">
+                <span style="color:#00E676; font-size:0.78em; font-weight:900; letter-spacing:1px; text-transform:uppercase; display:inline-block;">
+                    PRO ENGINEERING SUITE • FOR ANDROID
+                </span>
+            </div>
+
+            <div id="sidebarCarousel" onmouseenter="pauseCarousel()" onmouseleave="resumeCarousel()">
+                
+        <div class="sidebar-slide" data-slide="0" style="display:block; text-align:center;">
+            <div style="display:inline-block; background:rgba(0, 230, 118, 0.15); color:#00E676; font-size:0.75em; font-weight:900; letter-spacing:0.8px; padding:3px 10px; border-radius:12px; text-transform:uppercase; margin-bottom:8px;">
+                ⚡ DUAL CODE ENGINE
+            </div>
+            <div style="background:#090d13; border:1px solid #21262d; border-radius:12px; padding:6px; margin-bottom:8px; display:flex; justify-content:center; align-items:center;">
+                <img src="assets/wire_en_1.jpg" alt="Whole mm² & NEC AWG Sizes" style="max-height:250px; width:auto; max-width:100%; object-fit:contain; border-radius:8px; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.6)); display:block; margin:0 auto;">
+            </div>
+            <h4 style="margin:4px 0 2px; color:#ffffff; font-size:0.95em; line-height:1.3;">Whole mm² & NEC AWG Sizes</h4>
+            <p style="color:#8b949e; font-size:0.8em; margin:0 0 8px; line-height:1.35;">Simultaneous thermal & voltage drop calculation without manual guessing.</p>
+        </div>
+        
+        <div class="sidebar-slide" data-slide="1" style="display:none; text-align:center;">
+            <div style="display:inline-block; background:rgba(0, 230, 118, 0.15); color:#00E676; font-size:0.75em; font-weight:900; letter-spacing:0.8px; padding:3px 10px; border-radius:12px; text-transform:uppercase; margin-bottom:8px;">
+                🛡️ OVERCURRENT PROTECTION
+            </div>
+            <div style="background:#090d13; border:1px solid #21262d; border-radius:12px; padding:6px; margin-bottom:8px; display:flex; justify-content:center; align-items:center;">
+                <img src="assets/wire_en_2.jpg" alt="Breakers & Fuses (Ib ≤ In ≤ Iz)" style="max-height:250px; width:auto; max-width:100%; object-fit:contain; border-radius:8px; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.6)); display:block; margin:0 auto;">
+            </div>
+            <h4 style="margin:4px 0 2px; color:#ffffff; font-size:0.95em; line-height:1.3;">Breakers & Fuses (Ib ≤ In ≤ Iz)</h4>
+            <p style="color:#8b949e; font-size:0.8em; margin:0 0 8px; line-height:1.35;">Prevents wire melting inside conduits before the circuit breaker trips.</p>
+        </div>
+        
+        <div class="sidebar-slide" data-slide="2" style="display:none; text-align:center;">
+            <div style="display:inline-block; background:rgba(0, 230, 118, 0.15); color:#00E676; font-size:0.75em; font-weight:900; letter-spacing:0.8px; padding:3px 10px; border-radius:12px; text-transform:uppercase; margin-bottom:8px;">
+                🔋 SOLAR & 8 METALS
+            </div>
+            <div style="background:#090d13; border:1px solid #21262d; border-radius:12px; padding:6px; margin-bottom:8px; display:flex; justify-content:center; align-items:center;">
+                <img src="assets/wire_en_3.jpg" alt="12V / 24V / 48V Off-Grid Sizing" style="max-height:250px; width:auto; max-width:100%; object-fit:contain; border-radius:8px; filter:drop-shadow(0 6px 14px rgba(0,0,0,0.6)); display:block; margin:0 auto;">
+            </div>
+            <h4 style="margin:4px 0 2px; color:#ffffff; font-size:0.95em; line-height:1.3;">12V / 24V / 48V Off-Grid Sizing</h4>
+            <p style="color:#8b949e; font-size:0.8em; margin:0 0 8px; line-height:1.35;">Class-T fuses, pure nickel battery strips & 40% conduit fill tables.</p>
+        </div>
+        
+            </div>
+
+            <!-- Indicadores de puntos -->
+            <div style="text-align:center; margin:6px 0 12px;" id="carouselDots">
+                <span class="carousel-dot" onclick="switchSidebarSlide(0)" data-dot="0" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#00E676; margin:0 4px; cursor:pointer; transition:background 0.3s;"></span><span class="carousel-dot" onclick="switchSidebarSlide(1)" data-dot="1" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#4b5563; margin:0 4px; cursor:pointer; transition:background 0.3s;"></span><span class="carousel-dot" onclick="switchSidebarSlide(2)" data-dot="2" style="display:inline-block; width:8px; height:8px; border-radius:50%; background:#4b5563; margin:0 4px; cursor:pointer; transition:background 0.3s;"></span>
+            </div>
+
+            <a href="https://play.google.com/store/apps/details?id=com.pbideasvirtuales.voltagedropwiresizecalc&hl=en_US&gl=US&referrer=utm_source%3Dgithub_electric_blog%26utm_medium%3Dorganic_seo%26utm_campaign%3Dlaunch_v1" target="_blank" rel="noopener" style="display:block; text-align:center; background:#00E676; color:#0d1117; font-weight:900; font-size:0.95em; padding:12px 14px; border-radius:24px; text-decoration:none; text-transform:uppercase; letter-spacing:0.5px; box-shadow:0 4px 14px rgba(0,0,0,0.4);">
+                📲 Get Free on Google Play (v1.0) &rarr;
+            </a>
+            <p style="font-size:0.74em; color:#8b949e; text-align:center; margin:8px 0 0;">✓ 100% Offline • ✓ Google Play Verified • ✓ No Ads in v1.0</p>
+        </div>
+
+        <script>
+        let currentSlideIdx = 0;
+        const totalSlides = 3;
+        let slideTimer = null;
+
+        function switchSidebarSlide(idx) {
+            currentSlideIdx = idx;
+            document.querySelectorAll('.sidebar-slide').forEach((el, i) => {
+                el.style.display = (i === idx) ? 'block' : 'none';
+            });
+            document.querySelectorAll('.carousel-dot').forEach((el, i) => {
+                el.style.background = (i === idx) ? '#00E676' : '#4b5563';
+            });
+        }
+
+        function nextSidebarSlide() {
+            currentSlideIdx = (currentSlideIdx + 1) % totalSlides;
+            switchSidebarSlide(currentSlideIdx);
+        }
+
+        function startCarousel() {
+            if (!slideTimer && totalSlides > 1) {
+                slideTimer = setInterval(nextSidebarSlide, 3800);
+            }
+        }
+
+        function pauseCarousel() {
+            if (slideTimer) {
+                clearInterval(slideTimer);
+                slideTimer = null;
+            }
+        }
+
+        function resumeCarousel() {
+            startCarousel();
+        }
+
+        document.addEventListener('DOMContentLoaded', startCarousel);
+        </script>
+
+        <!-- NAVEGACIÓN A LOS OTROS ARTÍCULOS -->
+        <div style="background:#161b22; border:1px solid #30363d; border-radius:14px; padding:18px;">
+            <h4 style="margin:0 0 14px; font-size:0.98em; color:#00F2FE; border-bottom:1px solid #30363d; padding-bottom:8px;">
+                📚 More Lab Field Guides (19)
+            </h4>
+            <div style="max-height:460px; overflow-y:auto; padding-right:4px;">
+                
+        <a href="power-factor-correction-cos-phi-reactive-kvar-capacitor-bank-sizing-guide.html" style="display:flex; gap:12px; align-items:center; background:rgba(255, 255, 255, 0.08); border:1px solid #00E676; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/el12_factor_potencia_cos_fi_capacitores.webp" alt="Power Factor Correction (Cos &Phi;): How Reactive Current Heats Cables and How to Size Capacitors" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    Power Factor Correction (Cos &Phi;): How Reactive Current Heats Cables and How to Size Capacitors <span style="background:#00E676; color:#0d1117; font-size:0.7em; font-weight:900; padding:2px 6px; border-radius:4px; margin-left:6px;">READING</span>
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-27</div>
+            </div>
+        </a>
+        
+        <a href="motor-circuit-protection-mpcb-contactor-thermal-overload-relay-sizing-nec-430.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/el11_motores_contactor_guardamotor.webp" alt="Motor Circuit Protection: Sizing MPCBs, Contactors & Thermal Overload Relays (NEC 430)" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    Motor Circuit Protection: Sizing MPCBs, Contactors & Thermal Overload Relays (NEC 430) 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-26</div>
+            </div>
+        </a>
+        
+        <a href="three-phase-neutral-overheating-triplen-harmonics-and-load-balancing-guide.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/el10_equilibrio_fases_trifasica_neutro.webp" alt="Three-Phase Neutral Overheating: The Invisible Danger of Triplen Harmonics in Modern Buildings" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    Three-Phase Neutral Overheating: The Invisible Danger of Triplen Harmonics in Modern Buildings 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-25</div>
+            </div>
+        </a>
+        
+        <a href="wire-ferrules-vs-bare-stranded-wire-screw-terminal-fire-prevention-din-46228.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/el08_empalmes_punteras_tif_borneras.webp" alt="Wire Ferrules vs. Bare Stranded Wire: The Mechanical Reason Screw Terminals Catch Fire" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    Wire Ferrules vs. Bare Stranded Wire: The Mechanical Reason Screw Terminals Catch Fire 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-24</div>
+            </div>
+        </a>
+        
+        <a href="ground-rod-resistance-soil-resistivity-why-earth-ground-wont-trip-breakers.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/el05_puesta_a_tierra_jabalina.webp" alt="The Ground Rod Fallacy: Why Soil Resistance Will Never Trip an Overcurrent Breaker" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    The Ground Rod Fallacy: Why Soil Resistance Will Never Trip an Overcurrent Breaker 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-23</div>
+            </div>
+        </a>
+        
+        <a href="voltage-drop-vs-ampacity-why-cool-wires-destroy-compressors-undervoltage.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/el03_caida_tension_vs_calentamiento.webp" alt="Voltage Drop vs. Ampacity: Why Ice-Cold Wires Still Burn Out Induction Compressors" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    Voltage Drop vs. Ampacity: Why Ice-Cold Wires Still Burn Out Induction Compressors 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-22</div>
+            </div>
+        </a>
+        
+        <a href="mcb-vs-rcd-gfci-breaker-difference-shock-protection-tripping-thresholds.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/el02_termica_vs_diferencial_rcd.webp" alt="MCB vs. RCD & GFCI: Why Standard Circuit Breakers Will Never Save You from Electrocution" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    MCB vs. RCD & GFCI: Why Standard Circuit Breakers Will Never Save You from Electrocution 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-21</div>
+            </div>
+        </a>
+        
+        <a href="submersible-well-pump-wire-sizing-12-volt-or-240v-deep-borehole-drop.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/el14_bombas_sumergibles_cable_arranque.webp" alt="Deep Borehole Well Pump Wiring: Why Voltage Drop Slashes Motor Starting Torque Squared" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    Deep Borehole Well Pump Wiring: Why Voltage Drop Slashes Motor Starting Torque Squared 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-20</div>
+            </div>
+        </a>
+        
+        <a href="type-b-c-d-mcb-trip-curves-why-submersible-pumps-nuisance-trip.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/el04_curvas_disparo_b_c_d_termicas.webp" alt="Type B, C &amp; D Breaker Trip Curves: Why Motors Nuisance-Trip Correct Amperage Breakers" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    Type B, C &amp; D Breaker Trip Curves: Why Motors Nuisance-Trip Correct Amperage Breakers 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-19</div>
+            </div>
+        </a>
+        
+        <a href="nichrome-wire-heating-elements-ohm-law-resistance-temperature-calc.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/so13_alambre_nicrom_calculo_resistencia_calor.webp" alt="Sizing Nichrome 80/20 Wire: Hot-Wire Foam Cutters, Resistive Coils &amp; Thermal Math" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    Sizing Nichrome 80/20 Wire: Hot-Wire Foam Cutters, Resistive Coils &amp; Thermal Math 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-18</div>
+            </div>
+        </a>
+        
+        <a href="neutral-loss-open-neutral-240v-split-phase-burns-120v-appliances.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/el06_corte_neutro_protector_tension.webp" alt="The Open Neutral Nightmare: Why One Broken Return Wire Sends 200V Through 120V Outlets" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    The Open Neutral Nightmare: Why One Broken Return Wire Sends 200V Through 120V Outlets 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-17</div>
+            </div>
+        </a>
+        
+        <a href="cold-weather-solar-voc-spike-why-frosty-mornings-fry-mppt-controllers.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/so08_paneles_solares_serie_paralelo_voc_frio.webp" alt="Cold Weather Solar Voc Spikes: How Freezing Dawns Permanently Fry MPPT Charge Controllers" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    Cold Weather Solar Voc Spikes: How Freezing Dawns Permanently Fry MPPT Charge Controllers 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-16</div>
+            </div>
+        </a>
+        
+        <a href="smart-alternators-euro-6-why-auxiliary-batteries-never-reach-100-percent.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/so11_alternador_inteligente_booster_dc_dc.webp" alt="Euro 6 Smart Alternators: Why Simple Battery Isolators Starve Camper &amp; Work-Truck Lithium Banks" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    Euro 6 Smart Alternators: Why Simple Battery Isolators Starve Camper &amp; Work-Truck Lithium Banks 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-15</div>
+            </div>
+        </a>
+        
+        <a href="aluminum-vs-copper-service-feeders-bimetallic-galvanic-corrosion-fix.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/el07_cobre_vs_aluminio_bimetalico.webp" alt="Aluminum vs. Copper Feeder Wiring: Preventing Galvanic Meltdowns &amp; Ampacity Upsizing" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    Aluminum vs. Copper Feeder Wiring: Preventing Galvanic Meltdowns &amp; Ampacity Upsizing 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-14</div>
+            </div>
+        </a>
+        
+        <a href="ac-breakers-on-dc-solar-arrays-why-electric-arcs-never-extinguish.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/so06_peligro_usar_termica_ac_en_continua_dc.webp" alt="Why Residential AC Breakers Catch Fire on DC Solar Panels (Zero-Crossing Physics)" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    Why Residential AC Breakers Catch Fire on DC Solar Panels (Zero-Crossing Physics) 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-13</div>
+            </div>
+        </a>
+        
+        <a href="pure-nickel-strips-for-18650-lifepo4-battery-packs.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/so12_cintas_niquel_puro_packs_baterias_litio.webp" alt="Pure Nickel vs. Nickel-Plated Steel: Sizing Strips for 18650 & LiFePO4 DIY Battery Packs" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    Pure Nickel vs. Nickel-Plated Steel: Sizing Strips for 18650 & LiFePO4 DIY Battery Packs 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-10</div>
+            </div>
+        </a>
+        
+        <a href="nec-awg-vs-iec-mm2-wire-size-and-voltage-drop-guide.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/el01_regla_oro_termica_cable.webp" alt="NEC (AWG) vs. IEC (mm²) Wire Sizing & Why Breakers Must Obey Ib ≤ In ≤ Iz" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    NEC (AWG) vs. IEC (mm²) Wire Sizing & Why Breakers Must Obey Ib ≤ In ≤ Iz 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-10</div>
+            </div>
+        </a>
+        
+        <a href="conduit-fill-40-percent-rule-nec-pvc-emt-guide.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/el09_ocupacion_canos_regla_40_porciento.webp" alt="The 40% Conduit Fill Rule: How to Size PVC, EMT & Flexible Conduit Without Jamming Wires" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    The 40% Conduit Fill Rule: How to Size PVC, EMT & Flexible Conduit Without Jamming Wires 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-10</div>
+            </div>
+        </a>
+        
+        <a href="12v-vs-24v-vs-48v-solar-inverter-cable-sizing-and-fuse-guide.html" style="display:flex; gap:12px; align-items:center; background:#0d1117; border:1px solid #30363d; border-radius:10px; padding:10px; margin-bottom:10px; text-decoration:none; transition:transform 0.15s ease;">
+            <img src="assets/so02_elegir_12v_24v_48v_sistema_solar.webp" alt="12V vs. 24V vs. 48V Solar Battery Wiring: How to Size Inverter Cables & Class-T Fuses Safely" style="width:54px; height:54px; object-fit:cover; border-radius:8px; flex-shrink:0;">
+            <div style="flex:1; min-width:0;">
+                <div style="color:#ffffff; font-size:0.86em; font-weight:bold; line-height:1.3; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical;">
+                    12V vs. 24V vs. 48V Solar Battery Wiring: How to Size Inverter Cables & Class-T Fuses Safely 
+                </div>
+                <div style="color:#8b949e; font-size:0.75em; margin-top:4px;">2026-11-10</div>
+            </div>
+        </a>
+        
+            </div>
+        </div>
+    </aside>
+    
+    </div>
+
+    <footer>
+        <p>&copy; 2026 PB Ideas Virtuales • <a href="../index.html">Main Developer Hub</a> • <a href="../privacidad-utilidades.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
